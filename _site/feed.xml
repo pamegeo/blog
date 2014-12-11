@@ -7,15 +7,16 @@
     <atom:link href="http://noelmas.github.io//blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Scraping search box results</title>
-        <description>&lt;p&gt;Earlier in the week I had to find a list of all addresses on a given street. After chasing a few deadends that involved vists to the Ordnance Survey website and having a look if the Google Maps API could help, I found a neat trick that uses the most authoratitive source for this kind of information: Royal Mail.&lt;/p&gt;
+        <title>Scraping Royal Mail search box results</title>
+        <description>&lt;p&gt;Earlier in the week I had to find a list of all addresses on a given street. After chasing a few deadends that involved vists to the Ordnance Survey website and having a look if the Google Maps API could help, I found a neat trick that uses the most authoratitive source for this kind of information: &lt;a href=&quot;http://www.royalmail.com/find-a-postcode&quot;&gt;Royal Mail&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The screencast below shows how to do it using the Google Chrome &lt;a href=&quot;https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd&quot;&gt;Scraper&lt;/a&gt; plug-in. It’s a bit of a hack and doesn’t give you all flat addresses in one table, but is a great start for grabbing this kind of information.&lt;/p&gt;
 
+&lt;object width=&quot;100%&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/VpruUcsk0Z0&amp;amp;hl=en&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/VpruUcsk0Z0&amp;amp;hl=en&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; height=&quot;500&quot; /&gt;&lt;/object&gt;
 </description>
         <pubDate>Thu, 11 Dec 2014 00:00:00 +0000</pubDate>
-        <link>http://noelmas.github.io//blog/scraping/2014/12/11/welcome-to-pixyll/</link>
-        <guid isPermaLink="true">http://noelmas.github.io//blog/scraping/2014/12/11/welcome-to-pixyll/</guid>
+        <link>http://noelmas.github.io//blog/scraping/2014/12/11/scraping-royal-mail/</link>
+        <guid isPermaLink="true">http://noelmas.github.io//blog/scraping/2014/12/11/scraping-royal-mail/</guid>
       </item>
     
   </channel>
