@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      Scraping search box stuff
+title:      Scraping search box results
 date:       2014-12-11
-summary:    
+summary:	Scraping contents of search boxes from the Royal Mail Postcode Finder website. 
 categories: scraping
 ---
 
