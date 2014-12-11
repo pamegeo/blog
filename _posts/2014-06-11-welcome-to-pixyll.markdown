@@ -1,26 +1,12 @@
 ---
 layout:     post
-title:      Hello, Pixyll
-date:       2014-06-11 15:31:19
-summary:    Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
-categories: jekyll pixyll
+title:      Scraping search box stuff
+date:       2014-12-11
+summary:    
+categories: scraping
 ---
 
-Hello.
+Earlier in the week I had to find a list of all addresses on a given street. After chasing a few deadends that involved vists to the Ordnance Survey website and having a look if the Google Maps API could help, I found a neat trick that uses the most authoratitive source for this kind of information: Royal Mail.
 
-Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It's mobile _first_, fluidly responsive, and delightfully lightweight.
+The screencast below shows how to do it using the Google Chrome [Scraper](https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd) plug-in. It's a bit of a hack and doesn't give you all flat addresses in one table, but is a great start for grabbing this kind of information.
 
-It's pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.
-
-<blockquote>
-  <p>
-    Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
-  </p>
-  <footer><cite title="Antoine de Saint-Exupéry">Antoine de Saint-Exupéry</cite></footer>
-</blockquote>
-
-## Where is it?
-
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it, request a feature, or report a bug.
-
-It's free, and open source ([MIT](http://opensource.org/licenses/MIT)).
