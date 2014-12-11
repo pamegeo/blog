@@ -7,7 +7,7 @@
     <atom:link href="http://noelmas.github.io//blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Scraping Royal Mail search box results</title>
+        <title>Scraping Royal Mail search box</title>
         <description>&lt;p&gt;Earlier in the week I had to find a list of all addresses on a given street. After chasing a few deadends that involved vists to the Ordnance Survey website and having a look if the Google Maps API could help, I found a neat trick that uses the most authoratitive source for this kind of information: &lt;a href=&quot;http://www.royalmail.com/find-a-postcode&quot;&gt;Royal Mail&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The screencast below shows how to do it using the Google Chrome &lt;a href=&quot;https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd&quot;&gt;Scraper&lt;/a&gt; plug-in. It’s a bit of a hack and doesn’t give you all flat addresses in one table, but is a great start for grabbing this kind of information.&lt;/p&gt;
