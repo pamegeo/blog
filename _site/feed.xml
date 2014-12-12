@@ -3,8 +3,8 @@
   <channel>
     <title>Noelmas data doodles</title>
     <description>S</description>
-    <link>http://noelmas.github.io//blog/</link>
-    <atom:link href="http://noelmas.github.io//blog/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://noelmas.github.io/blog/</link>
+    <atom:link href="http://noelmas.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Scraping Royal Mail search box</title>
@@ -15,8 +15,8 @@
 &lt;object width=&quot;100%&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/VpruUcsk0Z0&amp;amp;hl=en&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/VpruUcsk0Z0&amp;amp;hl=en&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; height=&quot;500&quot; /&gt;&lt;/object&gt;
 </description>
         <pubDate>Thu, 11 Dec 2014 00:00:00 +0000</pubDate>
-        <link>http://noelmas.github.io//blog/scraping/2014/12/11/scraping-royal-mail/</link>
-        <guid isPermaLink="true">http://noelmas.github.io//blog/scraping/2014/12/11/scraping-royal-mail/</guid>
+        <link>http://noelmas.github.io/blog/scraping/2014/12/11/scraping-royal-mail/</link>
+        <guid isPermaLink="true">http://noelmas.github.io/blog/scraping/2014/12/11/scraping-royal-mail/</guid>
       </item>
     
   </channel>
