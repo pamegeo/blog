@@ -33,7 +33,7 @@ The screencast below shows one method to turn the PDF of a UK investment sanctio
 
 	*The newly created "Address" column retains some extra information that is not useful this time such as "Other information" (you may want to put this data into a new column). We are going to remove it. We would struggle to do this using a normal Find and Replace operation as the string we want to replace is different for every cell, however it does follow a pattern so we are able to use Regular Expressions.*
 
-9. In the "Address" column go to "Edit cells > Transform", insert the following GREL expression that effectively finds all strings in that column that start with "Other information:" and are followed by an indefinite number of further characters. Regular Expressions are bounded by the "/" character is GREL:
+9. In the "Address" column go to "Edit cells > Transform", insert the following GREL expression that effectively finds all strings in that column that start with "Other information:" and are followed by an indefinite number of further characters. Regular Expressions are bounded by the "/" character in GREL:
 		
 		value.replace(/\sOther\sInformation.*/,"")
 	
