@@ -82,26 +82,29 @@
   <li>
     <p>On “Column 2” choose the “Add a column based on this column function”. Insert the following bit of Google Refine Expressions Language (GREL):</p>
 
-    <pre><code> row.record.cells["Column 2"][0].value
+    <div class="highlighter-rouge"><pre class="highlight"><code> row.record.cells["Column 2"][0].value
 </code></pre>
+    </div>
   </li>
   <li>
     <p>Do this a second time except changing the 0 to a 1:</p>
 
-    <pre><code> row.record.cells["Column 2"][1].value
+    <div class="highlighter-rouge"><pre class="highlight"><code> row.record.cells["Column 2"][1].value
 </code></pre>
+    </div>
 
     <p><em>The newly created “Address” column retains some extra information that is not useful this time such as “Other information” (you may want to put this data into a new column). We are going to remove it. We would struggle to do this using a normal Find and Replace operation as the string we want to replace is different for every cell, however it does follow a pattern so we are able to use Regular Expressions.</em></p>
   </li>
   <li>
     <p>In the “Address” column go to “Edit cells &gt; Transform”, insert the following GREL expression that effectively finds all strings in that column that start with “Other information:” and are followed by an indefinite number of further characters. Regular Expressions are bounded by the “/” character in GREL:</p>
 
-    <pre><code> value.replace(/\sOther\sInformation.*/,"")
+    <div class="highlighter-rouge"><pre class="highlight"><code> value.replace(/\sOther\sInformation.*/,"")
 </code></pre>
+    </div>
 
     <p><em>Now to get remove the extra lines in the records, so that we only have one line for each row of data.</em></p>
   </li>
-  <li>Choose the “Edit Cells &gt; Blank down” function on the “Address” column effectively blanking out all consecutive duplicate rows for that column </li>
+  <li>Choose the “Edit Cells &gt; Blank down” function on the “Address” column effectively blanking out all consecutive duplicate rows for that column</li>
   <li>Go to “Facet &gt; Text Facet” on the “Address column”</li>
   <li>Select from the Text Facet box “(blank)”, we need to remove all these rows</li>
   <li>Change the view (top left) to “Rows” from “Records”</li>
