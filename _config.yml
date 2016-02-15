@@ -1,9 +1,9 @@
 # Site settings
 title:       Noelmas data doodles
-email:       sam.leon@okfn.org
+email:       sam.ed.leon@gmail.com
 author:      Sam Leon
 description: S
-baseurl:     "blog"
+baseurl:     "/blog"
 url:         "http://noelmas.github.io"
 
 # Google analytics
