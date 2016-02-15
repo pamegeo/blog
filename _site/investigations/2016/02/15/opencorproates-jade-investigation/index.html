@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Using OpenCorporates data to investigate the Burmese jade industry &#8211; Noelmas data doodles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How Global Witness investigated corruption in the jade industry">
+    <meta name="author" content="Sam Leon">
+    <meta name="keywords" content="investigations">
+    <link rel="canonical" href="http://noelmas.github.io/blog/investigations/2016/02/15/opencorproates-jade-investigation/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Using OpenCorporates data to investigate the Burmese jade industry">
+    <meta property="og:description" content="S">
+    <meta property="og:url" content="http://noelmas.github.io/investigations/2016/02/15/opencorproates-jade-investigation/">
+    <meta property="og:site_name" content="Noelmas data doodles">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://noelmas.github.io//blog">Noelmas data doodles</a>
+      <nav class="site-nav right">
+        <a href="/blog/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Using OpenCorporates data to investigate the Burmese jade industry</h1>
+  <span class="post-meta">Feb 15, 2016</span><br>
+  
+  <span class="post-meta small">10 minute read</span>
+</div>
+
+<article class="post-content">
+  <h3 id="background-to-investigation">Background to investigation</h3>
+
+<p>The jade industry in Burma was worth a staggering $31 billion in 2014 - equivalent to half of Burma’s official GDP. <a href="https://globalwitness.org">Global Witness</a> undertook a <a href="https://www.globalwitness.org/en-gb/campaigns/oil-gas-and-mining/myanmarjade/">year-long investigation</a> to tell the story of this valuable mineral and who really benefits from it. The picture that emerged was a grim one: jade is secretly controlled by Burma’s military elite and some of the generals associated with the worst abuses of junta rule. Little or no money flows to the communities who live in jade mining regions where some of Burma’s poorest and most vulnerable people live.</p>
+
+<p>The team working on this used a variety of investigative approaches including field research, interviews and economic analysis.  One important aspect of the work was data analysis conducted using publicly available company data published by <a href="https://opencorporates.com/">OpenCorporates</a>. By combining this data with other sources, we were able to understand the complex webs of ownership of the jade industry and which individuals and groups controlled this valuable mineral.</p>
+
+<p>The approach could in principle be applied to many other investigations. Below is a description of the method used, so that it might give other groups seeking to undertake similar analysis using OpenCorporates a place to start.</p>
+
+<h3 id="data-acquisition">Data acquisition</h3>
+
+<p>The research began with a government map of jade concessions and their current license holders. As our goal was to understand who was behind these companies, we needed to get this data in a form that could be linked to a database like OpenCorporates. This needed to be (a) in a structured form that could programatically be linked to another database, and (b) in English. So the first step was to create a simple Excel spreadsheet and translate these names into English using Roman script.</p>
+
+<h3 id="reconciliation-with-opencorporates-api">Reconciliation with OpenCorporates API</h3>
+
+<p>Transliteration always introduces some ambiguity and there are often numerous ways to convert a specific company name from one script to another. Fortunately, OpenCorporates has a service that lets users find company names in the database that are near but not exact matches. This all happens via an <a href="https://api.opencorporates.com/documentation/Open-Refine-Reconciliation-API">‘endpoint’</a> through which users can load the data they want to reconcile into <a href="http://openrefine.org/">OpenRefine</a>. OpenCorporates will then return a likely set of matches against the company names you have imported. In the case of this investigation, many of the companies returned multiple matches. The mining, gems and trading arms of companies were often separated into different legal entities under the same name. Take for example, Max Burma Company: there is a <a href="https://opencorporates.com/companies/mm/733-1993-1994">general limited company</a>, a <a href="https://opencorporates.com/companies/mm/903-2007-2008">gems and jewellery arm</a> as well as a <a href="https://opencorporates.com/companies/mm/958-2005-2006">construction company</a>.</p>
+
+<p>Each set of results was checked by the team of researchers and the best matches were chosen and added to the data, now with a link to the OpenCorporates database. This was a painstaking task even with the suggestions all the automation OpenRefine supplied, there was still a lot of human judgement required.</p>
+
+<h3 id="extraction-of-shareholders-and-director-data">Extraction of shareholders and director data</h3>
+
+<p>Now that relationships had been established between the jade companies and the OpenCorporates database, we were in a position to extract other properties of those companies held within OpenCorporates. The properties of primary interest were shareholders and directors of those companies.</p>
+
+<p>There are a number of ways to extract this information, one could write a script in a language like Python to programmatically query the <a href="https://api.opencorporates.com/">OpenCorporates API</a> for instance. The method we opted for was to use the data we already had in OpenRefine and extract the new information we needed into new columns from OpenCorporates.</p>
+
+<h3 id="extracting-shareholder-sand-directors-from-opencorporates-using-openrefine">Extracting shareholder sand directors from OpenCorporates using OpenRefine</h3>
+
+<ul>
+  <li>Load in the company names for which you want to extract shareholders and directors intro OpenRefine;</li>
+  <li>Reconcile the names to the OpenCorporates API, you can follow the tutorial available <a href="https://api.opencorporates.com/documentation/Google-Refine-Reconciliation-API">here</a>;</li>
+  <li>Once you have reconciled the data and chosen the correct matches, you need to add a column to your data that contains the OpenCorporates ID. This can be achieved by clicking Edit Column &gt; Add column based on this column in the Transform box type <code class="highlighter-rouge">cell.recon.match.id</code>;</li>
+  <li>You should now have a column with the OpenCorporates ID. From this you can construct a URL which returns JSON data for each company on its shareholders and directors;</li>
+  <li>You now need to add a column in which we will get data that contains our officers and our shareholders. First, we construct a column that contains the URLs which will return this data;</li>
+  <li>For the Burmese company registry you need to construct two different URLs. The director data is contained within the JSON you get from calling <code class="highlighter-rouge">http://api.opencorporates.com + cell.recon.match.id</code>. The shareholder data on the other hand is contained within the JSON you get from the URL <code class="highlighter-rouge">http://api.opencorporates.com + cell.recon.match.id + "/statements"</code>;</li>
+  <li>We now have two nicely formatted columns containing the URLs we need. Copy and paste one of them into a browser, you should see some data about that company. If it looks messy, install a JSON viewer plug-in in your browser like <a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en">JSONView for Chrome</a>;</li>
+  <li>Next we pull all the data returned by each of these URLs by using Refine’s fetch URL function. We can access this by going to one of our URL columns and clicking Edit columns &gt; Add column by fetching URLs;</li>
+  <li>Depending on how much data you want to extract, you may need to add an API Token to your URLs. You can request an open data API token from OpenCorporates which lets you request 10,000 URLs a day. When you fetch your URLs you can add it to you URLs by typing value <code class="highlighter-rouge">+ “&amp;api_token=”</code> in the expression box;</li>
+  <li>OpenRefine will then work through you your URLs returning JSON formatted data in the cells in your new column. Once this process has finished you then need to parse this data and extract the relevant bits. In the case of the Burma investigation we were interested in two key pieces of data for directors - their names and their national identifier number. This is the code we used to extract this: <code class="highlighter-rouge">forEach(value.parseJson().get("results").company.officers,v,(v.officer.name + " (" + v.officer.position + ")" + " (" + v.officer.uid + ")")).join(":::")forEach(value.parseJson().get("results").company.officers,v,(v.officer.name + " (" + v.officer.position + ")" + " (" + v.officer.uid + ")")).join(":::")</code></li>
+</ul>
+
+<h3 id="fuzzy-matching-of-directors-against-sanctions-lists">Fuzzy matching of directors against sanctions lists</h3>
+
+<p>An important part of the investigation was to understand if any of the directors of jade mining companies or their directors were under sanctions for any reason. By this time we had the names of thousands of companies, directors and shareholders. While there are various proprietary databases for checking this information like LexisNexis or WorldCheck, few of them let you programmatically search for such large numbers of names at once. We therefore opted for our own solution using existing sources of public data [1].</p>
+
+<p>We took a number of recent sanctions lists published by the <a href="http://eeas.europa.eu/cfsp/sanctions/consol-list/index_en.htm">EU</a>, <a href="https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx">US</a> and <a href="http://dfat.gov.au/international-relations/security/sanctions/pages/consolidated-list.aspx">Australia</a>. We then sought to match these names with the names of company officers and shareholders from OpenCorporates. Names are often spelt differently, so rather than looking for exact matches we used a technique called ‘fuzzy matching’.  There are a number of different ways to fuzzy match names. We opted to use a Python scripts to do this [2], but you can also try to use tools such as <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=15011">Microsoft Excel’s Fuzzy Lookup</a> addin.</p>
+
+<h3 id="checking-for-politically-exposed-directors-using-national-identifiers">Checking for politically exposed directors using national identifiers</h3>
+
+<p>One of the objectives of the investigation was to look at the extent to which politicians in Burma had interests in the jade industry. Making associations between political figures via name alone was difficult for two main reasons. First, our list of shareholders and officers was already in the hundreds and manual cross checking would be very time consuming. Second, many Burmese individuals share the same surname so a match based on name alone does not guarantee by any means that the two individuals you are looking at are the same.</p>
+
+<p>This is where the national identifiers published first by <a href="http://dica.gov.mm.x-aas.net/">DICA</a>, the Burmese company registry, and re-published by OpenCorporates were so useful. We were able to build up our own lists of Burmese PEPs (“Politically Exposed People”) using national identifiers of political candidates published in Burmese newspapers and available online. Historical copies of the newspaper the New Light of Burma Times (for example this issue <a href="https://www.globalwitness.org/en-gb/campaigns/oil-gas-and-mining/myanmarjade/">published on 13 Nov 2010</a>) proved particularly useful</p>
+
+<p>Again, we used “fuzzy” rather than exact matching. We looked for national identifiers that were the same but with one or two characters difference. We were able to catch those individuals where ID numbers had been put in incorrectly through clerical error, and, more interestingly, associate them with members of their family that had successive ID numbers. On one occasion the spouse of a Burmese politician who had the national identifier after her husband (presumably they had registered together).</p>
+
+<h3 id="lessons-learned">Lessons learned</h3>
+
+<p>The methodology above provided us with a number of connections between jade companies and the Burmese military that were later incorporated into the <a href="https://www.globalwitness.org/en-gb/campaigns/oil-gas-and-mining/myanmarjade/">final report</a> published in November 2015.</p>
+
+<p>There are some key lessons that we have taken from this approach:</p>
+
+<ul>
+  <li>
+    <p><em>Open source tools are key for public integrity journalism</em> - We could not have cleaned and processed the data without tools like OpenRefine that supply simple graphical interfaces, power and flexibility in a way that is affordable to those working in the not-for-profit sector.</p>
+  </li>
+  <li>
+    <p><em>Unique identifiers are essential</em>- We would not have been able to conclusively connect members of the military elite to the jade industry without the national identifier numbers.</p>
+  </li>
+  <li>
+    <p><em>OpenCorporates supports powerful workflows not available for common proprietary databases</em> - While databases like Orbis may have more complete information they do not support the bulk data operations and flexible workflows required for this investigation. The OpenCorporates API proved invaluable at every step from reconciling the company names to harvesting director data in bulk. [3]</p>
+  </li>
+  <li>
+    <p>*The importance of scraped data *- At the time of undertaking the investigation the original source of the company data (<a href="http://dica.gov.mm.x-aas.net/">DICA</a>) was not available. This is where OpenCorporates again proved its value with its vast archive of scraped data preserving access public interest data even when the original publishers have taken it down. [3]</p>
+  </li>
+  <li>
+    <p><em>Data journalism projects requires dedication (and perspiration!)</em> - Even with all the powerful computational tools we had at our disposal, there was still a huge amount of manual data cleaning and reviewing required to get reliable results.</p>
+  </li>
+</ul>
+
+<p>[1] Friedrich Lindenberg has made the first baby steps towards pulling together an open source PEP list that may be useful for those undertaking similar cross-checking exercises: <a href="http://pudo.org/material/opennames/">http://pudo.org/material/opennames/</a></p>
+
+<p>[2] Our Python approach to fuzzy matching used a method to this <a href="http://blog.yhat.com/posts/fuzzy-matching-with-yhat.html">http://blog.yhat.com/posts/fuzzy-matching-with-yhat.html</a></p>
+
+<p>[3] The team at OpenCorporates explore these issues more fully in their white paper on the subject, <a href="https://medium.com/@opencorporates/how-open-company-data-was-used-to-uncover-the-powerful-elite-benefiting-from-myanmar-s-multi-1ef35f88d6bd#.ygcs3g3i9">“How open company data was used to uncover the powerful elite benefiting from Burma’s multi-billion dollar jade industry”</a></p>
+
+
+</article>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Blog by <a href="https://twitter.com/noel_mas">@Noel_Mas</a> powered by <a href="https://github.com/johnotander/pixyll">Pixyll</a> Jekyll theme.<br>
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" 				src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" />
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57586437-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

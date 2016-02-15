@@ -3,7 +3,7 @@ title:       Noelmas data doodles
 email:       sam.leon@okfn.org
 author:      Sam Leon
 description: S
-baseurl:     "/blog"
+baseurl:     "blog"
 url:         "http://noelmas.github.io"
 
 # Google analytics
@@ -30,3 +30,7 @@ permalink:    pretty
 paginate:     3
 sass:
   compressed: true
+
+##Pagination settings
+
+gems: [jekyll-paginate]
