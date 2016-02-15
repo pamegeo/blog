@@ -3,7 +3,7 @@ title:       Noelmas data doodles
 email:       sam.ed.leon@gmail.com
 author:      Sam Leon
 description: S
-#baseurl:     "/blog"
+baseurl:     "/"
 url:         "http://blog.noelmas.net"
 
 # Google analytics
