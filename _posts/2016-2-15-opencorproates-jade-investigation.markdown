@@ -42,8 +42,8 @@ There are a number of ways to extract this information, one could write a script
 * Next we pull all the data returned by each of these URLs by using Refine’s fetch URL function. We can access this by going to one of our URL columns and clicking Edit columns > Add column by fetching URLs;
 * Depending on how much data you want to extract, you may need to add an API Token to your URLs. You can request an open data API token from OpenCorporates which lets you request 10,000 URLs a day. When you fetch your URLs you can add it to you URLs by typing value `+ “&api_token=”` in the expression box;
 * OpenRefine will then work through you your URLs returning JSON formatted data in the cells in your new column. Once this process has finished you then need to parse this data and extract the relevant bits. In the case of the Burma investigation we were interested in two key pieces of data for directors - their names and their national identifier number. This is the code we used to extract this: `forEach(value.parseJson()
-	.get("results").company.officers,v,(v.officer.name + " (" + v.officer.position + ")" + " (" + v.officer.uid +
-	")")).join(":::")forEach(value.parseJson().get("results").company.officers,v,(v.officer.name + " (" +
+	.get("results").company.officers,v,(v.officer.name + " (" + v.officer.position + ")" + " (" + v.officer.uid + ")"))
+	.join(":::")forEach(value.parseJson().get("results").company.officers,v,(v.officer.name + " (" +
 	v.officer.position + ")" + " (" + v.officer.uid + ")")).join(":::")`
 
 ### Fuzzy matching of directors against sanctions lists
