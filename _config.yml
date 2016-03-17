@@ -4,7 +4,7 @@ email:       sam.ed.leon@gmail.com
 author:      Sam Leon
 description: Simple data hackery and reflections on tech for public integrity journalism.
 baseurl:     ""
-url:         "http://blog.noelmas.net"
+url:         "https://blog.noelmas.net"
 
 # Google analytics
 google_analytics: UA-57586437-1
