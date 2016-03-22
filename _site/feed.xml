@@ -3,8 +3,8 @@
   <channel>
     <title>Noelmas data doodles</title>
     <description>Simple data hackery and reflections on tech for public integrity journalism.</description>
-    <link>http://blog.noelmas.net/</link>
-    <atom:link href="http://blog.noelmas.net/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://blog.noelmas.net/</link>
+    <atom:link href="https://blog.noelmas.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Open data at Global Witness in 2016</title>
@@ -37,8 +37,8 @@
 &lt;/div&gt;
 &lt;/div&gt;</description>
         <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://blog.noelmas.net/open/data/2016/02/20/gw-in-2016/</link>
-        <guid isPermaLink="true">http://blog.noelmas.net/open/data/2016/02/20/gw-in-2016/</guid>
+        <link>https://blog.noelmas.net/open/data/2016/02/20/gw-in-2016/</link>
+        <guid isPermaLink="true">https://blog.noelmas.net/open/data/2016/02/20/gw-in-2016/</guid>
       </item>
     
       <item>
@@ -132,8 +132,8 @@
 
 </description>
         <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://blog.noelmas.net/investigations/2016/02/15/opencorproates-jade-investigation/</link>
-        <guid isPermaLink="true">http://blog.noelmas.net/investigations/2016/02/15/opencorproates-jade-investigation/</guid>
+        <link>https://blog.noelmas.net/investigations/2016/02/15/opencorproates-jade-investigation/</link>
+        <guid isPermaLink="true">https://blog.noelmas.net/investigations/2016/02/15/opencorproates-jade-investigation/</guid>
       </item>
     
       <item>
@@ -197,8 +197,8 @@
 &lt;p&gt;&lt;a name=&quot;3&quot;&gt;&lt;/a&gt;[3] If you&#39;re interested in reconciling company names to the OpenCorporates database in order to attach the wealth information held by OpenCorporates to your database (e.g. director names, date of incorporation etc) take a look at &lt;a href=&quot;http://vimeo.com/17924204&quot;&gt;this&lt;/a&gt; tutorial.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
-        <link>http://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/</link>
-        <guid isPermaLink="true">http://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/</guid>
+        <link>https://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/</link>
+        <guid isPermaLink="true">https://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/</guid>
       </item>
     
       <item>
@@ -211,8 +211,8 @@
 
 </description>
         <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
-        <link>http://blog.noelmas.net/ddj-tips/2014/12/17/email-formats/</link>
-        <guid isPermaLink="true">http://blog.noelmas.net/ddj-tips/2014/12/17/email-formats/</guid>
+        <link>https://blog.noelmas.net/ddj-tips/2014/12/17/email-formats/</link>
+        <guid isPermaLink="true">https://blog.noelmas.net/ddj-tips/2014/12/17/email-formats/</guid>
       </item>
     
       <item>
@@ -224,8 +224,8 @@
 &lt;object width=&quot;100%&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/VpruUcsk0Z0&amp;amp;hl=en&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/VpruUcsk0Z0&amp;amp;hl=en&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; height=&quot;500&quot; /&gt;&lt;/object&gt;
 </description>
         <pubDate>Thu, 11 Dec 2014 00:00:00 +0000</pubDate>
-        <link>http://blog.noelmas.net/scraping/2014/12/11/scraping-royal-mail/</link>
-        <guid isPermaLink="true">http://blog.noelmas.net/scraping/2014/12/11/scraping-royal-mail/</guid>
+        <link>https://blog.noelmas.net/scraping/2014/12/11/scraping-royal-mail/</link>
+        <guid isPermaLink="true">https://blog.noelmas.net/scraping/2014/12/11/scraping-royal-mail/</guid>
       </item>
     
   </channel>
