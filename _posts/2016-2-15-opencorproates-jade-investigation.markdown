@@ -2,7 +2,7 @@
 layout:     post
 title:      Ingredients of an open data investigation
 date:       2016-2-15
-summary:	How Global Witness used OpenCorporates data to investigate corruption in the Burmese jade industry
+summary:	How Global Witness used OpenCorporates data to investigate corruption in the Burmese jade industry.
 categories: investigations
 ---
 
