@@ -2,7 +2,7 @@
 layout:     post
 title:      Google Trends in tax avoidance and tax evasion
 date:       2016-4-10
-summary:	Public interest in corporate accoutnability and tax justice issues in the wake of the Panama Leaks.
+summary:	Public interest in corporate accountability and tax justice issues in the wake of the Panama Leaks.
 categories: 
 ---
 
