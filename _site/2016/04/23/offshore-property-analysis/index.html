@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>A quick look at offshore property ownership in England & Wales &#8211; Noelmas data doodles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Land Registry has just published the details of all properties and land owned by offshore companies in England and Wales.">
+    <meta name="author" content="Sam Leon">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="https://blog.noelmas.net/2016/04/23/offshore-property-analysis/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="A quick look at offshore property ownership in England & Wales">
+    <meta property="og:description" content="Simple data hackery and reflections on tech for public integrity journalism.">
+    <meta property="og:url" content="https://blog.noelmas.net/2016/04/23/offshore-property-analysis/">
+    <meta property="og:site_name" content="Noelmas data doodles">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="https://blog.noelmas.net">Noelmas data doodles</a>
+      <nav class="site-nav right">
+        <a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>A quick look at offshore property ownership in England & Wales</h1>
+  <span class="post-meta">Apr 23, 2016</span><br>
+  
+  <span class="post-meta small">3 minute read</span>
+</div>
+
+<article class="post-content">
+  <p>The ownership of properties and land in England and Wales by companies registered in overseas countries has come under significant scrutiny in recent months. Reports by <a href="https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/mystery-baker-street/">Global Witness</a>, <a href="http://www.telegraph.co.uk/news/picturegalleries/uknews/8340483/A-look-round-the-London-house-thought-to-be-owned-by-Libyas-Saif-al-Islam-Gaddafi.html">The Telegraph</a>, <a href="http://www.theguardian.com/uk-news/2015/mar/04/uk-properties-held-by-offshore-firms-used-in-global-corruption-say-police">The Guardian</a> and <a href="http://www.private-eye.co.uk/registry">Private Eye</a> have shown that offshore ownership can be a convenient means to launder the proceeds of crime and corruption. As it turns out, it is also a convenient mechanism to avoid tax assocaited with buying and selling a property.</p>
+
+<p>A <a href="http://www.saplaw.co.uk/uk-legal-services/commercial-lawyers-london/commercial-lawyers-articles/using-an-offshore-company-to-buy-and-sell-uk-residential-property">telling article</a> on the website of a UK based solicitors lists the potential “tax advantages” of this approach to trading UK property. I quote directly from <a href="http://www.saplaw.co.uk/uk-legal-services/commercial-lawyers-london/commercial-lawyers-articles/using-an-offshore-company-to-buy-and-sell-uk-residential-property">the site</a>:</p>
+
+<ul>
+  <li>“Regardless of who owns the property any rental income will remain taxable in the UK. If the property is owned by an offshore company only the basic rate of UK income tax (20%) will apply regardless of the level of income.”</li>
+  <li>“A property can be sold by selling the shares in the company with no UK Capital Gains Tax.”</li>
+  <li>“If the property is in the name of an individual then on their death inheritance tax is potentially payable on the net value of the property.”</li>
+  <li>“No stamp duty land tax is payable by a buyer of the shares in the company.”</li>
+</ul>
+
+<p>Considering that we’re in the midst of a housing crisis, and with tenants in London paying on average <a href="http://www.theguardian.com/money/2015/jul/16/tenants-in-england-spend-half-their-pay-on-rent">72% of their gross income</a>, the fact that so much property is not subject to normal UK tax law seems particualrly unjust.</p>
+
+<p>I looked at the data published by the Land Registry in March 2016. It contains information on all freeholds and leasholds owned by companies registered overseas. The data is accurate as of 31st October 2015. It contains almost 100,000 leaseholds addresses and includes information on tenure, date of purchase, price paid and if there are multiple owners. This data was made available in response to increasing pressue from civil society groups for greater transparency in the property market and some well-publicised <a href="http://www.private-eye.co.uk/registry">Freedom of Information requests concerning the extent of offshore ownership of land and property in England and Wales</a>.</p>
+
+<h2 id="little-data-on-price-but-likely-vast-amounts-of-wealth">Little data on price, but likely vast amounts of wealth</h2>
+
+<p>We know from this information that at least £10.1 billion of land and property is owned by overseas company. Considering that only 7% of these properties contains price paid data, that’s a staggering figure. We can only approximate what the total value might be for all leaseholds and freeholds in the database. Given that the average price of these freeholds and leasholds is £1,512,032 we might expect the total figure to be around the £150 billion mark. This is substantially higher than the esimate given by the Financial Times in 2015 of <a href="http://www.ft.com/cms/s/0/6cb11114-18aa-11e4-a51a-00144feabdc0.html#axzz46ls5rtpE">£122 billion</a>.</p>
+
+<iframe src="//datawrapper.dwcdn.net/cxBIK/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="600" height="400"></iframe>
+
+<h2 id="its-about-secrecy-and-tax">It’s about secrecy and tax</h2>
+
+<p>Take a look at the top 10 countries through which these properties are owned. These are the archetypal tax havens and secrecy jursidictions. Half of them rank in the top 20 most secretive jurisdictions in <a href="http://www.financialsecrecyindex.com/introduction/fsi-2015-results">Tax Justice Network’s Financial Secrecy Index</a>. This quite clearly is not about foreign nationals and normal overseas companies owning property in England and Wales, but rather the deliberate choice to use jurisidctions renowned for low tax rates and corproate secrecy to buy and sell property.</p>
+
+<iframe src="//datawrapper.dwcdn.net/JNsPc/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="681" height="343"></iframe>
+
+<h2 id="the-vast-majority-of-overseas-ownership-is-in-greater-london">The vast majority of overseas ownership is in Greater London</h2>
+
+<p>Unsurprisingly, overseas ownership of property and land is concentrated in the South East and Greater London.</p>
+
+<iframe src="//datawrapper.dwcdn.net/AFgqt/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="747" height="433"></iframe>
+
+<h2 id="discredited-companies-use-overseas-ownership-extensively">Discredited companies use overseas ownership extensively</h2>
+
+<p>A quick look at the top 5 companies that make most extensive use of offshore purchasing of land, we see that one of them, Profitable Plots, has been caught up in <a href="http://www.telegraph.co.uk/finance/property/news/7436428/Green-Belt-housing-scheme-promoted-by-footballers-leaves-investors-in-the-red.html">a scandal that involved cheating investors for just short of a million dollars</a>. Clearly not all people who use offshore property ownership are out to scam, but the level of secrecy afforded to companies incorporated in places like the British Virgin Islands is an invitation to all sorts of nefarious activity.</p>
+
+<iframe src="//datawrapper.dwcdn.net/r3b24/3/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="747" height="413"></iframe>
+
+
+</article>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Blog by <a href="https://twitter.com/noel_mas">@Noel_Mas</a> powered by <a href="https://github.com/johnotander/pixyll">Pixyll</a> Jekyll theme.<br>
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" 				src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" />
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57586437-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
