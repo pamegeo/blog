@@ -19,7 +19,7 @@ Considering that we're in the midst of a housing crisis, and with tenants in Lon
 
 I looked at the data published by the Land Registry in March 2016. It contains information on all freeholds and leasholds owned by companies registered overseas. The data is accurate as of 31st October 2015. It contains almost 100,000 leaseholds addresses and includes information on tenure, date of purchase, price paid and if there are multiple owners. This data was made available in response to increasing pressue from civil society groups for greater transparency in the property market and some well-publicised [Freedom of Information requests concerning the extent of offshore ownership of land and property in England and Wales](http://www.private-eye.co.uk/registry).
 
-## Little data on price, but likely vast amounts of wealth
+## Little data available on price, but as an estimate...
 
 We know from this information that at least £10.1 billion of land and property is owned by overseas company. Considering that only 7% of these properties contains price paid data, that's a staggering figure. We can only approximate what the total value might be for all leaseholds and freeholds in the database. Given that the average price of these freeholds and leasholds is £1,512,032 we might expect the total figure to be around the £150 billion mark. This is substantially higher than the esimate given by the Financial Times in 2015 of [£122 billion](http://www.ft.com/cms/s/0/6cb11114-18aa-11e4-a51a-00144feabdc0.html#axzz46ls5rtpE).
 
