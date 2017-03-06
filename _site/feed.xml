@@ -7,6 +7,174 @@
     <atom:link href="https://blog.noelmas.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Mining the UK register of beneficial ownership</title>
+        <description>&lt;p&gt;UK companies with hidden owners lie behind some of the worst problems of our time. Amongst other things they have been used to breach UN sanctions, evade taxes and rip off ordinary citizens. That’s why Global Witness has been calling for an end to these getaway cars for crime and corruption for years (see this &lt;a href=&quot;http://ed.ted.com/lessons/how-exposing-anonymous-companies-could-cut-down-on-crime-global-witness&quot;&gt;TED-Ed animation&lt;/a&gt; for a short introduction to the issue). Now, we’re seeing the first seeds of change - in June, the &lt;a href=&quot;https://companieshouse.blog.gov.uk/2016/04/13/the-new-people-with-significant-control-register/&quot;&gt;UK government started publishing&lt;/a&gt; the world’s first open data register of the real owners and controllers of companies – known as “beneficial owners”.&lt;/p&gt;
+
+&lt;p&gt;It is a big step forward for transparency in this country, and a potential treasure trove of information - but we need to make sense of it first. Which is why we’ve collaborated with &lt;a href=&quot;http://www.datakind.org/chapters/datakind-uk&quot;&gt;DataKind UK&lt;/a&gt;, &lt;a href=&quot;https://opencorporates.com/&quot;&gt;OpenCorporates&lt;/a&gt;, &lt;a href=&quot;https://www.spendnetwork.com/&quot;&gt;Spend Network&lt;/a&gt; and &lt;a href=&quot;https://www.occrp.org/en&quot;&gt;OCCRP&lt;/a&gt;, to probe it in detail, and give feedback on how useful it is. So on a grey autumn weekend in London, we brought together thirty volunteer data scientists, including the head of software for a Formula 1 team, an astrophysicist and a former consultant to the UK tax authority.&lt;/p&gt;
+
+&lt;p&gt;We had three aims for the weekend. Firstly, we wanted to get some basic insights into this data and what it could tell us about companies in the UK. Secondly, it was important to understand the flaws and gaps in the new register. Finally, we were curious to see whether the register could yield investigative leads.&lt;/p&gt;
+
+&lt;p&gt;Here’s a snapshot of what we found:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Almost 3,000 companies listed their beneficial owner as a company with a tax haven address - something that is not allowed under the rules. There are problems with how the data has been inputted. For example, you can write anything in the nationality field and we found over 500 ways of putting “British”, including ten people who wrote “Cornish”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;76 beneficial owners share the same name and birthday as someone on the U.S. sanctions list. We have to do more digging to find out whether these are actually the same people, but it’s an insight into what is possible with this new information.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Most beneficial owners are from the UK, followed by a number from other European countries and India and China.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;insights&quot;&gt;Insights&lt;/h3&gt;
+
+&lt;p&gt;The data allows us to start to understand the complex ecosystem of companies and their owners in the UK - where they’re from, and what other companies they own. In theory, law enforcement agencies, journalists and civil society being able to map this stuff out will make it much harder for those with something to hide to do so behind layers and layers of secret companies.&lt;/p&gt;
+
+&lt;p&gt;Under the new system, companies have to provide ownership information once a year when they send in their annual return or “confirmation statement”. Out of 3.5 million companies, 1.3 million have already filed beneficial ownership information as of 17 November. Most beneficial owners (1.2 million) are British. Perhaps unsurprisingly when you take the British out of the mix, Irish is the next biggest nationality, followed by a mix of European countries (Italy and Poland) and the two mega-economies of China and India.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.globalwitness.org//media/images/Screen_Shot_2016-11-19_at_22.07.18.width-1280.png&quot; alt=&quot;Beneficial Owners Nationality&quot; /&gt;
+&lt;em&gt;Nationality of beneficial owners in the UK register&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On top of nationality, we also have information on where beneficial owners live. The vast majority are based in the UK, with 183,000, or 13% of the total, living overseas.&lt;/p&gt;
+
+&lt;p&gt;One of the arguments made against creating these registers is that companies would find it very difficult to identify their beneficial owners, but this doesn’t appear to be the case. In only 2% of cases did companies say that they were struggling to identify a beneficial owner or collect the right information.&lt;/p&gt;
+
+&lt;p&gt;Just under ten percent of companies claimed to have no beneficial owner. This is possible under the legislation, because you have to own at least 25 percent of a company to be considered its beneficial owner. We think that’s quite a high threshold, which could be exploited by people looking to stay under the radar So we will be digging a bit deeper to see whether companies are trying to avoid disclosing information that they should be.&lt;/p&gt;
+
+&lt;div style=&quot;max-width:900px&quot;&gt;&lt;iframe id=&quot;datawrapper-chart-EVcm0&quot; src=&quot;//datawrapper.dwcdn.net/EVcm0/1/&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;allowfullscreen&quot; webkitallowfullscreen=&quot;webkitallowfullscreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; oallowfullscreen=&quot;oallowfullscreen&quot; msallowfullscreen=&quot;msallowfullscreen&quot; width=&quot;100%&quot; height=&quot;196&quot;&gt;&lt;/iframe&gt;&lt;script type=&quot;text/javascript&quot;&gt;&quot;undefined&quot;==typeof window.datawrapper&amp;&amp;(window.datawrapper={}),window.datawrapper[&quot;EVcm0&quot;]={},window.datawrapper[&quot;EVcm0&quot;].embedDeltas={&quot;100&quot;:196,&quot;200&quot;:196,&quot;300&quot;:196,&quot;400&quot;:196,&quot;500&quot;:196,&quot;600&quot;:196,&quot;700&quot;:196,&quot;800&quot;:196,&quot;900&quot;:196,&quot;1000&quot;:196},window.datawrapper[&quot;EVcm0&quot;].iframe=document.getElementById(&quot;datawrapper-chart-EVcm0&quot;),window.datawrapper[&quot;EVcm0&quot;].iframe.style.height=window.datawrapper[&quot;EVcm0&quot;].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper[&quot;EVcm0&quot;].iframe.offsetWidth/100),100))]+&quot;px&quot;,window.addEventListener(&quot;message&quot;,function(a){if(&quot;undefined&quot;!=typeof a.data[&quot;datawrapper-height&quot;])for(var b in a.data[&quot;datawrapper-height&quot;])&quot;EVcm0&quot;==b&amp;&amp;(window.datawrapper[&quot;EVcm0&quot;].iframe.style.height=a.data[&quot;datawrapper-height&quot;][b]+&quot;px&quot;)});&lt;/script&gt;&lt;/div&gt;
+
+&lt;p&gt;Approximately 30 beneficial owners have been successfully granted the right to keep their name off the register due to concerns about their security.&lt;/p&gt;
+
+&lt;p&gt;We were also able to build up a picture of company networks. These were only partial insights as we were working with just three months’ worth of data, but it gave us an idea of what was possible, and to start to understand complex corporate structures. Complexity doesn’t necessarily indicate wrongdoing. For example below is a partial map of Reckitt Benckiser, the healthcare company that makes Durex condoms among other things. However, it will provide a much better map of how UK companies structure themselves, and in some cases connections between companies may raise further questions about what they have been up to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.globalwitness.org//media/images/Screen_Shot_2016-11-18_at_14.31.23.width-1280.png&quot; alt=&quot;Reckitt Benckiser&quot; /&gt;
+&lt;em&gt;The UK control structure of Reckitt Benckiser&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;flaws&quot;&gt;Flaws&lt;/h3&gt;
+
+&lt;p&gt;Inevitably with a bold experiment like this, there will be problems with the data, despite the generally excellent job that Companies House has done. The flaws that we identified split into two categories: messy data due to how it was collected, and examples of what look like non-compliance with the law.&lt;/p&gt;
+
+&lt;p&gt;One of the big problems we found was that Companies House allows for free text entry for a number of fields. For example, we found over 500 different ways of putting “British”. Our favourite were the 10 beneficial owners who described themselves as Cornish. We were able to get around this by creating a nationality mapping table. However, an easy way to avoid this would be for Companies House to use drop down menus for fields such as nationality or title, with a potential “other box”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.globalwitness.org/media/images/Screen_Shot_2016-11-18_at_14.19.07.width-1280.png&quot; alt=&quot;Many ways of spelling British&quot; /&gt;
+&lt;em&gt;The many ways of spelling “British” in the UK beneficial ownership register&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Another big challenge is the lack of unique identifiers for individuals and some companies. We were relying on using name and day and month of birth to try and identify individuals. This is fine if you’re someone with an unusual name, but proves more tricky for the John Smiths or Mohammed Iqbals of this world. We’d like to work with Companies House on thinking about how they could get around this problem. One solution could be to assign beneficial owners a unique number to allow better cross-matching.&lt;/p&gt;
+
+&lt;p&gt;There were also 2,160 beneficial owners born in 2016. Now either these are a very precocious bunch of toddlers or the data has been entered incorrectly. We also had people who listed 9988 as their year of birth - clearly a visitor from the future.&lt;/p&gt;
+
+&lt;p&gt;On top of these data validation issues, we found a number of signs of non-compliance with the law. For example, 9,800 companies listed their beneficial owner as a foreign company. Now this is possible if the foreign company was listed on one of the stock exchanges deemed equivalent to the UK system (e.g. the US, EU and Japanese exchanges). However, we found almost 3,000 companies with tax haven addresses listed as beneficial owners. This is not allowed under the rules. We’ll be handing this list of companies over to Companies House to investigate further.&lt;/p&gt;
+
+&lt;div style=&quot;max-width:900px&quot;&gt;&lt;iframe id=&quot;datawrapper-chart-OpOKm&quot; src=&quot;//datawrapper.dwcdn.net/OpOKm/1/&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;allowfullscreen&quot; webkitallowfullscreen=&quot;webkitallowfullscreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; oallowfullscreen=&quot;oallowfullscreen&quot; msallowfullscreen=&quot;msallowfullscreen&quot; width=&quot;100%&quot; height=&quot;351&quot;&gt;&lt;/iframe&gt;&lt;script type=&quot;text/javascript&quot;&gt;&quot;undefined&quot;==typeof window.datawrapper&amp;&amp;(window.datawrapper={}),window.datawrapper[&quot;OpOKm&quot;]={},window.datawrapper[&quot;OpOKm&quot;].embedDeltas={&quot;100&quot;:485,&quot;200&quot;:418,&quot;300&quot;:385,&quot;400&quot;:385,&quot;500&quot;:351,&quot;600&quot;:351,&quot;700&quot;:351,&quot;800&quot;:351,&quot;900&quot;:351,&quot;1000&quot;:351},window.datawrapper[&quot;OpOKm&quot;].iframe=document.getElementById(&quot;datawrapper-chart-OpOKm&quot;),window.datawrapper[&quot;OpOKm&quot;].iframe.style.height=window.datawrapper[&quot;OpOKm&quot;].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper[&quot;OpOKm&quot;].iframe.offsetWidth/100),100))]+&quot;px&quot;,window.addEventListener(&quot;message&quot;,function(a){if(&quot;undefined&quot;!=typeof a.data[&quot;datawrapper-height&quot;])for(var b in a.data[&quot;datawrapper-height&quot;])&quot;OpOKm&quot;==b&amp;&amp;(window.datawrapper[&quot;OpOKm&quot;].iframe.style.height=a.data[&quot;datawrapper-height&quot;][b]+&quot;px&quot;)});&lt;/script&gt;&lt;/div&gt;
+
+&lt;p&gt;With all of these examples it’s not clear whether this is because the people filing the information didn’t understand the new system, or whether there’s something more sinister going on.&lt;/p&gt;
+
+&lt;h3 id=&quot;investigation&quot;&gt;Investigation&lt;/h3&gt;
+
+&lt;p&gt;One of the key arguments in favour of creating this register was that law enforcement, civil society and journalists could use it to uncover wrongdoing. We didn’t expect to find any slam dunk cases in just a weekend, but we did find a few interesting leads. Because the UK register is available as open data, we could compare it to other data sets.&lt;/p&gt;
+
+&lt;p&gt;Initial findings suggest 19 senior politicians (known as politically exposed persons), 76 people from the U.S. sanctions list and 267 disqualified directors were listed as beneficial owners.&lt;/p&gt;
+
+&lt;p&gt;However, these matches were based on name and month and year of birth. This means that it’s hard to be certain that the matches are good ones. Any leads coming out of the new register will have to be followed up with more traditional investigative digging.&lt;/p&gt;
+
+&lt;p&gt;We also had an initial look at comparing the beneficial ownership to government spending information. It was challenging given that a lot of the spending information doesn’t have proper identification for companies (for example it would be good to include company numbers). But we did find a number of recipients of government contracts who had beneficial owners based in tax havens.&lt;/p&gt;
+
+&lt;h3 id=&quot;reflections&quot;&gt;Reflections&lt;/h3&gt;
+
+&lt;p&gt;As campaigners who have worked for years to get this information out in the public domain, the weekend was an exciting first opportunity to get our hands dirty and start to tell some stories. The work was only possible because the UK government made the decision to make the register free and accessible to all as open data. This is an important lesson for other countries who are thinking about creating similar registers.&lt;/p&gt;
+
+&lt;p&gt;Inevitably the data was messy, partly due to how the register is set up and partly due to confusion from those providing data. We’re going to be working with Companies House on ironing out some of these issues. Hopefully as the register beds in, these kinks will get ironed out.&lt;/p&gt;
+
+&lt;p&gt;A big question that we weren’t able to answer was whether people had lied to the register or provided inaccurate information. This is going to be a serious challenge for the credibility of the register, and the government will have to provide more reassurances on how they’re going to ensure data accuracy.&lt;/p&gt;
+
+&lt;p&gt;Finally, we’re hoping that other governments will see the potential of what the UK has done. The process will be difficult, but if our weekend showed us anything, it’s that this is incredibly useful information to have.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
+        <link>https://blog.noelmas.net/open/data/2016/11/22/data-dive-beneficial-ownership/</link>
+        <guid isPermaLink="true">https://blog.noelmas.net/open/data/2016/11/22/data-dive-beneficial-ownership/</guid>
+      </item>
+    
+      <item>
+        <title>Why we published the data behind Hostile Takeover</title>
+        <description>&lt;p&gt;&lt;em&gt;This blog post was originally posted on the &lt;a href=&quot;https://www.globalwitness.org/en/blog/why-we-published-data-behind-hostile-takeover/&quot;&gt;Global Witness website&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It will come as no shock to Cambodians that their ruling elite has amassed vast fortunes whilst in power. As our report, &lt;em&gt;&lt;a href=&quot;https://www.globalwitness.org/en/reports/hostile-takeover/&quot;&gt;Hostile Takeover&lt;/a&gt;&lt;/em&gt;, shows, members of Prime Minister Hun Sen’s family have business interests spanning the majority of the country’s major industries. While 40% of Cambodians live below or close to the poverty line, the Hun family have a combined wealth estimated to total between US$ 500 million and US$ 1 billion.&lt;/p&gt;
+
+&lt;p&gt;But until fairly recently it has been extremely difficult for activists and campaigners to prove this with hard facts and solid data.&lt;/p&gt;
+
+&lt;p&gt;This has enabled the country’s most powerful family to continue to line its pockets behind a wall of secrecy. It has also allowed international companies and investors to establish business relationships with members of Hun Sen’s family, either unaware of or unconcerned by previous allegations of corruption and human rights abuses.&lt;/p&gt;
+
+&lt;h3 id=&quot;limitations-of-the-original-dataset&quot;&gt;Limitations of the original dataset&lt;/h3&gt;
+
+&lt;p&gt;The publication of data by &lt;a href=&quot;http://www.moc.gov.kh/en-us/&quot;&gt;Cambodia’s Ministry of Commerce&lt;/a&gt; was a step towards greater transparency. The data held the key to the extensive business interests of Cambodia’s ruling elite, exposing just how much of a grip Hun Sen and his family have over the nation’s economy. However, in its original form the data was unusable for investigative purposes.&lt;/p&gt;
+
+&lt;p&gt;Whilst we commend the Ministry of Commerce for publishing the data in the first place, the information provided suffered from a number of issues that prevented our researchers from using it effectively:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The database was put behind a login, making it difficult to programmatically access&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The search portal didn’t allow people to download the dataset in its entirety&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The service and availability of information changed from time to time. This posed a risk to our research that data would be taken offline or modified without our knowledge. Since the publication of the &lt;a href=&quot;https://www.globalwitness.org/en/reports/hostile-takeover/&quot;&gt;&lt;em&gt;Hostile Takeover&lt;/em&gt;&lt;/a&gt; report - for instance - shareholder information has been removed completely&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Ministry’s servers were slow and unreliable, making it difficult to conduct in-depth research&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Given these limitations we extracted the contents of the database and developed our own version with the functionality needed to support in-depth investigation. This is known as “web scraping” by techies, and it is becoming an essential process in a wide-range of investigations at Global Witness.&lt;/p&gt;
+
+&lt;h3 id=&quot;open-data-and-network-effects&quot;&gt;Open data and network effects&lt;/h3&gt;
+
+&lt;p&gt;At Global Witness we passionately believe that our investigations should be a platform for change. We are well aware, however, that the kinds of changes we want to see can only be achieved when we work through networks.&lt;/p&gt;
+
+&lt;p&gt;When it comes to data and technology this means enabling a range of actors - from civil society groups to law enforcement - to use the databases we’ve built up and the technology we’ve developed to verify our findings and spot things we haven’t.&lt;/p&gt;
+
+&lt;p&gt;This is exactly what we did for &lt;em&gt;&lt;a href=&quot;https://www.globalwitness.org/en/reports/hostile-takeover/&quot;&gt;Hostile Takeover&lt;/a&gt;&lt;/em&gt;. We have published both the &lt;a href=&quot;https://cambodiacorporates.globalwitness.org/&quot;&gt;dataset that we extracted&lt;/a&gt; from the Ministry of Commerce in its entirety and also &lt;a href=&quot;https://cambodiacorporates.globalwitness.org/&quot;&gt;the research tool&lt;/a&gt; we developed to interrogate this information including the underlying &lt;a href=&quot;https://github.com/Global-Witness/cambodia-corporates&quot;&gt;source code&lt;/a&gt;. We have applied &lt;a href=&quot;http://opendefinition.org/&quot;&gt;open licenses&lt;/a&gt; to all of these so anyone can freely access, remix and build on our work.&lt;/p&gt;
+
+&lt;p&gt;Cambodian newspaper &lt;em&gt;&lt;a href=&quot;http://www.phnompenhpost.com/&quot;&gt;The Phnom Penh Post&lt;/a&gt;&lt;/em&gt; made great use of the data almost immediately after we launched our report. As well as publishing their own analysis of the data we provided, they also produced a &lt;a href=&quot;http://www.phnompenhpost.com/national/inside-hun-familys-business-empire#interactive&quot;&gt;playful interactive&lt;/a&gt; letting readers explore the wide-ranging business interests of the Hun Sen family.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.phnompenhpost.com/national/inside-hun-familys-business-empire&quot;&gt;&lt;img src=&quot;https://www.globalwitness.org/media/images/Screen_Shot_2016-08-19_at_10.17.02.width-500.png&quot; alt=&quot;Cambodia Wheel of Fortune&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By publishing our data openly we also want it to be re-used in some of the game-changing aggregation and search services being built by civic-hackers and tech-for-good enterprises like &lt;a href=&quot;https://opencorporates.com/&quot;&gt;OpenCorporates&lt;/a&gt;. Powerful, free tools for investigative journalists like &lt;a href=&quot;https://data.occrp.org/&quot;&gt;data.occrp.org&lt;/a&gt; benefit hugely from organisations choosing to open their data post-publication.&lt;/p&gt;
+
+&lt;p&gt;These tools and this pooling of information is ever more important for anti-corruption campaigners who - in their attempts to unravel global illicit financial flows - need to be able to join the dots between fragmented and siloed datasets. In the same way that medical researchers across the world leverage the technology, data and methods of their peers to defeat deadly diseases, the fight against corruption could benefit from a far more joined up investigative community.&lt;/p&gt;
+
+&lt;p&gt;But openness isn’t just a practical matter for us, it’s also a principle. As an organisation that asks governments and companies around the world to do more of their work in the open where it can be scrutinised by the public, we believe that once we’ve published a story, and where no risks exist for our sources, we should publish the data we’ve collected as permissibly as possible. We invite others to verify our findings and scrutinise our methodology.&lt;/p&gt;
+
+&lt;h3 id=&quot;cambodia-corporates-functionality&quot;&gt;Cambodia Corporates functionality&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cambodiacorporates.globalwitness.org/&quot;&gt;&lt;img src=&quot;https://www.globalwitness.org//media/images/Screen_Shot_2016-08-19_at_10.19.11.width-800.png&quot; alt=&quot;Cambodia Corporates screnshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As well as being able to conduct searches for companies and directors, &lt;a href=&quot;https://cambodiacorporates.globalwitness.org/&quot;&gt;Cambodia Corporates&lt;/a&gt; has a number of functions not available on the original site:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fuzzy search for names - It’s a common problem in many datasets that names for the same person are spelt differently on different records. This is particularly problematic in cases where names have been. transliterated from Roman script. &lt;a href=&quot;https://cambodiacorporates.globalwitness.org/&quot;&gt;Cambodia Corporates&lt;/a&gt; let’s you introduce “fuzziness” into your search by choosing the number of characters that the results can vary from your original search term&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find the nationality of chairpersons - The Ministry of Commerce website doesn’t allow you to look at the nationality of the chairperson of Cambodian registered companies. This is important information for understanding international investment in the country.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download all the data - There are many colleagues and researchers out there who will want to do things with the information that we haven’t anticipated. Perhaps they will want to combine it with other databases they are building. We also want to enable those building excellent registries and search tools like &lt;a href=&quot;https://opencorporates.com&quot;&gt;OpenCorproates&lt;/a&gt; and OCCRP (&lt;a href=&quot;http://data.occrp.org&quot;&gt;data.occrp.org&lt;/a&gt;) to connect to this information.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Global-Witness/cambodia-corporates&quot;&gt;Get the source code&lt;/a&gt; - For the geeks amongst you, you can download, tweak and re-deploy our source code for similar projects.&lt;/li&gt;
+  &lt;li&gt;Following the publication of &lt;em&gt;&lt;a href=&quot;https://www.globalwitness.org/en/reports/hostile-takeover/&quot;&gt;Hostile Takeover&lt;/a&gt;&lt;/em&gt; the Ministry of Commerce database no longer contains the shareholder data that our investigation was built on. The reasons as to why this data is no longer available are &lt;a href=&quot;https://www.cambodiadaily.com/news/government-scrubs-database-exposed-hun-family-riches-116772/&quot;&gt;unclear&lt;/a&gt;. This important information is currently only available from &lt;a href=&quot;https://cambodiacorporates.globalwitness.org/&quot;&gt;Cambodia Corporates&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can access the fully functional research tool and the attached database of companies and directors at &lt;a href=&quot;https://cambodiacorproates.globalwitness.org&quot;&gt;https://cambodiacorproates.globalwitness.org&lt;/a&gt;, the underlying source code is available on GitHub &lt;a href=&quot;https://github.com/Global-Witness/cambodia-corporates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 Aug 2016 00:00:00 +0100</pubDate>
+        <link>https://blog.noelmas.net/open/data/2016/08/09/hostile-takeover-data/</link>
+        <guid isPermaLink="true">https://blog.noelmas.net/open/data/2016/08/09/hostile-takeover-data/</guid>
+      </item>
+    
+      <item>
         <title>A quick look at offshore property ownership in England &amp; Wales</title>
         <description>&lt;p&gt;The ownership of properties and land in England and Wales by companies registered in overseas countries has come under significant scrutiny in recent months. Reports by &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/mystery-baker-street/&quot;&gt;Global Witness&lt;/a&gt;, &lt;a href=&quot;http://www.telegraph.co.uk/news/picturegalleries/uknews/8340483/A-look-round-the-London-house-thought-to-be-owned-by-Libyas-Saif-al-Islam-Gaddafi.html&quot;&gt;The Telegraph&lt;/a&gt;, &lt;a href=&quot;http://www.theguardian.com/uk-news/2015/mar/04/uk-properties-held-by-offshore-firms-used-in-global-corruption-say-police&quot;&gt;The Guardian&lt;/a&gt; and &lt;a href=&quot;http://www.private-eye.co.uk/registry&quot;&gt;Private Eye&lt;/a&gt; have shown that offshore ownership can be a convenient means to launder the proceeds of crime and corruption. As it turns out, it is also a convenient mechanism to avoid tax assocaited with buying and selling a property.&lt;/p&gt;
 
@@ -327,19 +495,6 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
         <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
         <link>https://blog.noelmas.net/ddj-tips/2014/12/17/email-formats/</link>
         <guid isPermaLink="true">https://blog.noelmas.net/ddj-tips/2014/12/17/email-formats/</guid>
-      </item>
-    
-      <item>
-        <title>Scraping Royal Mail search box</title>
-        <description>&lt;p&gt;Earlier in the week I had to find a list of all addresses on a given street. After chasing a few deadends that involved vists to the Ordnance Survey website and having a look if the Google Maps API could help, I found a neat trick that uses the most authoratitive source for this kind of information: &lt;a href=&quot;http://www.royalmail.com/find-a-postcode&quot;&gt;Royal Mail&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The screencast below shows how to do it using the Google Chrome &lt;a href=&quot;https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd&quot;&gt;Scraper&lt;/a&gt; plug-in. It’s a bit of a hack and doesn’t give you all flat addresses in one table, but is a great start for grabbing this kind of information.&lt;/p&gt;
-
-&lt;object width=&quot;100%&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/VpruUcsk0Z0&amp;amp;hl=en&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/VpruUcsk0Z0&amp;amp;hl=en&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; height=&quot;500&quot; /&gt;&lt;/object&gt;
-</description>
-        <pubDate>Thu, 11 Dec 2014 00:00:00 +0000</pubDate>
-        <link>https://blog.noelmas.net/scraping/2014/12/11/scraping-royal-mail/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/scraping/2014/12/11/scraping-royal-mail/</guid>
       </item>
     
   </channel>

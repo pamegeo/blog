@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Why we published the data behind Hostile Takeover &#8211; Noelmas data doodles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Publishing the data and research tools we used to investigate crony capitalism in Cambodia is key to Global Witness's mission">
+    <meta name="author" content="Sam Leon">
+    <meta name="keywords" content="open, data">
+    <link rel="canonical" href="https://blog.noelmas.net/open/data/2016/08/09/hostile-takeover-data/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Why we published the data behind Hostile Takeover">
+    <meta property="og:description" content="Simple data hackery and reflections on tech for public integrity journalism.">
+    <meta property="og:url" content="https://blog.noelmas.net/open/data/2016/08/09/hostile-takeover-data/">
+    <meta property="og:site_name" content="Noelmas data doodles">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="https://blog.noelmas.net">Noelmas data doodles</a>
+      <nav class="site-nav right">
+        <a href="/music/">Music</a>
+<a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Why we published the data behind Hostile Takeover</h1>
+  <span class="post-meta">Aug 9, 2016</span><br>
+  
+  <span class="post-meta small">6 minute read</span>
+</div>
+
+<article class="post-content">
+  <p><em>This blog post was originally posted on the <a href="https://www.globalwitness.org/en/blog/why-we-published-data-behind-hostile-takeover/">Global Witness website</a></em></p>
+
+<p>It will come as no shock to Cambodians that their ruling elite has amassed vast fortunes whilst in power. As our report, <em><a href="https://www.globalwitness.org/en/reports/hostile-takeover/">Hostile Takeover</a></em>, shows, members of Prime Minister Hun Sen’s family have business interests spanning the majority of the country’s major industries. While 40% of Cambodians live below or close to the poverty line, the Hun family have a combined wealth estimated to total between US$ 500 million and US$ 1 billion.</p>
+
+<p>But until fairly recently it has been extremely difficult for activists and campaigners to prove this with hard facts and solid data.</p>
+
+<p>This has enabled the country’s most powerful family to continue to line its pockets behind a wall of secrecy. It has also allowed international companies and investors to establish business relationships with members of Hun Sen’s family, either unaware of or unconcerned by previous allegations of corruption and human rights abuses.</p>
+
+<h3 id="limitations-of-the-original-dataset">Limitations of the original dataset</h3>
+
+<p>The publication of data by <a href="http://www.moc.gov.kh/en-us/">Cambodia’s Ministry of Commerce</a> was a step towards greater transparency. The data held the key to the extensive business interests of Cambodia’s ruling elite, exposing just how much of a grip Hun Sen and his family have over the nation’s economy. However, in its original form the data was unusable for investigative purposes.</p>
+
+<p>Whilst we commend the Ministry of Commerce for publishing the data in the first place, the information provided suffered from a number of issues that prevented our researchers from using it effectively:</p>
+
+<ul>
+  <li>
+    <p>The database was put behind a login, making it difficult to programmatically access</p>
+  </li>
+  <li>
+    <p>The search portal didn’t allow people to download the dataset in its entirety</p>
+  </li>
+  <li>
+    <p>The service and availability of information changed from time to time. This posed a risk to our research that data would be taken offline or modified without our knowledge. Since the publication of the <a href="https://www.globalwitness.org/en/reports/hostile-takeover/"><em>Hostile Takeover</em></a> report - for instance - shareholder information has been removed completely</p>
+  </li>
+  <li>
+    <p>The Ministry’s servers were slow and unreliable, making it difficult to conduct in-depth research</p>
+  </li>
+</ul>
+
+<p>Given these limitations we extracted the contents of the database and developed our own version with the functionality needed to support in-depth investigation. This is known as “web scraping” by techies, and it is becoming an essential process in a wide-range of investigations at Global Witness.</p>
+
+<h3 id="open-data-and-network-effects">Open data and network effects</h3>
+
+<p>At Global Witness we passionately believe that our investigations should be a platform for change. We are well aware, however, that the kinds of changes we want to see can only be achieved when we work through networks.</p>
+
+<p>When it comes to data and technology this means enabling a range of actors - from civil society groups to law enforcement - to use the databases we’ve built up and the technology we’ve developed to verify our findings and spot things we haven’t.</p>
+
+<p>This is exactly what we did for <em><a href="https://www.globalwitness.org/en/reports/hostile-takeover/">Hostile Takeover</a></em>. We have published both the <a href="https://cambodiacorporates.globalwitness.org/">dataset that we extracted</a> from the Ministry of Commerce in its entirety and also <a href="https://cambodiacorporates.globalwitness.org/">the research tool</a> we developed to interrogate this information including the underlying <a href="https://github.com/Global-Witness/cambodia-corporates">source code</a>. We have applied <a href="http://opendefinition.org/">open licenses</a> to all of these so anyone can freely access, remix and build on our work.</p>
+
+<p>Cambodian newspaper <em><a href="http://www.phnompenhpost.com/">The Phnom Penh Post</a></em> made great use of the data almost immediately after we launched our report. As well as publishing their own analysis of the data we provided, they also produced a <a href="http://www.phnompenhpost.com/national/inside-hun-familys-business-empire#interactive">playful interactive</a> letting readers explore the wide-ranging business interests of the Hun Sen family.</p>
+
+<p><a href="http://www.phnompenhpost.com/national/inside-hun-familys-business-empire"><img src="https://www.globalwitness.org/media/images/Screen_Shot_2016-08-19_at_10.17.02.width-500.png" alt="Cambodia Wheel of Fortune" /></a></p>
+
+<p>By publishing our data openly we also want it to be re-used in some of the game-changing aggregation and search services being built by civic-hackers and tech-for-good enterprises like <a href="https://opencorporates.com/">OpenCorporates</a>. Powerful, free tools for investigative journalists like <a href="https://data.occrp.org/">data.occrp.org</a> benefit hugely from organisations choosing to open their data post-publication.</p>
+
+<p>These tools and this pooling of information is ever more important for anti-corruption campaigners who - in their attempts to unravel global illicit financial flows - need to be able to join the dots between fragmented and siloed datasets. In the same way that medical researchers across the world leverage the technology, data and methods of their peers to defeat deadly diseases, the fight against corruption could benefit from a far more joined up investigative community.</p>
+
+<p>But openness isn’t just a practical matter for us, it’s also a principle. As an organisation that asks governments and companies around the world to do more of their work in the open where it can be scrutinised by the public, we believe that once we’ve published a story, and where no risks exist for our sources, we should publish the data we’ve collected as permissibly as possible. We invite others to verify our findings and scrutinise our methodology.</p>
+
+<h3 id="cambodia-corporates-functionality">Cambodia Corporates functionality</h3>
+
+<p><a href="https://cambodiacorporates.globalwitness.org/"><img src="https://www.globalwitness.org//media/images/Screen_Shot_2016-08-19_at_10.19.11.width-800.png" alt="Cambodia Corporates screnshot" /></a></p>
+
+<p>As well as being able to conduct searches for companies and directors, <a href="https://cambodiacorporates.globalwitness.org/">Cambodia Corporates</a> has a number of functions not available on the original site:</p>
+
+<ol>
+  <li>
+    <p>Fuzzy search for names - It’s a common problem in many datasets that names for the same person are spelt differently on different records. This is particularly problematic in cases where names have been. transliterated from Roman script. <a href="https://cambodiacorporates.globalwitness.org/">Cambodia Corporates</a> let’s you introduce “fuzziness” into your search by choosing the number of characters that the results can vary from your original search term</p>
+  </li>
+  <li>
+    <p>Find the nationality of chairpersons - The Ministry of Commerce website doesn’t allow you to look at the nationality of the chairperson of Cambodian registered companies. This is important information for understanding international investment in the country.</p>
+  </li>
+  <li>
+    <p>Download all the data - There are many colleagues and researchers out there who will want to do things with the information that we haven’t anticipated. Perhaps they will want to combine it with other databases they are building. We also want to enable those building excellent registries and search tools like <a href="https://opencorporates.com">OpenCorproates</a> and OCCRP (<a href="http://data.occrp.org">data.occrp.org</a>) to connect to this information.</p>
+  </li>
+  <li><a href="https://github.com/Global-Witness/cambodia-corporates">Get the source code</a> - For the geeks amongst you, you can download, tweak and re-deploy our source code for similar projects.</li>
+  <li>Following the publication of <em><a href="https://www.globalwitness.org/en/reports/hostile-takeover/">Hostile Takeover</a></em> the Ministry of Commerce database no longer contains the shareholder data that our investigation was built on. The reasons as to why this data is no longer available are <a href="https://www.cambodiadaily.com/news/government-scrubs-database-exposed-hun-family-riches-116772/">unclear</a>. This important information is currently only available from <a href="https://cambodiacorporates.globalwitness.org/">Cambodia Corporates</a>.</li>
+</ol>
+
+<p>You can access the fully functional research tool and the attached database of companies and directors at <a href="https://cambodiacorproates.globalwitness.org">https://cambodiacorproates.globalwitness.org</a>, the underlying source code is available on GitHub <a href="https://github.com/Global-Witness/cambodia-corporates">here</a>.</p>
+
+</article>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Blog by <a href="https://twitter.com/noel_mas">@Noel_Mas</a> powered by <a href="https://github.com/johnotander/pixyll">Pixyll</a> Jekyll theme.<br>
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" 				src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" />
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57586437-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
