@@ -1,5 +1,5 @@
 # Site settings
-title:       Noelmas data doodles
+title:       Noelmas
 email:       sam.ed.leon@gmail.com
 author:      Sam Leon
 description: Simple data hackery and reflections on tech for public integrity journalism.
@@ -15,9 +15,9 @@ show_related_posts: false
 show_post_footers:  false
 
 # Social icons
-show_social_icons: false
+show_social_icons: true
 github_username:
-twitter_username:
+twitter_username: noeL_maS
 google_plus_id:
 linkedin_username:
 bitcoin_url:
