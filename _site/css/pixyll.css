@@ -926,7 +926,7 @@ h6,
 
   .h2,
   h2 {
-    font-size: 3.18rem; }
+    font-size: 2.0rem; }
 
   .h3,
   h3 {
@@ -943,8 +943,8 @@ h6,
     margin-top: .125em; }
 
   .posts .post {
-    margin-bottom: 2.666em;
-    padding-bottom: 1.333em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
     border-bottom: thin solid #f3f3f3; }
 
   .posts .post:last-child {
