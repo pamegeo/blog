@@ -2,7 +2,7 @@
 layout:     post
 title:      Mining the UK register of beneficial ownership
 date:       2016-11-22
-summary:	Insights from our dive into the world's first register of who corporate control.
+summary:	Insights from our dive into the world's first register of corporate control.
 categories: open data
 ---
 
