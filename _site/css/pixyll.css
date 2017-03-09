@@ -614,6 +614,10 @@ a:hover {
   MIT License http://opensource.org/licenses/MIT
 
 */
+.center-image {
+  margin: 0 auto;
+  display: block; }
+
 body {
   font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif; }
 

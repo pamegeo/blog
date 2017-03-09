@@ -7,6 +7,30 @@
     <atom:link href="https://blog.noelmas.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Top 5 workshops from NICAR 2017</title>
+        <description>&lt;p&gt;I was lucky enough to attend &lt;a href=&quot;https://www.ire.org/nicar/&quot;&gt;NICAR&lt;/a&gt; this year - the largest gathering of data journalists worldwide and all-round geek fest. A mind-boggling array of workshops and events were on offer covering the broad range of techniques used by journalists to investigate and present topics using data. These were my top 5 sessions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The &lt;a href=&quot;https://github.com/robroc/GIS-with-python&quot;&gt;top 5 Python libraries for working with geospatial data&lt;/a&gt; - A whirlwind tour from Roberto Rocha of the 5 best libraries for building a powerful but efficient workflows for analysing, wrangling and presenting geospatial data. It included easy starter code snippets wrapped up in a single Jupyter/notebook presentation to boot. &lt;a href=&quot;http://geopandas.org/&quot;&gt;Geopandas&lt;/a&gt; is already proving an invaluable tool in my day-to-day. &lt;a href=&quot;https://github.com/robroc/GIS-with-python&quot;&gt;https://github.com/robroc/GIS-with-python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Michelle Borkin’s talk on the cognition of data visualisation based on a large scale experiment which tracked the responses, recall and eye-movements of volunteers exposed to hundreds of static infographics and charts. Some of the findings were surprising and counter to the lauded Tufte’s &lt;a href=&quot;http://www.infovis-wiki.net/index.php/Data-Ink_Ratio&quot;&gt;data-ink ratio paradigm&lt;/a&gt;. For instance, Borkin found that information redundnacy in charts positively influenced particiapnts’ recall and understanding. The whole dataset for the project including has been released for openly as the &lt;a href=&quot;http://massvis.mit.edu/&quot;&gt;Massvis Dataset&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;A quick introduction to &lt;a href=&quot;https://flourish.studio/&quot;&gt;Kiln’s Flourish Studio&lt;/a&gt;. Kiln founder Duncan Clarke demoed the new platform for publishing interactive data visualisations that combines re-usability, clean GUI interfaces for data updating whilst allowing for radical creativity in the design process.&lt;/li&gt;
+  &lt;li&gt;Buzzfeed’s Open Labs Fellows’ crash course in mining data from social media sources including Facebook and Twitter with a handy &lt;a href=&quot;https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data&quot;&gt;Github repo&lt;/a&gt; of scripts to get you started on coding up your own scrapers. &lt;a href=&quot;https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data&quot;&gt;https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Neil Halloran - the creator of the &lt;a href=&quot;https://vimeo.com/128373915&quot;&gt;Fallen of World War II’s&lt;/a&gt; - gave wide-ranging talk on the natural tension between statistics and sentiment and how we can do a better job at marrying gate two. Including some great links to further reading that I will follow up on: Steven Pinker’s &lt;em&gt;The Better Angels of Our Nature&lt;/em&gt; and Daniel Kahneman’s &lt;em&gt;Thinking, Fast &amp;amp; Slow&lt;/em&gt;. Here’s a link to the amazing visual data story if you haven’t seen it already:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/128373915&quot; width=&quot;100%&quot; height=&quot;360&quot; frameborder=&quot;100&quot; align=&quot;center&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/128373915&quot;&gt;The Fallen of World War II&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user22627560&quot;&gt;Neil Halloran&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Chrys Wu has helpfully pulled together the various tip sheets and slide decks from some of the other sessions: &lt;a href=&quot;http://blog.chryswu.com/2017/03/02/nicar17-slides-links-tutorials-nicar17/&quot;&gt;http://blog.chryswu.com/2017/03/02/nicar17-slides-links-tutorials-nicar17/&lt;/a&gt;. If you’re interested in getting involved there is a very active disucssion list &lt;a href=&quot;https://www.ire.org/resource-center/listservs/subscribe-nicar-l/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Massive thanks to all the organisers and stalwarts of the Nicar community for facilitating such a brilliant exchange of stories, skills and knowledge.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+        <link>https://blog.noelmas.net/data-journalism/2017/03/09/nicar-2017/</link>
+        <guid isPermaLink="true">https://blog.noelmas.net/data-journalism/2017/03/09/nicar-2017/</guid>
+      </item>
+    
+      <item>
         <title>Mining the UK register of beneficial ownership</title>
         <description>&lt;p&gt;UK companies with hidden owners lie behind some of the worst problems of our time. Amongst other things they have been used to breach UN sanctions, evade taxes and rip off ordinary citizens. That’s why Global Witness has been calling for an end to these getaway cars for crime and corruption for years (see this &lt;a href=&quot;http://ed.ted.com/lessons/how-exposing-anonymous-companies-could-cut-down-on-crime-global-witness&quot;&gt;TED-Ed animation&lt;/a&gt; for a short introduction to the issue). Now, we’re seeing the first seeds of change - in June, the &lt;a href=&quot;https://companieshouse.blog.gov.uk/2016/04/13/the-new-people-with-significant-control-register/&quot;&gt;UK government started publishing&lt;/a&gt; the world’s first open data register of the real owners and controllers of companies – known as “beneficial owners”.&lt;/p&gt;
 
@@ -481,20 +505,6 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
         <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
         <link>https://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/</link>
         <guid isPermaLink="true">https://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/</guid>
-      </item>
-    
-      <item>
-        <title>Identifying email domain patterns</title>
-        <description>&lt;p&gt;This tip comes courtesy of Paul Myers who runs the brilliant &lt;a href=&quot;http://researchclinic.net/&quot;&gt;Research Clinic website&lt;/a&gt; that has a range of similar techniques for investigative reporters.&lt;/p&gt;
-
-&lt;p&gt;A core part of journalism involves contacting people for the purposes of a story. It can often be difficult get hold of direct email addresses. One option is to intelligently guess them. In order to do this, you need to know the email and domain pattern that the organisation your individual is linked to uses. This is where &lt;a href=&quot;http://email-format.com/&quot;&gt;Email-Format.com&lt;/a&gt; comes in. You can search for any organisation and identify the format used for emails. Take the Open Knowledge Foundation for example - &lt;a href=&quot;http://email-format.com/d/okfn.org/&quot;&gt;http://email-format.com/d/okfn.org/&lt;/a&gt;. If you know that I currently work them and that my name is Sam Leon, it’s pretty straight forward to get my email address.&lt;/p&gt;
-
-&lt;center&gt;&lt;iframe src=&quot;https://docs.google.com/file/d/0B3m0VSUa2b5mLUxlUFdxSVB0aVk/preview&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
-
-</description>
-        <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
-        <link>https://blog.noelmas.net/ddj-tips/2014/12/17/email-formats/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/ddj-tips/2014/12/17/email-formats/</guid>
       </item>
     
   </channel>

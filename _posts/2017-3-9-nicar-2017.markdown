@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      Top 5 workshops from NICAR 2017
+date:       2017-3-9
+summary:	Read out from the world's best data journalism gathering.
+categories: data-journalism
+---
+
+I was lucky enough to attend [NICAR](https://www.ire.org/nicar/) this year - the largest gathering of data journalists worldwide and all-round geek fest. A mind-boggling array of workshops and events were on offer covering the broad range of techniques used by journalists to investigate and present topics using data. These were my top 5 sessions:
+
+1. The [top 5 Python libraries for working with geospatial data](https://github.com/robroc/GIS-with-python) - A whirlwind tour from Roberto Rocha of the 5 best libraries for building a powerful but efficient workflows for analysing, wrangling and presenting geospatial data. It included easy starter code snippets wrapped up in a single Jupyter/notebook presentation to boot. [Geopandas](http://geopandas.org/) is already proving an invaluable tool in my day-to-day. [https://github.com/robroc/GIS-with-python](https://github.com/robroc/GIS-with-python)
+2. Michelle Borkin’s talk on the cognition of data visualisation based on a large scale experiment which tracked the responses, recall and eye-movements of volunteers exposed to hundreds of static infographics and charts. Some of the findings were surprising and counter to the lauded Tufte’s [data-ink ratio paradigm](http://www.infovis-wiki.net/index.php/Data-Ink_Ratio). For instance, Borkin found that information redundnacy in charts positively influenced particiapnts' recall and understanding. The whole dataset for the project including has been released for openly as the [Massvis Dataset](http://massvis.mit.edu/). 
+3. A quick introduction to [Kiln’s Flourish Studio](https://flourish.studio/). Kiln founder Duncan Clarke demoed the new platform for publishing interactive data visualisations that combines re-usability, clean GUI interfaces for data updating whilst allowing for radical creativity in the design process.
+4. Buzzfeed’s Open Labs Fellows' crash course in mining data from social media sources including Facebook and Twitter with a handy [Github repo](https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data) of scripts to get you started on coding up your own scrapers. [https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data](https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data)
+5. Neil Halloran - the creator of the [Fallen of World War II’s](https://vimeo.com/128373915) - gave wide-ranging talk on the natural tension between statistics and sentiment and how we can do a better job at marrying gate two. Including some great links to further reading that I will follow up on: Steven Pinker’s *The Better Angels of Our Nature* and Daniel Kahneman’s *Thinking, Fast & Slow*. Here’s a link to the amazing visual data story if you haven’t seen it already:
+
+
+<iframe src="https://player.vimeo.com/video/128373915" width="100%" height="360" frameborder="100" align="center" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/128373915">The Fallen of World War II</a> from <a href="https://vimeo.com/user22627560">Neil Halloran</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+Chrys Wu has helpfully pulled together the various tip sheets and slide decks from some of the other sessions: [http://blog.chryswu.com/2017/03/02/nicar17-slides-links-tutorials-nicar17/](http://blog.chryswu.com/2017/03/02/nicar17-slides-links-tutorials-nicar17/). If you're interested in getting involved there is a very active disucssion list [here](https://www.ire.org/resource-center/listservs/subscribe-nicar-l/).
+
+Massive thanks to all the organisers and stalwarts of the Nicar community for facilitating such a brilliant exchange of stories, skills and knowledge.
