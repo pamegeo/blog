@@ -7,7 +7,7 @@
     <atom:link href="https://blog.noelmas.net/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Top 5 workshops from NICAR 2017</title>
+        <title>Top 6 workshops from NICAR 2017</title>
         <description>&lt;p&gt;I was lucky enough to attend &lt;a href=&quot;https://www.ire.org/nicar/&quot;&gt;NICAR&lt;/a&gt; this year - the largest gathering of data journalists worldwide and all-round geek fest. A mind-boggling array of workshops and events were on offer covering the broad range of techniques used by journalists to investigate and present topics using data. These were my top 5 sessions:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -15,6 +15,7 @@
   &lt;li&gt;Michelle Borkin’s talk on the cognition of data visualisation based on a large scale experiment which tracked the responses, recall and eye-movements of volunteers exposed to hundreds of static infographics and charts. Some of the findings were surprising and counter to the lauded Tufte’s &lt;a href=&quot;http://www.infovis-wiki.net/index.php/Data-Ink_Ratio&quot;&gt;data-ink ratio paradigm&lt;/a&gt;. For instance, Borkin found that information redundnacy in charts positively influenced particiapnts’ recall and understanding. The whole dataset for the project including has been released for openly as the &lt;a href=&quot;http://massvis.mit.edu/&quot;&gt;Massvis Dataset&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;A quick introduction to &lt;a href=&quot;https://flourish.studio/&quot;&gt;Kiln’s Flourish Studio&lt;/a&gt;. Kiln founder Duncan Clarke demoed the new platform for publishing interactive data visualisations that combines re-usability, clean GUI interfaces for data updating whilst allowing for radical creativity in the design process.&lt;/li&gt;
   &lt;li&gt;Buzzfeed’s Open Labs Fellows’ crash course in mining data from social media sources including Facebook and Twitter with a handy &lt;a href=&quot;https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data&quot;&gt;Github repo&lt;/a&gt; of scripts to get you started on coding up your own scrapers. &lt;a href=&quot;https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data&quot;&gt;https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Meredith Broussard (New York University) and William Lyon (Neo4J) demonstrated how the network database Neo4J can be used to explore campaign finance. ICIJ have showed through the Panama Papers the power of Neo4J for investigating and presenting complex networks. Neo4J now runs a journalism accelerator programme to encourage uptake by newsrooms. More info &lt;a href=&quot;http://bit.ly/neo4j_ddj&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Neil Halloran - the creator of the &lt;a href=&quot;https://vimeo.com/128373915&quot;&gt;Fallen of World War II&lt;/a&gt; - gave wide-ranging talk on the natural tension between statistics and sentiment and how we can do a better job at marrying gate two. Including some great links to further reading that I will follow up on: Steven Pinker’s &lt;em&gt;The Better Angels of Our Nature&lt;/em&gt; and Daniel Kahneman’s &lt;em&gt;Thinking, Fast &amp;amp; Slow&lt;/em&gt;. Here’s a link to the amazing visual data story if you haven’t seen it already:&lt;/li&gt;
 &lt;/ol&gt;
 
