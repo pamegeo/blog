@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Top 5 workshops from NICAR 2017
+title:      Top 6 workshops from NICAR 2017
 date:       2017-3-9
 summary:	Read out from the world's best data journalism gathering.
 categories: data-journalism
@@ -12,7 +12,8 @@ I was lucky enough to attend [NICAR](https://www.ire.org/nicar/) this year - the
 2. Michelle Borkin’s talk on the cognition of data visualisation based on a large scale experiment which tracked the responses, recall and eye-movements of volunteers exposed to hundreds of static infographics and charts. Some of the findings were surprising and counter to the lauded Tufte’s [data-ink ratio paradigm](http://www.infovis-wiki.net/index.php/Data-Ink_Ratio). For instance, Borkin found that information redundnacy in charts positively influenced particiapnts' recall and understanding. The whole dataset for the project including has been released for openly as the [Massvis Dataset](http://massvis.mit.edu/). 
 3. A quick introduction to [Kiln’s Flourish Studio](https://flourish.studio/). Kiln founder Duncan Clarke demoed the new platform for publishing interactive data visualisations that combines re-usability, clean GUI interfaces for data updating whilst allowing for radical creativity in the design process.
 4. Buzzfeed’s Open Labs Fellows' crash course in mining data from social media sources including Facebook and Twitter with a handy [Github repo](https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data) of scripts to get you started on coding up your own scrapers. [https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data](https://github.com/buzzfeed-openlab/big-picture/wiki/Guide:-Harvesting-social-data)
-5. Neil Halloran - the creator of the [Fallen of World War II](https://vimeo.com/128373915) - gave wide-ranging talk on the natural tension between statistics and sentiment and how we can do a better job at marrying gate two. Including some great links to further reading that I will follow up on: Steven Pinker’s *The Better Angels of Our Nature* and Daniel Kahneman’s *Thinking, Fast & Slow*. Here’s a link to the amazing visual data story if you haven’t seen it already:
+5. Meredith Broussard (New York University) and William Lyon (Neo4J) demonstrated how the network database Neo4J can be used to explore campaign finance. ICIJ have showed through the Panama Papers the power of Neo4J for investigating and presenting complex networks. Neo4J now runs a journalism accelerator programme to encourage uptake by newsrooms. More info [here](bit.ly/neo4j_ddj).
+6. Neil Halloran - the creator of the [Fallen of World War II](https://vimeo.com/128373915) - gave wide-ranging talk on the natural tension between statistics and sentiment and how we can do a better job at marrying gate two. Including some great links to further reading that I will follow up on: Steven Pinker’s *The Better Angels of Our Nature* and Daniel Kahneman’s *Thinking, Fast & Slow*. Here’s a link to the amazing visual data story if you haven’t seen it already:
 
 
 <iframe src="https://player.vimeo.com/video/128373915" width="100%" height="380" frameborder="100" align="center" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
