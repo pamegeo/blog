@@ -8,7 +8,7 @@
     <meta name="description" content="How to scrape PDFs using ScraperWiki's PDF extract tool and OpenRefine. We use a UK sanctions list of investment targets in Myanmar as an example.">
     <meta name="author" content="Sam Leon">
     <meta name="keywords" content="ddj-tips, scraping">
-    <link rel="canonical" href="https://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/">
+    <link rel="canonical" href="http://localhost:4000/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
@@ -26,7 +26,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Scraping PDF tables using ScraperWiki and Open Refine">
     <meta property="og:description" content="Simple data hackery and reflections on tech for public integrity journalism.">
-    <meta property="og:url" content="https://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/">
+    <meta property="og:url" content="http://localhost:4000/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/">
     <meta property="og:site_name" content="Noelmas">
 </head>
 
@@ -35,7 +35,7 @@
     <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="https://blog.noelmas.net">Noelmas</a>
+      <a href="http://localhost:4000">Noelmas</a>
       <nav class="site-nav right">
         <a href="/music/">Music</a>
 <a href="/about/">About</a>
@@ -87,7 +87,7 @@
 
 <p>The screencast below shows one method to turn the PDF of a UK investment sanctions list for Burmese companies into a spreadsheet. This kind of transformation would be useful if you wanted to automatically reconcile the list of companies with an external database such as <a href="https://opencorporates.com/">OpenCorporates</a>,<sup><a href="#3">3</a></sup> see if any of organsiations appear in another dataset you’ve been compiling or map the locations of the companies. For this demo, we are aiming to create a spreadsheet that contains one organisation name and address per row. The screencast and instructions below walk through the steps:</p>
 
-<object width="100%"><param name="movie" value="http://www.youtube.com/v/GobC87hVvrQ&amp;hl=en&amp;fs=1" /><param name="allowFullScreen" value="true" /><embed src="http://www.youtube.com/v/GobC87hVvrQ&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="100%" height="500" /></object>
+<object width="100%"><param name="movie" value="http://www.youtube.com/v/GobC87hVvrQ&amp;hl=en&amp;fs=1" />&lt;/param&gt;<param name="allowFullScreen" value="true" />&lt;/param&gt;<embed src="http://www.youtube.com/v/GobC87hVvrQ&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="100%" height="500" />&lt;/embed&gt;</object>
 
 <p> </p>
 
@@ -107,25 +107,22 @@
   <li>
     <p>On “Column 2” choose the “Add a column based on this column function”. Insert the following bit of Google Refine Expressions Language (GREL):</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> row.record.cells["Column 2"][0].value
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> row.record.cells["Column 2"][0].value
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Do this a second time except changing the 0 to a 1:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> row.record.cells["Column 2"][1].value
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> row.record.cells["Column 2"][1].value
+</code></pre></div>    </div>
 
     <p><em>The newly created “Address” column retains some extra information that is not useful this time such as “Other information” (you may want to put this data into a new column). We are going to remove it. We would struggle to do this using a normal Find and Replace operation as the string we want to replace is different for every cell, however it does follow a pattern so we are able to use Regular Expressions.</em></p>
   </li>
   <li>
     <p>In the “Address” column go to “Edit cells &gt; Transform”, insert the following GREL expression that effectively finds all strings in that column that start with “Other information:” and are followed by an indefinite number of further characters. Regular Expressions are bounded by the “/” character in GREL:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> value.replace(/\sOther\sInformation.*/,"")
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> value.replace(/\sOther\sInformation.*/,"")
+</code></pre></div>    </div>
 
     <p><em>Now to get remove the extra lines in the records, so that we only have one line for each row of data.</em></p>
   </li>

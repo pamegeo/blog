@@ -3,8 +3,90 @@
   <channel>
     <title>Noelmas</title>
     <description>Simple data hackery and reflections on tech for public integrity journalism.</description>
-    <link>https://blog.noelmas.net/</link>
-    <atom:link href="https://blog.noelmas.net/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>The 86,000 secretly owned properties in England and Wales</title>
+        <description>&lt;p&gt;&lt;em&gt;This blog post was &lt;a href=&quot;https://www.globalwitness.org/en/blog/two-years-still-dark-about-86000-anonymously-owned-uk-homes/&quot;&gt;originally published on the Global Witness blog&lt;/a&gt; and was co-written with my colleague Naomi Hirst.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In 2015 David Cameron issued a threat to the corrupt, declaring &lt;a href=&quot;https://www.gov.uk/government/news/pm-announces-new-global-commitments-to-expose-punish-and-drive-out-corruption&quot;&gt;‘London is not a place to stash your dodgy cash’&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In a bid to stop dirty money from being funnelled into the country through anonymously owned companies his Government promised to create a public register naming the real owners of all overseas companies that own UK properties.&lt;/p&gt;
+
+&lt;p&gt;But, despite making the commitment again in front of over 40 governments at the &lt;a href=&quot;https://www.gov.uk/government/news/pm-announces-new-global-commitments-to-expose-punish-and-drive-out-corruption&quot;&gt;International Anti-Corruption Summit&lt;/a&gt; just last year, and in the face of widespread domestic support for making the UK property market more transparent, progress has stalled. We’re two years on and the register is nowhere to be seen.&lt;/p&gt;
+
+&lt;p&gt;But maybe the British government know better than us? Maybe after the tough talk at the Summit all the secret beneficiaries left the shadows and incorporated companies in plain sight. It’s possible, right…?!&lt;/p&gt;
+
+&lt;p&gt;To find out whether or not we were barking up the wrong tree, we joined forces with friends at Who Owns England? and Transparency International UK to look at the most recent Land Registry data.&lt;/p&gt;
+
+&lt;p&gt;Unsurprisingly, our analysis found that since the property register was promised, nothing has changed.&lt;/p&gt;
+
+&lt;p&gt;We are still in the dark about the 86,000+ UK properties that are owned by anonymous companies.&lt;/p&gt;
+
+&lt;p&gt;As initially &lt;a href=&quot;https://www.thetimes.co.uk/article/the-average-estate-agents-commission-on-a-1m-sale-is-20-000-the-average-fine-for-money-laundering-breaches-is-1-134-sjc5hch05&quot;&gt;published in The Times&lt;/a&gt;, our joint analysis found that:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Secret ownership of property in England and Wales remains virtually unchanged since 2015&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The total number of properties owned by companies incorporated in secrecy jurisdictions remains virtually unchanged from late 2015, at &lt;strong&gt;86,000&lt;/strong&gt; - suggesting the Government’s rhetoric has had little effect.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;As was the case in 2015, &lt;strong&gt;87%&lt;/strong&gt; of all properties owned by overseas companies have an owner in jurisdictions which keep information about the real people behind the company secret.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Tens of thousands of properties are owned through companies incorporated in the highly secretive British Overseas Territories and Crown Dependencies&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;57,000 properties are owned by companies registered in British Overseas Territories &amp;amp; Crown Dependencies&lt;/strong&gt; - including places like the British Virgin Islands, Jersey, and the Isle of Man.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Some of the most expensive UK property sales in recent years have been made via companies incorporated in secrecy jurisdictions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;According to the Land Registry, the most expensive property owned by a company based in secrecy jurisdiction is 123 Buckingham Palace Road which is worth &lt;strong&gt;£215,399,999&lt;/strong&gt; and owned by a Jersey-based company.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The top 10 most expensive properties owned by companies in secrecy jurisdictions are worth over £1.5 billion.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;The use of companies incorporated in secrecy jurisdictions to purchase property is increasing in some areas.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Since 2015 the London borough of &lt;strong&gt;Tower Hamlets has seen an 11% increase&lt;/strong&gt; in the number of properties owned by companies incorporated by secrecy jurisdictions, meanwhile &lt;strong&gt;Greater Manchester has experienced a 10% increase.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Secret ownership of property remains especially high in the London boroughs of Kensington &amp;amp; Chelsea and the City of Westminster.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the &lt;strong&gt;City of Westminster over 10,000 properties&lt;/strong&gt; are owned anonymously whilst in the &lt;strong&gt;Royal Borough of Kensington &amp;amp; Chelsea the tally almost 6,000&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;max-width:900px&quot;&gt;&lt;iframe src=&quot;//datawrapper.dwcdn.net/rOQBW/3/&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;allowfullscreen&quot; webkitallowfullscreen=&quot;webkitallowfullscreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; oallowfullscreen=&quot;oallowfullscreen&quot; msallowfullscreen=&quot;msallowfullscreen&quot; width=&quot;100%&quot; height=&quot;602&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;These new findings tell us that the need for a property register remains as strong as ever. And as we approach International Anti-Corruption Day, all eyes are on Margot James as Minister for Corporate Responsibility to fulfil the commitment the Government made to citizens and to leaders from around the world to get dirty money out of the UK property market.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reproduce our analysis&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For those wanting to reproduce our analysis, expand upon it or understand more about our approach, the code is available as a &lt;a href=&quot;https://github.com/Global-Witness/overseas_companies_land_ownership/blob/master/overseas_companies_land_ownership_analysis.ipynb&quot;&gt;Jupyter notebook via Github&lt;/a&gt;. The Land Registry data (accurate as of October 2017) that we used for this analysis has now been published freely, but you will still need to go through the &lt;a href=&quot;https://www.gov.uk/guidance/hm-land-registry-overseas-companies-ownership-data&quot;&gt;steps to download it&lt;/a&gt; in order to reproduce our analysis.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;These findings are based on the Land Registry’s Overseas Ownership Dataset as initially received and processed by Global Witness. This dataset is now available free of charge at &lt;a href=&quot;https://www.gov.uk/guidance/hm-land-registry-overseas-companies-ownership-data&quot;&gt;https://www.gov.uk/guidance/hm-land-registry-overseas-companies-ownership-data  &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Secrecy jurisdiction” is a term used as an alternative to the more widely used term tax havens. These jurisdictions use secrecy to attract illicit and illegitimate or abusive financial flows. This analysis deems any jurisdiction with a “financial secrecy score” of 60 and above in the Tax Justice Network’s &lt;a href=&quot;http://www.financialsecrecyindex.com/introduction/fsi-2015-results&quot;&gt;Financial Secrecy Index&lt;/a&gt; to be a secrecy jurisdiction.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/data-journalism/2017/12/07/offshore-property/</link>
+        <guid isPermaLink="true">http://localhost:4000/data-journalism/2017/12/07/offshore-property/</guid>
+      </item>
     
       <item>
         <title>Top 6 workshops from NICAR 2017</title>
@@ -27,8 +109,8 @@
 &lt;p&gt;Massive thanks to all the organisers and stalwarts of the Nicar community for facilitating such a brilliant exchange of stories, skills and knowledge.&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
-        <link>https://blog.noelmas.net/data-journalism/2017/03/09/nicar-2017/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/data-journalism/2017/03/09/nicar-2017/</guid>
+        <link>http://localhost:4000/data-journalism/2017/03/09/nicar-2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/data-journalism/2017/03/09/nicar-2017/</guid>
       </item>
     
       <item>
@@ -117,8 +199,8 @@
 &lt;p&gt;Finally, we’re hoping that other governments will see the potential of what the UK has done. The process will be difficult, but if our weekend showed us anything, it’s that this is incredibly useful information to have.&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
-        <link>https://blog.noelmas.net/open/data/2016/11/22/data-dive-beneficial-ownership/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/open/data/2016/11/22/data-dive-beneficial-ownership/</guid>
+        <link>http://localhost:4000/open/data/2016/11/22/data-dive-beneficial-ownership/</link>
+        <guid isPermaLink="true">http://localhost:4000/open/data/2016/11/22/data-dive-beneficial-ownership/</guid>
       </item>
     
       <item>
@@ -195,8 +277,8 @@
 &lt;p&gt;You can access the fully functional research tool and the attached database of companies and directors at &lt;a href=&quot;https://cambodiacorproates.globalwitness.org&quot;&gt;https://cambodiacorproates.globalwitness.org&lt;/a&gt;, the underlying source code is available on GitHub &lt;a href=&quot;https://github.com/Global-Witness/cambodia-corporates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 09 Aug 2016 00:00:00 +0100</pubDate>
-        <link>https://blog.noelmas.net/open/data/2016/08/09/hostile-takeover-data/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/open/data/2016/08/09/hostile-takeover-data/</guid>
+        <link>http://localhost:4000/open/data/2016/08/09/hostile-takeover-data/</link>
+        <guid isPermaLink="true">http://localhost:4000/open/data/2016/08/09/hostile-takeover-data/</guid>
       </item>
     
       <item>
@@ -242,8 +324,8 @@
 
 </description>
         <pubDate>Sat, 23 Apr 2016 00:00:00 +0100</pubDate>
-        <link>https://blog.noelmas.net/2016/04/23/offshore-property-analysis/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/2016/04/23/offshore-property-analysis/</guid>
+        <link>http://localhost:4000/2016/04/23/offshore-property-analysis/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/23/offshore-property-analysis/</guid>
       </item>
     
       <item>
@@ -253,8 +335,8 @@
 &lt;img src=&quot;https://globalwitness.org/media/images/Energreen.width-300.png&quot; align=&quot;right&quot; width=&quot;300&quot; height=&quot;213&quot; alt=&quot;&quot;/&gt;
 &lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;It tells another important story, which often gets lost. Corruption isn’t something that just affects fragile states and dictatorships, it’s far closer to home than many Western governments like to admit. As our work has shown time and time again, Western companies, law firms and banks are key enablers for moving dirty cash around the world and covering up secret deals, and their governments could be doing much more to put a stop to it.&lt;/p&gt;&lt;p&gt;In fact Denmark seems like the perfect setting to make this point.&lt;/p&gt;&lt;p&gt;Number one in &lt;a href=&quot;http://www.transparency.org/cpi2015&quot;&gt;Transparency International’s Corruption Perceptions Index&lt;/a&gt; in 2015, Denmark does not suffer from the kind of grand corruption that plagues those at the bottom of the Index like Cambodia or Afghanistan. However, such is the structure of the global financial system today, Danish companies and citizens, like those in any other European country, can use networks of offshore subsidiaries to hide and launder illicit funds whilst retaining the veneer of corporate respectability that being based in a center of global finance affords.&lt;/p&gt;&lt;p&gt;Services offered in places like the British Virgin Islands and the Cayman Islands can be used to hide wealth from tax authorities, deceive law enforcement agencies and introduce huge levels of risk to unwitting investors. We’ve seen some these mechanisms at play in our recent investigations into the &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/mystery-baker-street/&quot;&gt;London property market&lt;/a&gt; and the &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/oil-gas-and-mining/shell-and-enis-misadventures-nigeria/&quot;&gt;acquisition of one of West Africa’s largest oil blocks&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;The fictional, cut-throat energy firm at the heart of the plot, Energreen, uses a number of these ploys to devastating effect. Below are three of the top ways in which its activities mirror the companies we often investigate:&lt;br/&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;&lt;a href=&quot;http://ed.ted.com/lessons/how-exposing-anonymous-companies-could-cut-down-on-crime-global-witness&quot;&gt;Anonymous shell companies&lt;/a&gt; are the currency of the corrupt&lt;/b&gt; - Energreen and its insider traders use a network of subsidiaries whose true owners are hidden in order to siphon off funds and fraudulently pump up the value of its own assets.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Secrecy jurisdictions and tax havens such as the British Virgin Islands and the Cayman Islands are conduits for illicit financial flows&lt;/b&gt; - The network of subsidiaries used by Energreen are often based in offshore secrecy jurisdictions deliberately obscuring critical information about the company from law enforcement, the public and investors.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Corruption affects us all&lt;/b&gt; - Energreen’s eventual collapse after it goes public leaves a huge range of investors exposed including pension funds used by everyday people.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;As we wrote &lt;a href=&quot;https://www.globalwitness.org/en/press-releases/david-cameron-majority-british-public-want-you-act-tax-havens/&quot;&gt;two weeks ago&lt;/a&gt; this is a problem that the UK can help to fix by taking action on the UK Territories. For our readers based in the UK, you can watch all 10 episodes of &lt;i&gt;Follow the Money&lt;/i&gt; on &lt;a href=&quot;http://www.bbc.co.uk/programmes/b072h7rk&quot;&gt;BBC iPlayer&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description>
         <pubDate>Fri, 22 Apr 2016 00:00:00 +0100</pubDate>
-        <link>https://blog.noelmas.net/2016/04/22/follow-the-money/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/2016/04/22/follow-the-money/</guid>
+        <link>http://localhost:4000/2016/04/22/follow-the-money/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/22/follow-the-money/</guid>
       </item>
     
       <item>
@@ -276,12 +358,12 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
 &lt;p&gt;It’s notable that “tax avoidance” as a search term had a significant spike in June 2012 when Jimmy Carr’s use of a &lt;a href=&quot;http://www.theguardian.com/business/2012/jun/19/tax-scheme-jimmy-carr-hmrc&quot;&gt;“K2” tax avoidance scheme&lt;/a&gt; received press attention. As ever, the celebrity status  of the scalp claimed in the exposé drives public interest.&lt;/p&gt;
 </description>
         <pubDate>Sun, 10 Apr 2016 00:00:00 +0100</pubDate>
-        <link>https://blog.noelmas.net/2016/04/10/tax-trends/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/2016/04/10/tax-trends/</guid>
+        <link>http://localhost:4000/2016/04/10/tax-trends/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/10/tax-trends/</guid>
       </item>
     
       <item>
-        <title>Is the NHS safe in Cameron&#39;s hands?</title>
+        <title>Is the NHS safe in Cameron's hands?</title>
         <description>&lt;p&gt;As the government’s increasingly bitter dispute with Junior Doctors rolls on to the backdrop of a critically overstretched health service, it’s difficult to see how David Cameron can back up his words during the 2015 election campaign that NHS is &lt;a href=&quot;http://www.itv.com/news/update/2015-05-18/david-cameron-the-nhs-is-safe-in-my-hands/&quot;&gt;“safe in my hands”&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Data published by NHS England appears to show A&amp;amp;E waiting times slipping to new lows as patients in need of emergency care wait longer to be admitted to hospital.&lt;/p&gt;
@@ -309,8 +391,8 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
 &lt;/article&gt;
 </description>
         <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
-        <link>https://blog.noelmas.net/open/data/2016/03/22/safe-in-my-hands/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/open/data/2016/03/22/safe-in-my-hands/</guid>
+        <link>http://localhost:4000/open/data/2016/03/22/safe-in-my-hands/</link>
+        <guid isPermaLink="true">http://localhost:4000/open/data/2016/03/22/safe-in-my-hands/</guid>
       </item>
     
       <item>
@@ -321,7 +403,7 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
 &lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;Now is a very exciting time to be doing this. As the explosion of powerful, free data analysis tools intersects with our own efforts to bring business into the open, we’re seeing exciting new opportunities to help cut poverty and financial crime all over the world. The challenge, as we see it, is to find the right tools and equip the right people so that all this information can be translated into genuine accountability for those in power.&lt;/p&gt;&lt;p&gt;There is already a lot of valuable data relevant to our mission in the public domain. For example, billions of dollars worth of company-to-government payments are now published each year as part of the Publish What You Pay initiative that Global Witness helped to found. Elsewhere, recent US legislation means thousands of companies who use minerals in their products routinely publish information on their supply chains, to make sure they aren’t sponsoring conflict or bloodshed where the raw materials are mined.&lt;/p&gt;&lt;p&gt;As well as laws demanding information be published, there are non-profit organisations which exist to collect data and make it useful. &lt;a href=&quot;https://opencorporates.com/&quot;&gt;OpenCorporates&lt;/a&gt;, the world’s largest free database of corporate data, now contains the records of over of 97 million companies from around the world. MySociety’s nascent &lt;a href=&quot;http://everypolitician.org/&quot;&gt;EveryPolitician.org &lt;/a&gt;contains the records of over 60,000 politicians from over 232 companies which have been scraped and crowdsourced from numerous digital sources. Our friends at OpenOil now have a service which provides free access over one million company filings related to the oil, gas and mining industries.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;figure style=&quot;display:inline-block;text-align:center;float:right&quot;&gt;	
 &lt;img src=&quot;https://globalwitness.org/media/images/Screen_Shot_2016-02-17_at_16.10.14.width-300.png&quot; width=&quot;300&quot; height=&quot;162&quot; alt=&quot;&quot; style=&quot;vertical-align:top&quot;/&gt;
-&lt;figcaption style=&quot;&quot;&gt;&lt;p style=&quot;font-size:8px&quot;&gt;Visualisation from Open Oil&#39;s &lt;br&gt; vast database of contracts from Nigeria&#39;s byzantine &lt;br&gt; oil industry: &lt;a href=&quot;https://data.openoil.net/#nigeria_production&quot;&gt;https://data.openoil.net/#nigeria_production&lt;/a&gt; &lt;/p&gt;&lt;/figcaption&gt;
+&lt;figcaption style=&quot;&quot;&gt;&lt;p style=&quot;font-size:8px&quot;&gt;Visualisation from Open Oil's &lt;br&gt; vast database of contracts from Nigeria's byzantine &lt;br&gt; oil industry: &lt;a href=&quot;https://data.openoil.net/#nigeria_production&quot;&gt;https://data.openoil.net/#nigeria_production&lt;/a&gt; &lt;/p&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;This data could revolutionise the way journalists and NGOs like Global Witness expose the corrupt networks that deprive some of the world’s poorest people of the wealth beneath their feet. But for that to happen, the data needs to be actively monitored and mined by groups equipped with the right skills and tools. This analysis is especially valuable in states with limited political will or capacity to undertake their own corruption investigations, as is the case in many countries where Global Witness works. So the opportunities are obvious, but it’s complicated.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;No single public dataset is likely to unearth substantial corruption on its own. The real value tends to come when these datasets are combined in ways not anticipated by the publisher. For example, combining port records with company information has allowed us to show how the EU’s demand for illegal timber from the DRC undermines efforts to protect the world’s second largest rainforest. Elsewhere, company filings from multiple jurisdictions helped piece together the corrupt and complex deal behind the sale of Nigeria’s largest oil block, which deprived its citizens of over one billion US dollars. The more data that is available on companies and governments in a standardised form, the greater the opportunity for linking this information in meaningful ways to fight corruption.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;figure style=&quot;display:inline-block;text-align:center&quot;&gt;
@@ -338,14 +420,14 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
 &lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;That’s not to say we shouldn’t also work tirelessly to improve the data that’s already out there. Existing sources of public data are far from perfect, and in many countries online access to public records still remains a distant dream. Lack of standardisation makes information difficult to retrieve and connect. The secrecy for sale in the world’s tax havens means that many corporate structures used to funnel the proceeds of corruption remain hidden. Global Witness will continue to push for those gaps to be filled and input into developing strong, open and workable standards along with our partners in groups such as &lt;a href=&quot;http://www.publishwhatyoupay.org/&quot;&gt;Publish What You Pay&lt;/a&gt; and the &lt;a href=&quot;https://financialtransparency.org/&quot;&gt;Financial Transparency&lt;/a&gt; and &lt;a href=&quot;http://www.open-contracting.org/&quot;&gt;Open Contracting&lt;/a&gt; coalitions. And alongside our data work, we will be lobbying decision-makers to ensure that transparency becomes the expected norm in how the world does its business.  &lt;br/&gt;&lt;/p&gt;&lt;p&gt;The open data revolution shows no sign of slowing in 2016. This year even more data will go online as hundreds of UK companies release project-level information on all payments to governments in the oil, gas and mining industries under new EU law. From July onwards all UK companies will be forced to publish who their real owners are in publicly accessible register, something that Global Witness has been fighting for many years.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;figure style=&quot;display:inline-block;text-align:center;float:right&quot;&gt;	
 &lt;img src=&quot;https://globalwitness.org/media/images/Screen_Shot_2016-02-17_at_16.19.47_EY9qJg2.width-300.png&quot; width=&quot;300&quot; height=&quot;162&quot; alt=&quot;&quot; style=&quot;vertical-align:top&quot;/&gt;
-&lt;figcaption style=&quot;&quot;&gt;&lt;p style=&quot;font-size:8px&quot;&gt;OpenCorporates&#39; proof-of-concept of a global beneficial &lt;br&gt;ownership registry: &lt;a href=&quot;http://alpha.whocontrolsit.com/&quot;&gt;http://alpha.whocontrolsit.com/&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
+&lt;figcaption style=&quot;&quot;&gt;&lt;p style=&quot;font-size:8px&quot;&gt;OpenCorporates' proof-of-concept of a global beneficial &lt;br&gt;ownership registry: &lt;a href=&quot;http://alpha.whocontrolsit.com/&quot;&gt;http://alpha.whocontrolsit.com/&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;For anyone who wants to fight corruption and build a more open, just society, this is really exciting. For a data geek like me, it’s doubly so. But as the possibilities grow, so does the work involved in mining all the data, and we’re far from the only ones driving this. This week in Lima, I’ll be working with activists from all over the world to look at how they can apply these tools and techniques to their different contexts, and help make sure the new availability of information brings justice and accountability from their governments. Together we’ll be trawling this new information for insights and leads, so that the individuals and systems that perpetuate conflict, corruption and environmental devastation have no place to hide.&lt;/p&gt;&lt;p&gt;Watch this space!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
         <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
-        <link>https://blog.noelmas.net/open/data/2016/02/20/gw-in-2016/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/open/data/2016/02/20/gw-in-2016/</guid>
+        <link>http://localhost:4000/open/data/2016/02/20/gw-in-2016/</link>
+        <guid isPermaLink="true">http://localhost:4000/open/data/2016/02/20/gw-in-2016/</guid>
       </item>
     
       <item>
@@ -439,73 +521,8 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
 
 </description>
         <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
-        <link>https://blog.noelmas.net/investigations/2016/02/15/opencorproates-jade-investigation/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/investigations/2016/02/15/opencorproates-jade-investigation/</guid>
-      </item>
-    
-      <item>
-        <title>Scraping PDF tables using ScraperWiki and Open Refine</title>
-        <description>&lt;p&gt;Lots has been written as to why the PDF is inadequate format for data publication.&lt;sup&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; PDFs aren’t machine readable and information from them often can’t even be copy and pasted. Despite this governments, corporations and multi-lateral organisations still release large amounts of public data as PDF. As a result, any organisation or individual wanting to analyse public data will have to extract structured data from PDFs at some point. A fantastic tool for doing this - and which requires no coding knowledge at all - is &lt;a href=&quot;http://scraperwiki.com&quot;&gt;ScraperWiki’s&lt;/a&gt; PDF table extract tool.&lt;sup&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; In combination with the data cleaning tool, &lt;a href=&quot;http://openrefine.org/&quot;&gt;Open Refine&lt;/a&gt;, you can wrangle most PDFs into an analysable form within minutes.&lt;/p&gt;
-
-&lt;p&gt;The screencast below shows one method to turn the PDF of a UK investment sanctions list for Burmese companies into a spreadsheet. This kind of transformation would be useful if you wanted to automatically reconcile the list of companies with an external database such as &lt;a href=&quot;https://opencorporates.com/&quot;&gt;OpenCorporates&lt;/a&gt;,&lt;sup&gt;&lt;a href=&quot;#3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; see if any of organsiations appear in another dataset you’ve been compiling or map the locations of the companies. For this demo, we are aiming to create a spreadsheet that contains one organisation name and address per row. The screencast and instructions below walk through the steps:&lt;/p&gt;
-
-&lt;object width=&quot;100%&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/GobC87hVvrQ&amp;amp;hl=en&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/GobC87hVvrQ&amp;amp;hl=en&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; height=&quot;500&quot; /&gt;&lt;/object&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Log-in to &lt;a href=&quot;http://scraperwiki.com&quot;&gt;ScraperWiki&lt;/a&gt; (create a free account if you don’t have one already), create a new dataset and choose the PDF Extract tool&lt;/li&gt;
-  &lt;li&gt;Upload your PDF or paste in a web link to your PDF if it’s available publicly. For the purposes of this demo we will be using the sanctions list at &lt;a href=&quot;http://www.betterregulation.com/external/investmentban.pdf&quot;&gt;http://www.betterregulation.com/external/investmentban.pdf&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Download All Tables as an Excel spreadsheet&lt;/li&gt;
-  &lt;li&gt;Open the spreadsheet in Excel, there will be a tab for each page of data in the PDF&lt;/li&gt;
-  &lt;li&gt;Remove the header and footer information on each tab from each page&lt;/li&gt;
-  &lt;li&gt;Start Open Refine and create a project with your spreadsheet&lt;/li&gt;
-  &lt;li&gt;In preview mode, load each of the tabs that contains the data you are interested by ticking them (for brevity I’ve only turn the first 3 tabs)&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In preview mode, our data does not have headers so untick the “Parse next X lines(s) as column headers”&lt;/p&gt;
-
-    &lt;p&gt;&lt;em&gt;Open Refine recognises each of our lines from the table as a record despite the fact that it flows over multiple spreadsheet rows. As we are aiming to produce a spreadsheet with one organisation per line, we need to re-shape our data so the rows from our record that display “Organisation name” and “Address” have their own columns.&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;On “Column 2” choose the “Add a column based on this column function”. Insert the following bit of Google Refine Expressions Language (GREL):&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; row.record.cells[&quot;Column 2&quot;][0].value
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Do this a second time except changing the 0 to a 1:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; row.record.cells[&quot;Column 2&quot;][1].value
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-
-    &lt;p&gt;&lt;em&gt;The newly created “Address” column retains some extra information that is not useful this time such as “Other information” (you may want to put this data into a new column). We are going to remove it. We would struggle to do this using a normal Find and Replace operation as the string we want to replace is different for every cell, however it does follow a pattern so we are able to use Regular Expressions.&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the “Address” column go to “Edit cells &amp;gt; Transform”, insert the following GREL expression that effectively finds all strings in that column that start with “Other information:” and are followed by an indefinite number of further characters. Regular Expressions are bounded by the “/” character in GREL:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; value.replace(/\sOther\sInformation.*/,&quot;&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-
-    &lt;p&gt;&lt;em&gt;Now to get remove the extra lines in the records, so that we only have one line for each row of data.&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Choose the “Edit Cells &amp;gt; Blank down” function on the “Address” column effectively blanking out all consecutive duplicate rows for that column&lt;/li&gt;
-  &lt;li&gt;Go to “Facet &amp;gt; Text Facet” on the “Address column”&lt;/li&gt;
-  &lt;li&gt;Select from the Text Facet box “(blank)”, we need to remove all these rows&lt;/li&gt;
-  &lt;li&gt;Change the view (top left) to “Rows” from “Records”&lt;/li&gt;
-  &lt;li&gt;From the “All” function drop down (top left) select “Edit Cells &amp;gt; Remove all matching rows”&lt;/li&gt;
-  &lt;li&gt;Finally, export you project using the button in the top right to either an Excel or CSV file. We now have the one row one record structure we were looking for. You can clean up your data furthers by taking out&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a name=&quot;1&quot;&gt;&lt;/a&gt;[1] See for example &lt;a href=&quot;https://blog.scraperwiki.com/2013/12/the-tyranny-of-the-pdf/&quot;&gt;https://blog.scraperwiki.com/2013/12/the-tyranny-of-the-pdf/&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a name=&quot;2&quot;&gt;&lt;/a&gt;[2] ScraperWiki appears to be spinning this tool out as a separate product called &lt;a href=&quot;https://pdftables.com/&quot;&gt;PDF Tables&lt;/a&gt;, but you can still access the tool through ScraperWiki when this was written.&lt;/p&gt;
-&lt;p&gt;&lt;a name=&quot;3&quot;&gt;&lt;/a&gt;[3] If you&#39;re interested in reconciling company names to the OpenCorporates database in order to attach the wealth information held by OpenCorporates to your database (e.g. director names, date of incorporation etc) take a look at &lt;a href=&quot;http://vimeo.com/17924204&quot;&gt;this&lt;/a&gt; tutorial.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
-        <link>https://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/</link>
-        <guid isPermaLink="true">https://blog.noelmas.net/ddj-tips/scraping/2014/12/21/scraperwiki-pdf-extract-openrefine/</guid>
+        <link>http://localhost:4000/investigations/2016/02/15/opencorproates-jade-investigation/</link>
+        <guid isPermaLink="true">http://localhost:4000/investigations/2016/02/15/opencorproates-jade-investigation/</guid>
       </item>
     
   </channel>
