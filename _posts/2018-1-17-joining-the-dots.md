@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Joining the dots - From property deals at the Trump Ocean Club, Panama to Latin American drug cartels, how we're using new technology to expose corrupt networks
+title:      Joining the dots - From property deals at the Trump Ocean Club, Panama to Latin American drug cartels
 date:       2018-1-17
 summary:	The data journalism behind Narco-A-Lago - Money Laundering at the Trump Ocean Club, Panama
 categories: data-journalism
