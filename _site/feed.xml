@@ -7,6 +7,43 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Joining the dots - From property deals at the Trump Ocean Club, Panama to Latin American drug cartels, how we're using new technology to expose corrupt networks</title>
+        <description>&lt;p&gt;In October Global Witness’ investigation &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/narco-a-lago-panama/&quot;&gt;&lt;em&gt;Narco-A-Lago: Money Laundering at the Trump Ocean Club, Panama&lt;/em&gt;&lt;/a&gt; exposed how profits from Colombian cartels were trafficked through the purchase of real estate units at a Panama property development which Donald Trump made millions selling his name to. The investigation was based on months of research, interviews and in-depth data work on public sources including the Panamanian Company Registry, the Panamanian Land Registry and OpenCorporates.com.&lt;/p&gt;
+
+&lt;p&gt;This blog post describes in broad brush strokes some of the steps we took in the data research for &lt;em&gt;Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama&lt;/em&gt;. It outlines how we built programmes that took raw data from OpenCorporates.com and turned it into something that the broader investigative team could visually explore, verify and then incorporate into their final story. The scripts could be re-run quickly whenever the underlying data was changed, for example, when new companies of interest were identified as having been involved in purchasing property. The approaches outlined here are becoming increasingly central to how organisations like ours collaborate around digital sources and data to expose corruption more effectively in the digital age.&lt;/p&gt;
+
+&lt;h3 id=&quot;automating-searches-for-relevant-companies-using-opencorporates&quot;&gt;Automating searches for relevant companies using OpenCorporates&lt;/h3&gt;
+
+&lt;p&gt;By using scripts that automatically queried OpenCorporates we were able to incorporate much larger sets of information in our research than would be allowed by manual extraction. OpenCorporates is the world’s largest open database of company information; it contains the records on over 138 million companies registered in a huge range of jurisdictions. As well as offering web-based search it also offers a number of tools to data journalists via its &lt;a href=&quot;https://api.opencorporates.com/&quot;&gt;Application Programming Interface (API)&lt;/a&gt; to help them find, extract and connect large numbers of companies in automated workflows. In some cases this can substantially reduce the amount of time required to do investigative tasks. For instance, extracting all the companies a given individual is a director of can be automated via writing a simple computer script. In the case of &lt;em&gt;Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama&lt;/em&gt; we used this to identify companies that had been created apparently in order to purchase properties at Trump Ocean Club.&lt;/p&gt;
+
+&lt;h3 id=&quot;using-network-analysis-tools---neo4j-and-linkurious---to-reveal-patterns-in-the-data&quot;&gt;Using network analysis tools - Neo4J and Linkurious - to reveal patterns in the data&lt;/h3&gt;
+
+&lt;p&gt;We used a visualisation tool called Linkurious that enables us to share and spot patterns that would otherwise be difficult to detect if just looking at tables and statistics. As is the case in many Global Witness investigations, our core dataset on &lt;em&gt;Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama&lt;/em&gt; was made of properties, people and companies that represented a complicated real world network. This network had certain features that were of interest to our researchers. For example, we wanted to know which people directed the most property-purchasing companies and who else the companies were connected to.&lt;/p&gt;
+
+&lt;p&gt;In order to find this out and explore the connections in our data we used a database tool called &lt;a href=&quot;https://neo4j.com/&quot;&gt;Neo4J&lt;/a&gt; and an exploration technology, &lt;a href=&quot;https://linkurio.us/&quot;&gt;Linkurious&lt;/a&gt;. This tool stack was also used by the International Consortium of Investigative Journalists to interrogate the data contained within both the Panama and Paradise Papers and now powers their &lt;a href=&quot;https://offshoreleaks.icij.org/&quot;&gt;Offshore Leaks site&lt;/a&gt;. While the dataset for &lt;em&gt;Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama&lt;/em&gt; was much smaller than either of these gigantic leaks, these tools helped us to do three things.&lt;/p&gt;
+
+&lt;p&gt;First, it enabled us to quantify and see how individuals of interest, such as Alexandre Ventura Nogueira, were connected to companies apparently used to purchase properties at the Trump Ocean Club, Panama:. Second, it allowed us to gain a different perspective on our data. Data visualisation has long been understood in statistics as not simply about generating pretty insights, but also integral to the process of data exploration (for those who haven’t seen it, &lt;a href=&quot;https://en.wikipedia.org/wiki/Anscombe%27s_quartet&quot;&gt;Anscombe’s quartet&lt;/a&gt; is a wonderful illustration of this). Third, it allowed us to provide an interactive snapshot of some limited portions of our data when we published the report online:&lt;/p&gt;
+
+&lt;iframe src=&quot;https://linkurious.globalwitness.org/widget/8bb8e819&quot; width=&quot;100%&quot; height=&quot;370&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;The interactive above illustrates the networks we found using OpenCorporates and network analysis tool, Linkurious. It shows some of the directors, officers, agents, and subscribers of 7 Homes companies discussed in our investigation Narco-A-Lago: Money Laundering at the Trump Ocean Club, Panama. Click on the companies to find out more information about them. Company and officer data was extracted from OpenCorporates and verified in the original Panamanian company registry. Read the full report &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/narco-a-lago-panama/&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;An analysis is reproducible if you can reach the same conclusions or make the same inferences based on the same data. The importance of reproducibility to the development of modern science has been understood for at least three centuries. It is the means through which the conclusion of one person or group can be tested and interrogated by others. As more journalism becomes dependent on data sources, the tools used for doing reproducible analysis in the sciences have started to be applied to investigations. These tools help data journalists and the teams they are working with move from the raw data to their conclusions, documenting each step on the way. For those wanting a good explanation of the key components to a reproducible analysis that can be shared with others, &lt;a href=&quot;https://github.com/jtleek/datasharing&quot;&gt;see Jeff Leek&lt;/a&gt;. In &lt;em&gt;Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama&lt;/em&gt; all our analysis was written in the easy-to-learn programming language Python and stored as a reproducible script in a &lt;a href=&quot;http://jupyter.org/&quot;&gt;Jupyter Notebook&lt;/a&gt;. This had three key advantages.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;If the underlying data was changed (for instance we identified new companies that had been set up with the apparent intention of being used to purchase Trump Ocean Club properties) the analysis could be re-run at the click of a button. This saved us time and reduced the possibility of introducing error by re-doing the analysis.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Every step that we took extracting, cleaning and analysing the data was written out in plain non-technical English so that we developed a record of each assumption we made. This meant that lawyers, researchers and investigators could understand and agree on the chosen approach. Having the analysis organised and stored in this fashion is also very helpful later down the line when revisiting an analysis that was undertaken previously. Anyone who has undertaken complicated data transformation and analysis using Excel will know how easy it is to lose track of the steps taken to arrive at your final analysis.&lt;/li&gt;
+  &lt;li&gt;Jupyter Notebooks can easily be shared within a team and published online in conjunction with a story. This enables others to rerun your analysis and understand the exact steps you took to reach your conclusions. Code sharing sites like Github now render them and any visuals so that they no longer require specialist software to view. You can see our recent analysis of property owned by offshore companies in England and Wales in the form of a Jupyter Notebook &lt;a href=&quot;https://github.com/Global-Witness/overseas_companies_land_ownership/blob/master/overseas_companies_land_ownership_analysis.ipynb&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/data-journalism/2018/01/17/joining-the-dots/</link>
+        <guid isPermaLink="true">http://localhost:4000/data-journalism/2018/01/17/joining-the-dots/</guid>
+      </item>
+    
+      <item>
         <title>The 86,000 secretly owned properties in England and Wales</title>
         <description>&lt;p&gt;&lt;em&gt;This blog post was &lt;a href=&quot;https://www.globalwitness.org/en/blog/two-years-still-dark-about-86000-anonymously-owned-uk-homes/&quot;&gt;originally published on the Global Witness blog&lt;/a&gt; and was co-written with my colleague Naomi Hirst.&lt;/em&gt;&lt;/p&gt;
 
@@ -428,101 +465,6 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
         <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
         <link>http://localhost:4000/open/data/2016/02/20/gw-in-2016/</link>
         <guid isPermaLink="true">http://localhost:4000/open/data/2016/02/20/gw-in-2016/</guid>
-      </item>
-    
-      <item>
-        <title>Ingredients of an open data investigation</title>
-        <description>&lt;h3 id=&quot;background-to-investigation&quot;&gt;Background to investigation&lt;/h3&gt;
-
-&lt;p&gt;The jade industry in Burma was worth a staggering $31 billion in 2014 - equivalent to half of Burma’s official GDP. &lt;a href=&quot;https://globalwitness.org&quot;&gt;Global Witness&lt;/a&gt; undertook a &lt;a href=&quot;https://www.globalwitness.org/en-gb/campaigns/oil-gas-and-mining/myanmarjade/&quot;&gt;year-long investigation&lt;/a&gt; to tell the story of this valuable mineral and who really benefits from it. The picture that emerged was a grim one: jade is secretly controlled by Burma’s military elite and some of the generals associated with the worst abuses of junta rule. Little or no money flows to the communities who live in jade mining regions where some of Burma’s poorest and most vulnerable people live.&lt;/p&gt;
-
-&lt;p&gt;The team working on this used a variety of investigative approaches including field research, interviews and economic analysis.  One important aspect of the work was data analysis conducted using publicly available company data published by &lt;a href=&quot;https://opencorporates.com/&quot;&gt;OpenCorporates&lt;/a&gt;. By combining this data with other sources, we were able to understand the complex webs of ownership of the jade industry and which individuals and groups controlled this valuable mineral.&lt;/p&gt;
-
-&lt;p&gt;The approach could in principle be applied to many other investigations. Below is a description of the method used, so that it might give other groups seeking to undertake similar analysis using OpenCorporates a place to start.&lt;/p&gt;
-
-&lt;h3 id=&quot;data-acquisition&quot;&gt;Data acquisition&lt;/h3&gt;
-
-&lt;p&gt;The research began with a government map of jade concessions and their current license holders. As our goal was to understand who was behind these companies, we needed to get this data in a form that could be linked to a database like OpenCorporates. This needed to be (a) in a structured form that could programatically be linked to another database, and (b) in English. So the first step was to create a simple Excel spreadsheet and translate these names into English using Roman script.&lt;/p&gt;
-
-&lt;h3 id=&quot;reconciliation-with-opencorporates-api&quot;&gt;Reconciliation with OpenCorporates API&lt;/h3&gt;
-
-&lt;p&gt;Transliteration always introduces some ambiguity and there are often numerous ways to convert a specific company name from one script to another. Fortunately, OpenCorporates has a service that lets users find company names in the database that are near but not exact matches. This all happens via an &lt;a href=&quot;https://api.opencorporates.com/documentation/Open-Refine-Reconciliation-API&quot;&gt;‘endpoint’&lt;/a&gt; through which users can load the data they want to reconcile into &lt;a href=&quot;http://openrefine.org/&quot;&gt;OpenRefine&lt;/a&gt;. OpenCorporates will then return a likely set of matches against the company names you have imported. In the case of this investigation, many of the companies returned multiple matches. The mining, gems and trading arms of companies were often separated into different legal entities under the same name. Take for example, Max Burma Company: there is a &lt;a href=&quot;https://opencorporates.com/companies/mm/733-1993-1994&quot;&gt;general limited company&lt;/a&gt;, a &lt;a href=&quot;https://opencorporates.com/companies/mm/903-2007-2008&quot;&gt;gems and jewellery arm&lt;/a&gt; as well as a &lt;a href=&quot;https://opencorporates.com/companies/mm/958-2005-2006&quot;&gt;construction company&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Each set of results was checked by the team of researchers and the best matches were chosen and added to the data, now with a link to the OpenCorporates database. This was a painstaking task even with the suggestions all the automation OpenRefine supplied, there was still a lot of human judgement required.&lt;/p&gt;
-
-&lt;h3 id=&quot;extraction-of-shareholders-and-director-data&quot;&gt;Extraction of shareholders and director data&lt;/h3&gt;
-
-&lt;p&gt;Now that relationships had been established between the jade companies and the OpenCorporates database, we were in a position to extract other properties of those companies held within OpenCorporates. The properties of primary interest were shareholders and directors of those companies.&lt;/p&gt;
-
-&lt;p&gt;There are a number of ways to extract this information, one could write a script in a language like Python to programmatically query the &lt;a href=&quot;https://api.opencorporates.com/&quot;&gt;OpenCorporates API&lt;/a&gt; for instance. The method we opted for was to use the data we already had in OpenRefine and extract the new information we needed into new columns from OpenCorporates.&lt;/p&gt;
-
-&lt;h3 id=&quot;extracting-shareholder-sand-directors-from-opencorporates-using-openrefine&quot;&gt;Extracting shareholder sand directors from OpenCorporates using OpenRefine&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Load in the company names for which you want to extract shareholders and directors intro OpenRefine;&lt;/li&gt;
-  &lt;li&gt;Reconcile the names to the OpenCorporates API, you can follow the tutorial available &lt;a href=&quot;https://api.opencorporates.com/documentation/Google-Refine-Reconciliation-API&quot;&gt;here&lt;/a&gt;;&lt;/li&gt;
-  &lt;li&gt;Once you have reconciled the data and chosen the correct matches, you need to add a column to your data that contains the OpenCorporates ID. This can be achieved by clicking Edit Column &amp;gt; Add column based on this column in the Transform box type &lt;code class=&quot;highlighter-rouge&quot;&gt;cell.recon.match.id&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;You should now have a column with the OpenCorporates ID. From this you can construct a URL which returns JSON data for each company on its shareholders and directors;&lt;/li&gt;
-  &lt;li&gt;You now need to add a column in which we will get data that contains our officers and our shareholders. First, we construct a column that contains the URLs which will return this data;&lt;/li&gt;
-  &lt;li&gt;For the Burmese company registry you need to construct two different URLs. The director data is contained within the JSON you get from calling &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;http://api.opencorporates.com&quot; + cell.recon.match.id&lt;/code&gt;. The shareholder data on the other hand is contained within the JSON you get from the URL &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;http://api.opencorporates.com&quot; + cell.recon.match.id + &quot;/statements&quot;&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;We now have two nicely formatted columns containing the URLs we need. Copy and paste one of them into a browser, you should see some data about that company. If it looks messy, install a JSON viewer plug-in in your browser like &lt;a href=&quot;https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en&quot;&gt;JSONView for Chrome&lt;/a&gt;;&lt;/li&gt;
-  &lt;li&gt;Next we pull all the data returned by each of these URLs by using Refine’s fetch URL function. We can access this by going to one of our URL columns and clicking Edit columns &amp;gt; Add column by fetching URLs;&lt;/li&gt;
-  &lt;li&gt;Depending on how much data you want to extract, you may need to add an API Token to your URLs. You can request an open data API token from OpenCorporates which lets you request 10,000 URLs a day. When you fetch your URLs you can add it to you URLs by typing value &lt;code class=&quot;highlighter-rouge&quot;&gt;+ “&amp;amp;api_token=”&lt;/code&gt; in the expression box;&lt;/li&gt;
-  &lt;li&gt;OpenRefine will then work through you your URLs returning JSON formatted data in the cells in your new column. Once this process has finished you then need to parse this data and extract the relevant bits. In the case of the Burma investigation we were interested in two key pieces of data for directors - their names and their national identifier number. This is the code we used to extract this: 
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;forEach(value.parseJson()
-  .get(&quot;results&quot;).company
-  .officers,v,(v.officer.name + &quot; (&quot; + v.officer.position + &quot;)&quot; + &quot; (&quot; + v.officer.uid + &quot;)&quot;))
-  .join(&quot;:::&quot;)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;fuzzy-matching-of-directors-against-sanctions-lists&quot;&gt;Fuzzy matching of directors against sanctions lists&lt;/h3&gt;
-
-&lt;p&gt;An important part of the investigation was to understand if any of the directors of jade mining companies or their directors were under sanctions for any reason. By this time we had the names of thousands of companies, directors and shareholders. While there are various proprietary databases for checking this information like LexisNexis or WorldCheck, few of them let you programmatically search for such large numbers of names at once. We therefore opted for our own solution using existing sources of public data [1].&lt;/p&gt;
-
-&lt;p&gt;We took a number of recent sanctions lists published by the &lt;a href=&quot;http://eeas.europa.eu/cfsp/sanctions/consol-list/index_en.htm&quot;&gt;EU&lt;/a&gt;, &lt;a href=&quot;https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx&quot;&gt;US&lt;/a&gt; and &lt;a href=&quot;http://dfat.gov.au/international-relations/security/sanctions/pages/consolidated-list.aspx&quot;&gt;Australia&lt;/a&gt;. We then sought to match these names with the names of company officers and shareholders from OpenCorporates. Names are often spelt differently, so rather than looking for exact matches we used a technique called ‘fuzzy matching’.  There are a number of different ways to fuzzy match names. We opted to use a Python scripts to do this [2], but you can also try to use tools such as &lt;a href=&quot;http://www.microsoft.com/en-gb/download/details.aspx?id=15011&quot;&gt;Microsoft Excel’s Fuzzy Lookup&lt;/a&gt; addin.&lt;/p&gt;
-
-&lt;h3 id=&quot;checking-for-politically-exposed-directors-using-national-identifiers&quot;&gt;Checking for politically exposed directors using national identifiers&lt;/h3&gt;
-
-&lt;p&gt;One of the objectives of the investigation was to look at the extent to which politicians in Burma had interests in the jade industry. Making associations between political figures via name alone was difficult for two main reasons. First, our list of shareholders and officers was already in the hundreds and manual cross checking would be very time consuming. Second, many Burmese individuals share the same surname so a match based on name alone does not guarantee by any means that the two individuals you are looking at are the same.&lt;/p&gt;
-
-&lt;p&gt;This is where the national identifiers published first by &lt;a href=&quot;http://dica.gov.mm.x-aas.net/&quot;&gt;DICA&lt;/a&gt;, the Burmese company registry, and re-published by OpenCorporates were so useful. We were able to build up our own lists of Burmese PEPs (“Politically Exposed People”) using national identifiers of political candidates published in Burmese newspapers and available online. Historical copies of the newspaper the New Light of Burma Times (for example this issue &lt;a href=&quot;https://www.globalwitness.org/en-gb/campaigns/oil-gas-and-mining/myanmarjade/&quot;&gt;published on 13 Nov 2010&lt;/a&gt;) proved particularly useful&lt;/p&gt;
-
-&lt;p&gt;Again, we used “fuzzy” rather than exact matching. We looked for national identifiers that were the same but with one or two characters difference. We were able to catch those individuals where ID numbers had been put in incorrectly through clerical error, and, more interestingly, associate them with members of their family that had successive ID numbers. On one occasion the spouse of a Burmese politician who had the national identifier after her husband (presumably they had registered together).&lt;/p&gt;
-
-&lt;h3 id=&quot;lessons-learned&quot;&gt;Lessons learned&lt;/h3&gt;
-
-&lt;p&gt;The methodology above provided us with a number of connections between jade companies and the Burmese military that were later incorporated into the &lt;a href=&quot;https://www.globalwitness.org/en-gb/campaigns/oil-gas-and-mining/myanmarjade/&quot;&gt;final report&lt;/a&gt; published in November 2015.&lt;/p&gt;
-
-&lt;p&gt;There are some key lessons that we have taken from this approach:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Open source tools are key for public integrity journalism&lt;/em&gt; - We could not have cleaned and processed the data without tools like OpenRefine that supply simple graphical interfaces, power and flexibility in a way that is affordable to those working in the not-for-profit sector.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Unique identifiers are essential&lt;/em&gt;- We would not have been able to conclusively connect members of the military elite to the jade industry without the national identifier numbers.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;OpenCorporates supports powerful workflows not available for common proprietary databases&lt;/em&gt; - While databases like Orbis may have more complete information they do not support the bulk data operations and flexible workflows required for this investigation. The OpenCorporates API proved invaluable at every step from reconciling the company names to harvesting director data in bulk. [3]&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;*The importance of scraped data *- At the time of undertaking the investigation the original source of the company data (&lt;a href=&quot;http://dica.gov.mm.x-aas.net/&quot;&gt;DICA&lt;/a&gt;) was not available. This is where OpenCorporates again proved its value with its vast archive of scraped data preserving access public interest data even when the original publishers have taken it down. [3]&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Data journalism projects requires dedication (and perspiration!)&lt;/em&gt; - Even with all the powerful computational tools we had at our disposal, there was still a huge amount of manual data cleaning and reviewing required to get reliable results.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;[1] Friedrich Lindenberg has made the first baby steps towards pulling together an open source PEP list that may be useful for those undertaking similar cross-checking exercises: &lt;a href=&quot;http://pudo.org/material/opennames/&quot;&gt;http://pudo.org/material/opennames/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;[2] Our Python approach to fuzzy matching used a method to this &lt;a href=&quot;http://blog.yhat.com/posts/fuzzy-matching-with-yhat.html&quot;&gt;http://blog.yhat.com/posts/fuzzy-matching-with-yhat.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;[3] The team at OpenCorporates explore these issues more fully in their white paper on the subject, &lt;a href=&quot;https://medium.com/@opencorporates/how-open-company-data-was-used-to-uncover-the-powerful-elite-benefiting-from-myanmar-s-multi-1ef35f88d6bd#.ygcs3g3i9&quot;&gt;“How open company data was used to uncover the powerful elite benefiting from Burma’s multi-billion dollar jade industry”&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/investigations/2016/02/15/opencorproates-jade-investigation/</link>
-        <guid isPermaLink="true">http://localhost:4000/investigations/2016/02/15/opencorproates-jade-investigation/</guid>
       </item>
     
   </channel>

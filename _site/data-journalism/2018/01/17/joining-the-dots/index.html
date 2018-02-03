@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joining the dots - From property deals at the Trump Ocean Club, Panama to Latin American drug cartels, how we're using new technology to expose corrupt networks &#8211; Noelmas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The data journalism behind Narco-A-Lago - Money Laundering at the Trump Ocean Club, Panama">
+    <meta name="author" content="Sam Leon">
+    <meta name="keywords" content="data-journalism">
+    <link rel="canonical" href="http://localhost:4000/data-journalism/2018/01/17/joining-the-dots/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Joining the dots - From property deals at the Trump Ocean Club, Panama to Latin American drug cartels, how we're using new technology to expose corrupt networks">
+    <meta property="og:description" content="Simple data hackery and reflections on tech for public integrity journalism.">
+    <meta property="og:url" content="http://localhost:4000/data-journalism/2018/01/17/joining-the-dots/">
+    <meta property="og:site_name" content="Noelmas">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://localhost:4000">Noelmas</a>
+      <nav class="site-nav right">
+        <a href="/music/">Music</a>
+<a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="left">
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/noeL_maS"></a>
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:sam.ed.leon@gmail.com"></a>
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Joining the dots - From property deals at the Trump Ocean Club, Panama to Latin American drug cartels, how we're using new technology to expose corrupt networks</h1>
+  <span class="post-meta">Jan 17, 2018</span><br>
+  
+  <span class="post-meta small">6 minute read</span>
+</div>
+
+<article class="post-content">
+  <p>In October Global Witness’ investigation <a href="https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/narco-a-lago-panama/"><em>Narco-A-Lago: Money Laundering at the Trump Ocean Club, Panama</em></a> exposed how profits from Colombian cartels were trafficked through the purchase of real estate units at a Panama property development which Donald Trump made millions selling his name to. The investigation was based on months of research, interviews and in-depth data work on public sources including the Panamanian Company Registry, the Panamanian Land Registry and OpenCorporates.com.</p>
+
+<p>This blog post describes in broad brush strokes some of the steps we took in the data research for <em>Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama</em>. It outlines how we built programmes that took raw data from OpenCorporates.com and turned it into something that the broader investigative team could visually explore, verify and then incorporate into their final story. The scripts could be re-run quickly whenever the underlying data was changed, for example, when new companies of interest were identified as having been involved in purchasing property. The approaches outlined here are becoming increasingly central to how organisations like ours collaborate around digital sources and data to expose corruption more effectively in the digital age.</p>
+
+<h3 id="automating-searches-for-relevant-companies-using-opencorporates">Automating searches for relevant companies using OpenCorporates</h3>
+
+<p>By using scripts that automatically queried OpenCorporates we were able to incorporate much larger sets of information in our research than would be allowed by manual extraction. OpenCorporates is the world’s largest open database of company information; it contains the records on over 138 million companies registered in a huge range of jurisdictions. As well as offering web-based search it also offers a number of tools to data journalists via its <a href="https://api.opencorporates.com/">Application Programming Interface (API)</a> to help them find, extract and connect large numbers of companies in automated workflows. In some cases this can substantially reduce the amount of time required to do investigative tasks. For instance, extracting all the companies a given individual is a director of can be automated via writing a simple computer script. In the case of <em>Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama</em> we used this to identify companies that had been created apparently in order to purchase properties at Trump Ocean Club.</p>
+
+<h3 id="using-network-analysis-tools---neo4j-and-linkurious---to-reveal-patterns-in-the-data">Using network analysis tools - Neo4J and Linkurious - to reveal patterns in the data</h3>
+
+<p>We used a visualisation tool called Linkurious that enables us to share and spot patterns that would otherwise be difficult to detect if just looking at tables and statistics. As is the case in many Global Witness investigations, our core dataset on <em>Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama</em> was made of properties, people and companies that represented a complicated real world network. This network had certain features that were of interest to our researchers. For example, we wanted to know which people directed the most property-purchasing companies and who else the companies were connected to.</p>
+
+<p>In order to find this out and explore the connections in our data we used a database tool called <a href="https://neo4j.com/">Neo4J</a> and an exploration technology, <a href="https://linkurio.us/">Linkurious</a>. This tool stack was also used by the International Consortium of Investigative Journalists to interrogate the data contained within both the Panama and Paradise Papers and now powers their <a href="https://offshoreleaks.icij.org/">Offshore Leaks site</a>. While the dataset for <em>Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama</em> was much smaller than either of these gigantic leaks, these tools helped us to do three things.</p>
+
+<p>First, it enabled us to quantify and see how individuals of interest, such as Alexandre Ventura Nogueira, were connected to companies apparently used to purchase properties at the Trump Ocean Club, Panama:. Second, it allowed us to gain a different perspective on our data. Data visualisation has long been understood in statistics as not simply about generating pretty insights, but also integral to the process of data exploration (for those who haven’t seen it, <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe’s quartet</a> is a wonderful illustration of this). Third, it allowed us to provide an interactive snapshot of some limited portions of our data when we published the report online:</p>
+
+<iframe src="https://linkurious.globalwitness.org/widget/8bb8e819" width="100%" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<p><em>The interactive above illustrates the networks we found using OpenCorporates and network analysis tool, Linkurious. It shows some of the directors, officers, agents, and subscribers of 7 Homes companies discussed in our investigation Narco-A-Lago: Money Laundering at the Trump Ocean Club, Panama. Click on the companies to find out more information about them. Company and officer data was extracted from OpenCorporates and verified in the original Panamanian company registry. Read the full report <a href="https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/narco-a-lago-panama/">here</a>.</em></p>
+
+<p>An analysis is reproducible if you can reach the same conclusions or make the same inferences based on the same data. The importance of reproducibility to the development of modern science has been understood for at least three centuries. It is the means through which the conclusion of one person or group can be tested and interrogated by others. As more journalism becomes dependent on data sources, the tools used for doing reproducible analysis in the sciences have started to be applied to investigations. These tools help data journalists and the teams they are working with move from the raw data to their conclusions, documenting each step on the way. For those wanting a good explanation of the key components to a reproducible analysis that can be shared with others, <a href="https://github.com/jtleek/datasharing">see Jeff Leek</a>. In <em>Narco-A-Lago: Money Laundering at the Trump Ocean Club Panama</em> all our analysis was written in the easy-to-learn programming language Python and stored as a reproducible script in a <a href="http://jupyter.org/">Jupyter Notebook</a>. This had three key advantages.</p>
+
+<ul>
+  <li>
+    <p>If the underlying data was changed (for instance we identified new companies that had been set up with the apparent intention of being used to purchase Trump Ocean Club properties) the analysis could be re-run at the click of a button. This saved us time and reduced the possibility of introducing error by re-doing the analysis.</p>
+  </li>
+  <li>Every step that we took extracting, cleaning and analysing the data was written out in plain non-technical English so that we developed a record of each assumption we made. This meant that lawyers, researchers and investigators could understand and agree on the chosen approach. Having the analysis organised and stored in this fashion is also very helpful later down the line when revisiting an analysis that was undertaken previously. Anyone who has undertaken complicated data transformation and analysis using Excel will know how easy it is to lose track of the steps taken to arrive at your final analysis.</li>
+  <li>Jupyter Notebooks can easily be shared within a team and published online in conjunction with a story. This enables others to rerun your analysis and understand the exact steps you took to reach your conclusions. Code sharing sites like Github now render them and any visuals so that they no longer require specialist software to view. You can see our recent analysis of property owned by offshore companies in England and Wales in the form of a Jupyter Notebook <a href="https://github.com/Global-Witness/overseas_companies_land_ownership/blob/master/overseas_companies_land_ownership_analysis.ipynb">here</a></li>
+</ul>
+
+</article>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Blog by <a href="https://twitter.com/noel_mas">@Noel_Mas</a> powered by <a href="https://github.com/johnotander/pixyll">Pixyll</a> Jekyll theme.<br>
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" 				src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" />
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57586437-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
