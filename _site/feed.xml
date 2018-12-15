@@ -7,6 +7,317 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Accounting for methods in data journalism - spreadsheets, scripts and programming notebooks</title>
+        <description>&lt;p&gt;&lt;em&gt;This chapter is part of the second Data Jouranlism Handbook edited by Jonathan Gray and Liliana Bounegru. The oroginal chapter and rest of the Handbook can be found  &lt;a href=&quot;https://datajournalismhandbook.org/handbook/two/working-with-data/accounting-for-methods-in-data-journalism-spreadsheets-scripts-and-programming-notebooks&quot;&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;With the rise of data journalism, ideas around what can be considered a journalistic source are changing. Sources come in many forms now: public datasets, leaked troves of emails, scanned documents, satellite imagery and sensor data. In tandem with this, new methods for finding stories in these sources are emerging. Machine learning, text analysis and some of the other techniques explored elsewhere in this book are increasingly being deployed in the service of the scoop.&lt;/p&gt;
+
+&lt;p&gt;But data, despite its aura of hard objective truth, can be distorted and mis-represented. There are many ways in which data journalists can introduce error into their interpretation of a dataset and publish a misleading story. There could be issues at the point of data collection which prevent general inferences being made to a broader population. This could, for instance, be a result of a self-selection bias in the way a sample was chosen, something that has become a common problem in the age of internet polls and surveys. Errors can also be introduced at the data processing stage. Data processing or cleaning, can involve geocoding, correcting misspelled names, harmonising categories or excluding certain data points altogether if, for instance, they are considered statistical outliers. A good example of this kind of error at work is the inaccurate geocoding of IP addresses in a widely reported study that purported to show a correlation between political persuasion and consumption of porn&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Then of course we have the meat of the data journalist’s work, analysis. Any number of statistical fallacies may affect this portion of the work such as mistaking correlation with causation or choosing an inappropriate statistic to summarise the dataset in question.&lt;/p&gt;
+
+&lt;p&gt;Given the ways in which collection, treatment and analysis of data can change a narrative - how does the data journalist reassure the reader that the sources they have used are reliable and that the work done to derive their conclusions is sound?&lt;/p&gt;
+
+&lt;p&gt;In the case that the data journalist is simply reporting the data or research findings of a third-party, they need not deviate from traditional editorial standards adopted by many major news outlets. A reference to the institution that collected and analysed the data is generally sufficient. For example, a recent Financial Times chart on life expectancy in the UK is accompanied by a note which says: “Source: Club Vita calculations based on EuroStat data”. In principle, the reader can then make an assessment of the credibility of the institution quoted. While a responsible journalist will only report studies they believe to be reliable, the third-party institution is largely responsible for accounting for the methods through which it arrived at its conclusions. In an academic context, this will likely include processes of peer review and in the case of scientific publishing it will invariably include some level of methodological transparency.&lt;/p&gt;
+
+&lt;p&gt;In the increasingly common case where the journalistic organisation produces the data-driven research, then they themselves are accountable to the reader for the reliability of the results they are reporting. Journalists have responded to the challenge of accounting for their methods in different ways. One common approach is to give a description of the general methodology used to arrive at the conclusions within a story. These descriptions should be framed as far as possible in plain, non-technical language so as to be comprehensible to the widest possible audience. A good example of this approach taken by the Guardian and Global Witness in explaining how they count deaths of environmental activists for their &lt;em&gt;Environmental Defenders series&lt;/em&gt;.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;But – as with all ways of accounting for social life – written accounts have their limits. The most significant issue with them is that they generally do not specify the exact procedures used to produce the analysis or prepare the data. This makes it difficult, or in some cases impossible, to exactly reproduce steps taken by the reporters to reach their conclusions. In other words, a written account is generally not a reproducible one. In the example above, where the data acquisition, processing and analysis steps are relatively straightforward, there may be no additional value in going beyond a general written description. However, when more complicated techniques are employed there may be a strong case for employing reproducible approaches.&lt;/p&gt;
+
+&lt;h1 id=&quot;reproducible-data-journalism&quot;&gt;Reproducible data journalism&lt;/h1&gt;
+
+&lt;p&gt;Reproducibility is widely regarded as a pillar of the modern scientific method. It aids in the process of corroborating results and to help identify and address problematic findings or questionable theories. In principle, the same mechanisms can help to weed out erroneous or misleading uses of data in the journalistic context.&lt;/p&gt;
+
+&lt;p&gt;A look at one of the most well-publicised methodological errors in recent academic history can be instructive. In a 2010 paper, Harvard’s Carmen Reinhart and Kenneth Rogoff purposed to have shown that average real economic growth slows (a 0.1% decline) when a country’s debt rises to more than 90% of gross domestic product (GDP).&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; This figure was then used as ammunition by politicians endorsing austerity measures.&lt;/p&gt;
+
+&lt;p&gt;As it turned out, the regression was based on an Excel error. Rather than taking the mean of a whole row of countries, Reinhart and Rogoff had made an error in their formula which meant only 15 out of the 20 countries they looked at were incorporated. Once the all the countries were considered the 0.1% “decline” became a 2.2% average increase in economic growth. The mistake was only picked up when PhD candidate Thomas Herndon and professors Michael Ash and Robert Pollin looked at the original spreadsheet that Reinhard and Rogoff had worked off. This demonstrates the importance of having not just the method written out in plain language - but also having the data and technology used for the analysis itself. But the Reinhart-Rogoff error perhaps points to something else as well - Microsoft Excel, and spreadsheet software in general, may not be the best technology for creating reproducible analysis.&lt;/p&gt;
+
+&lt;p&gt;Excel hides much of the process of working with data by design. Formulas - which do most of the analytical work in a spreadsheet - are only visible when clicking on a cell. This means that it is harder to review the actual steps taken to reaching a given conclusion. While we will never know for sure, one may imagine that had Reinhart and Rogoff’s analytical work been done in a language in which the steps had to be declared explicitly (e.g. a programming language) the error could have been spotted prior to publication.&lt;/p&gt;
+
+&lt;p&gt;Excel based workflows generally encourage the removal of the steps taken to arrive at a conclusion. Values rather than formulas are often copied across to other sheets or columns leaving the “undo” key as the only route back to how a given number was actually generated. “Undo” histories of course are generally erased when an application is closed, and are therefore not a good place for storing important methodological information.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-rise-of-the-literate-programmingenvironment-jupyter-notebooks-in-the-newsroom&quot;&gt;The rise of the literate programming environment: Jupyter notebooks in the newsroom&lt;/h1&gt;
+
+&lt;p&gt;An emerging approach to methodological transparency is to use so-called “literate programming” environments. Organisations like Buzzfeed, The New York Times and Correctiv are using them to provide human readable documents that can also be executed by a machine in order to reproduce exactly the steps taken in a given analysis.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;First articulated by Donald Knuth in the 1980s, literate programming is an approach to writing computer code where the author intersperses code with ordinary human language explaining the steps taken.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; The two main literate programming environments in use today are Jupyter Notebooks and R Markdown.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; Both produce human readable documents that mix plain English, visualisations and code in a single document that can usually be rendered in HTML and published on the web. Original data can be linked to explicitly and any other technical dependencies such as third-party libraries will be clearly identified.&lt;/p&gt;
+
+&lt;p&gt;Not only is there an emphasis on human readable explanation, the code is ordered so as to reflect human logic. Documents written in this paradigm can therefore read like a set of steps in an argument or a series of answers to a set of research questions.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style. Such an author, with thesaurus in hand, chooses the names of variables carefully and explains what each variable means. He or she strives for a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding, using a mixture of formal and informal methods that reinforce each other.”&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote7&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A good example of the form is found in Buzzfeed News’ Jupyter Notebook detailing how they analysed trends in California’s wildfires.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt; Whilst the notebook contains all the code and links to source data required to reproduce the analysis, the thrust of the document is a narrative or conversation with the source data. Explanations are set out under headings that follow a logical line of enquiry. Visualisations and charts are used to bring out key themes.&lt;/p&gt;
+
+&lt;p&gt;One aspect of the “literate” approach to programming is that the documents produced (as Jupyter Notebook or R Markdown files) may be capable of re-assuring even those readers who cannot read the code itself that the steps taken to produce the conclusions are sound. The idea is similar to Steven Shapin and Simon Schaffer’s account of “virtual witnessing” as a means of establishing matters of fact in early modern science. Using Robert Boyle’s experimental programme as an example Shapin and Schaffer set out the role that “virtual witnessing” had:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The technology of virtual witnessing involves the production in a reader’s mind of such an image of an experimental scene as obviates the necessity for either direct witness or replication. Through virtual witnessing the multiplication of witnesses could be, in principle, unlimited. It was therefore the most powerful technology for constituting matters of fact. The validation of experiments, and the crediting of their outcomes as matters of fact, necessarily entailed their realization in the laboratory of the mind and the mind’s eye. What was required was a technology of trust and assurance that the things had been done and done in the way claimed.”&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote9&quot;&gt;9&lt;/a&gt;&lt;/sup&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Documents produced by literate programming environments such as as Jupyter Notebooks - when published alongside articles - may have a similar effect in that they enable the non-programming reader to visualise the steps taken to produce the findings in a particular story. While the non-programming reader may not be able to understand or run the code itself, comments and explanations in the document may be capable of re-assuring them that appropriate steps were taken to mitigate error.&lt;/p&gt;
+
+&lt;p&gt;Take for instance a recent Buzzfeed News story on children’s home inspections in the UK.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote10&quot;&gt;10&lt;/a&gt;&lt;/sup&gt; The Jupyter Notebook has specific steps to check that data has been correctly filtered (Figure 1) providing a backstop against the types of simple but serious mistakes that caught Reinhart and Rogoff out. While the exact content of the code may not be comprehensible to the non-technical reader, the presence of these tests and backstops against error with appropriate plain English explanations may go some way to showing that the steps taken to produce the journalist’s findings were sound.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://datajournalismhandbook.org/uploads/book_two/accounting-for-methods-in-data-journalism-spreadsheets-scripts-and-programming-notebooks/Image_0.png&quot; alt=&quot;Figure 1: A cell from the Buzzfeed Jupyter notebook with a human readable explanation or comment explaining that its purpose is to check that the filtering of the raw data was performed correctly&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A cell from the Buzzfeed Jupyter notebook with a human readable explanation or comment explaining that its purpose is to check that the filtering of the raw data was performed correctly&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;more-than-just-reproducibility&quot;&gt;More than just reproducibility&lt;/h1&gt;
+
+&lt;p&gt;Using literate programming environments for data stories does not just help make them more reproducible.&lt;/p&gt;
+
+&lt;p&gt;Publishing code can aid collaboration between organisations. In 2016, Global Witness published a web scraper that extracted details on companies and their shareholders from the Papua New Guinea company register.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote11&quot;&gt;11&lt;/a&gt;&lt;/sup&gt; The initial piece of research aimed to identify the key beneficiaries of the corruption-prone trade in tropical timber which is having a devastating impact on local communities. While Global Witness had no immediate plans to re-use the scraper it developed, the underlying code was published on Github – the popular code sharing website.&lt;/p&gt;
+
+&lt;p&gt;Not long after, a community advocacy organisation, ACT NOW!, downloaded the code from the scraper, improved it and incorporated it into a their iPNG project that lets members of the public cross-check names of company shareholders and directors against other public interest sources.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote12&quot;&gt;12&lt;/a&gt;&lt;/sup&gt; The scraper is now part of the core data infrastructure of the site, retrieving data from the Papua New Guinea company registry twice a year.&lt;/p&gt;
+
+&lt;p&gt;Writing code within a literate programming environment can also help to streamline certain internal processes where others within an organisation need to understand and check an analysis prior to publication. At Global Witness, Jupyter Notebooks have been used to streamline the legal review process. As notebooks set out the steps taken to a get a certain finding in a logical order, lawyers can then make a more accurate assessment of the legal risks associated with a particular allegation.&lt;/p&gt;
+
+&lt;p&gt;In the context of investigative journalism, one area where this can be particularly important is where assumptions are made around the identity of specific individuals referenced in a dataset. As part of our recent work on the state of corporate transparency in the UK, we wanted to establish which individuals controlled a very large number of companies. This is indicative (although not proof) of them being a so-called “nominee” which in certain contexts - such as when the individual is listed as Person of Significant Control (PSC) - is illegal. When publishing the list of names of those individuals who controlled the most companies, the legal team wanted to know how we knew a specific individual, let’s say John Barry Smith, was the same as another individual named John B. Smith.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote13&quot;&gt;13&lt;/a&gt;&lt;/sup&gt; A Jupyter Notebook was able to clearly capture how we had performed this type of deduplication by presenting a table at the relevant step that set out the features that were used to assert the identity of individuals (see below).&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote14&quot;&gt;14&lt;/a&gt;&lt;/sup&gt; These same processes have been used at Global Witness for fact checking purposes as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://datajournalismhandbook.org/uploads/book_two/accounting-for-methods-in-data-journalism-spreadsheets-scripts-and-programming-notebooks/Image_1.png&quot; alt=&quot;Figure 2: A section of the Global Witness Jupyter notebook which constructs a table of individuals and accompanying counts based on them having the same first name, surname, month and year of birth and postcode.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A section of the Global Witness Jupyter notebook which constructs a table of individuals and accompanying counts based on them having the same first name, surname, month and year of birth and postcode.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Jupyter Notebooks have also proven particularly useful at Global Witness when there is need to monitor a specific dataset over time. For instance, in 2018 Global Witness wanted to establish how the corruption risk in the London property market had changed over a two year period.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote15&quot;&gt;15&lt;/a&gt;&lt;/sup&gt; They acquired a new snapshot of from the land registry of properties owned by foreign companies and re-used and published a notebook we had developed for the same purpose two years previously (Figure 2).&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote16&quot;&gt;16&lt;/a&gt;&lt;/sup&gt; This yielded comparable results with minimal overhead. The notebook has an additional advantage in this context too: it allowed Global Witness to show its methodology in the absence of being able to re-publish the underlying source data which, at the time of analysis, had certain licensing restrictions. This is something very difficult to do in a spreadsheet-based workflow. Of course, the most effective way of accounting for your method will always be to publish the raw data used. However, journalists often use data that cannot be re-published for reasons of copyright, privacy or source protection.&lt;/p&gt;
+
+&lt;p&gt;While literate programming environments can clearly enhance the accountability and reproducibility of a journalist’s data work, alongside other benefits, there are some important limitations.&lt;/p&gt;
+
+&lt;p&gt;One such limitation is that to re-produce (rather than just follow or “virtually witness”) an approach set out in a Jupyter Notebook or R Markdown document you need to know how to write, or at least run, code. The relatively nascent state of data journalism means that there is still a fairly small group of journalists, let alone general consumers of journalism, who can code. This means that it is unlikely that the Github repositories of newspapers will receive the same level of scrutiny as say peer reviewed code referenced in an academic journal where larger portions of the community can actually interrogate the code itself. Data journalism may therefore be more prone to hidden errors in code itself when compared to research with a more technically literate audience. As Jeff Harris points out, it probably won’t be long before we see programming corrections published by media outlets in much the same way as traditional that factual errors are published.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote17&quot;&gt;17&lt;/a&gt;&lt;/sup&gt; It is worth noting in this context that tools like Workbench (which is also mentioned in Jonathan Stray’s chapter in this book) are starting to be developed for journalists, which promise to deliver some of the functionality of literate programming environments without the need to write or understand any code&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote18&quot;&gt;18&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;At this point it is also worth considering whether the new mechanisms for accountability in journalism may not just be new means through which a pre-existing “public” can scrutinise methods, but indeed play a role in the formation of new types of “publics”. This is a point made by Andrew Barry in his essay, &lt;em&gt;Transparency as a political device&lt;/em&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Transparency implies not just the publication of specific information; it also implies the formation of a society that is in a position to recognize and assess the value of – and if necessary to modify – the information that is made public. The operation of transparency is addressed to local witnesses, yet these witnesses are expected to be properly assembled, and their presence validated. There is thus a circular relation between the constitution of political assemblies and accounts of the oil economy – one brings the other into being. Transparency is not just intended to make information public, but to form a public which is interested in being informed”&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote19&quot;&gt;19&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The methods elaborated on above for accounting for data journalistic working in themselves may play a role in the emergence of new groups of more technically aware publics that wish to scrutinise and hold reporters to account in ways not previously possible before the advent and use of technologies like literate programming environments in the journalistic context.&lt;/p&gt;
+
+&lt;p&gt;This idea speaks to some of Global Witness’s work on data literacy in order to enhance the accountability of the extractives sector. Landmark legislation in the European Union that forces extractives companies to publish project-level payments to governments for oil, gas and mining projects, an area highly vulnerable to corruption, has opened the possibility for far greater scrutiny of where these revenues actually accumulate. However, Global Witness, and other advocacy groups within the Publish What You Pay coalition have long observed that there is no pre-existing “public” which could immediately play this role. As a result, Global Witness and others have developed resources and training programmes to assemble journalists and civil society groups in resource rich countries who can be supported in developing the skills to use this data to more readily hold companies to accounts. One component to this effort has been the development and publication of specific methodologies for red flagging suspicious payment reports that could be corrupt.&lt;sup class=&quot;footnote&quot;&gt;&lt;a href=&quot;#footnote20&quot;&gt;20&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Literate programming environments are currently a promising means through which data journalists are making their methodologies more transparent and accountable. While data will always remain open to multiple interpretations, technologies that make a reporter’s assumptions explicit and their methods reproducible are valuable. They aid collaboration and open up an increasingly technical discipline to scrutiny from various publics. Given the current crisis of trust in journalism, a wider embrace of reproducible approaches may be one important way in which data teams can maintain their credibility.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Works Cited&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jacob Harris, &lt;a href=&quot;https://source.opennews.org/articles/distrust-your-data/&quot;&gt;Distrust Your Data&lt;/a&gt;, &lt;em&gt;Source&lt;/em&gt;, 22 May 2014. Ben Leather and Billy Kyte, &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/environmental-activists/defendersmethodology/&quot;&gt;Defenders: Methodology&lt;/a&gt;, &lt;em&gt;Global Witness&lt;/em&gt;, 13 July 2017.&lt;/li&gt;
+  &lt;li&gt;Donald Knuth, &lt;a href=&quot;http://www.literateprogramming.com/knuthweb.pdf&quot;&gt;Literate Programming&lt;/a&gt;, Computer Science Department, Stanford University, Stanford, CA 94305, USA, 1984.&lt;/li&gt;
+  &lt;li&gt;Andrew Barry, ‘Transparency as a political device In: Débordements: Mélanges offerts à Michel Callon’, Paris: Presses des Mines, 2010. Carmen&lt;/li&gt;
+  &lt;li&gt;Reinhart and Kenneth S. Rogoff, &lt;a href=&quot;https://www.nber.org/papers/w15639&quot;&gt;Growth in a Time of Debt&lt;/a&gt;, &lt;em&gt;The National Bureau of Economic Research&lt;/em&gt;, December 2011.&lt;/li&gt;
+  &lt;li&gt;Donald E. Knuth, &lt;a href=&quot;https://www-cs-faculty.stanford.edu/~knuth/lp.html&quot;&gt;Literate Programming&lt;/a&gt;, Stanford, California: &lt;em&gt;Center for the Study of Language and Information&lt;/em&gt;, 1992.&lt;/li&gt;
+  &lt;li&gt;Steven Shapin and Simon Schaffer, ‘Leviathan and the Air-Pump: Hobbes, Boyle and the Experimental Life’, Princeton University Press, 1985.&lt;/li&gt;
+  &lt;li&gt;Richard Holmes and Jeremy Singer-Vine, &lt;a href=&quot;https://www.buzzfeed.com/richholmes/care-price&quot;&gt;Danger and Despair Inside Cambian Group, Britain’s Largest Private Child Care Home Provider&lt;/a&gt;, BuzzFeed News, 26 July 2018. Naomi Hirst and Sam Leon, &lt;a href=&quot;https://www.globalwitness.org/en/blog/two-years-still-dark-about-86000-anonymously-owned-uk-homes/&quot;&gt;Two Years On, We’re Still in the Dark About the UK’s 86,000 Anonymously Owned Homes&lt;/a&gt;, Global Witness, 7 December 2017.&lt;/li&gt;
+  &lt;li&gt;Jacob Harris, &lt;a href=&quot;https://source.opennews.org/articles/times-regrets-programmer-error/&quot;&gt;The Times Regrets the Programmer Error&lt;/a&gt;, Source, 19 September 2013. Global Witness, ‘&lt;u&gt;&lt;/u&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.globalwitness.org/en/campaigns/oil-gas-and-mining/finding-missing-millions/&quot;&gt;Finding the Missing Millions&lt;/a&gt;, 9 August 2018.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Footnotes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div id=&quot;footnote1&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;1&lt;/a&gt; - Harris, ‘&lt;u&gt;&lt;a href=&quot;https://source.opennews.org/articles/distrust-your-data/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Distrust Your Data&lt;/a&gt;&lt;/u&gt;’, 2014.&lt;/p&gt;
+
+&lt;div id=&quot;footnote2&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;2&lt;/a&gt; - A good example of this approach taken by the Guardian and Global Witness in explaining how they count deaths of environmental activists for their Environmental Defenders series. see Leather, ‘&lt;u&gt;&lt;a href=&quot;https://www.theguardian.com/environment/2017/jul/13/environmental-defenders-who-are-they-and-how-do-we-decide-if-they-have-died-in-defence-of-their-environment&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Environmental defenders: who are they and how do we decide if they have died in defence of their environment?&lt;/a&gt;&lt;/u&gt;’, 2017; and Leather and Kyte, ‘&lt;u&gt;&lt;a href=&quot;https://www.globalwitness.org/en/campaigns/environmental-activists/defendersmethodology/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Defenders: Methodology&lt;/a&gt;&lt;/u&gt;’, July 2017.&lt;/p&gt;
+
+&lt;div id=&quot;footnote3&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;3&lt;/a&gt; - Reinhart &amp;amp; Rogoff, ‘&lt;u&gt;&lt;a href=&quot;https://www.nber.org/papers/w15639&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Growth in a Time of Debt&lt;/a&gt;&lt;/u&gt;’, 2011.&lt;/p&gt;
+
+&lt;div id=&quot;footnote4&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;4&lt;/a&gt; - See GitHub for &lt;u&gt;&lt;a href=&quot;https://github.com/BuzzFeedNews/everything&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Buzzfeed&lt;/a&gt;&lt;/u&gt;, &lt;u&gt;&lt;a href=&quot;https://github.com/TheUpshot&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;The New York Times&lt;/a&gt;&lt;/u&gt;, &lt;u&gt;&lt;a href=&quot;https://github.com/correctiv&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Correctiv&lt;/a&gt;&lt;/u&gt;.&lt;/p&gt;
+
+&lt;div id=&quot;footnote5&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;5&lt;/a&gt; - Knuth, ‘&lt;u&gt;&lt;a href=&quot;https://www-cs-faculty.stanford.edu/~knuth/lp.html&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Literate Programming&lt;/a&gt;&lt;/u&gt;’, 1992.&lt;/p&gt;
+
+&lt;div id=&quot;footnote6&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;6&lt;/a&gt; - See &lt;u&gt;&lt;a href=&quot;http://jupyter.org/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Jupyter Notebooks&lt;/a&gt;&lt;/u&gt; and &lt;u&gt;&lt;a href=&quot;https://rmarkdown.rstudio.com/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;R Markdown&lt;/a&gt;&lt;/u&gt;&lt;/p&gt;
+
+&lt;div id=&quot;footnote7&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;7&lt;/a&gt; - Knuth, Literate Programming, 1984&lt;/p&gt;
+
+&lt;div id=&quot;footnote8&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;8&lt;/a&gt; - See &lt;u&gt;&lt;a href=&quot;https://buzzfeednews.github.io/2018-07-wildfire-trends/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Buzzfeed GitHub: Wildfire Trends&lt;/a&gt;&lt;/u&gt;.&lt;/p&gt;
+
+&lt;div id=&quot;footnote9&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;9&lt;/a&gt; - &lt;em&gt;Shaping &amp;amp; Schaffer, ‘Leviathan and The Air-Pump’,1985&lt;/em&gt;&lt;/p&gt;
+
+&lt;div id=&quot;footnote10&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;10&lt;/a&gt; - Holmes and Singer-Vine, ‘&lt;u&gt;&lt;a href=&quot;https://www.buzzfeed.com/richholmes/care-price&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Danger and despair inside cambian group&lt;/a&gt;&lt;/u&gt;’, 2018.&lt;/p&gt;
+
+&lt;div id=&quot;footnote11&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;11&lt;/a&gt; - See GitHub &lt;u&gt;&lt;a href=&quot;https://github.com/Global-Witness/papua-new-guinea-ipa&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Global Witness: Papua New Guinea IPA &lt;/a&gt;&lt;/u&gt;&lt;/p&gt;
+
+&lt;div id=&quot;footnote12&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;12&lt;/a&gt; - See &lt;u&gt;&lt;a href=&quot;https://pngiportal.org/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;iPNG project&lt;/a&gt;&lt;/u&gt;&amp;lt;/li&amp;gt;&lt;/p&gt;
+
+&lt;div id=&quot;footnote13&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;13&lt;/a&gt; - Global Witness, ‘&lt;u&gt;&lt;a href=&quot;https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/anonymous-company-owners/companies-we-keep/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;The Companies We Keep&lt;/a&gt;&lt;/u&gt;’, 2018.&lt;/p&gt;
+
+&lt;div id=&quot;footnote14&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;14&lt;/a&gt; - See GitHub &lt;u&gt;&lt;a href=&quot;https://github.com/Global-Witness/the-companies-we-keep/blob/master/companies_we_keep_analysis.ipynb&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Global Witness: The companies We Keep&lt;/a&gt;&lt;/u&gt;.&lt;/p&gt;
+
+&lt;div id=&quot;footnote15&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;15&lt;/a&gt; - Hirst and Leon, ‘&lt;u&gt;&lt;a href=&quot;https://www.globalwitness.org/en/blog/two-years-still-dark-about-86000-anonymously-owned-uk-homes/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;We’re still in the Dark about UK’s 86,000 Anonymously Owned Homes&lt;/a&gt;&lt;/u&gt;’, 2017.&lt;/p&gt;
+
+&lt;div id=&quot;footnote16&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;16&lt;/a&gt; - See GitHub &lt;u&gt;&lt;a href=&quot;https://github.com/Global-Witness/overseas-companies-land-ownership/blob/master/overseas_companies_land_ownership_analysis.ipynb&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Global Witness: Overseas Companies Land Ownership&lt;/a&gt;&lt;/u&gt;.&lt;/p&gt;
+
+&lt;div id=&quot;footnote17&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;17&lt;/a&gt; - Harris, ‘&lt;u&gt;&lt;a href=&quot;https://source.opennews.org/articles/times-regrets-programmer-error/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;The Times Regret the Programmer Error&lt;/a&gt;&lt;/u&gt;’, 2013.&lt;/p&gt;
+
+&lt;div id=&quot;footnote18&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;18&lt;/a&gt; - See &lt;u&gt;&lt;a href=&quot;http://workbenchdata.com/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Workbench&lt;/a&gt;&lt;/u&gt;.&lt;/p&gt;
+
+&lt;div id=&quot;footnote19&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;19&lt;/a&gt; - Barry, ‘Transparency as a Political Device’, 2010&lt;/p&gt;
+
+&lt;div id=&quot;footnote20&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;footnoteAnchor&quot;&gt;20&lt;/a&gt; - For an example of this type of material see Global Witness’s ‘&lt;u&gt;&lt;a href=&quot;https://www.globalwitness.org/en/campaigns/oil-gas-and-mining/finding-missing-millions/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;Finding the Missing Millions&lt;/a&gt;&lt;/u&gt;’ handbook.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/data-journalism/2018/12/07/ddj-beta/</link>
+        <guid isPermaLink="true">http://localhost:4000/data-journalism/2018/12/07/ddj-beta/</guid>
+      </item>
+    
+      <item>
+        <title>How can we use artificial intelligience to help us fight corruption in the mining sector?</title>
+        <description>&lt;p&gt;Minerals underpin our daily lives, from the cars and smartphones that we use to the infrastructure and architecture that surrounds us. They have driven the economic development of many countries and could drive that of many more. Yet, often mined and traded in insecure, poverty-stricken and unregulated areas, they may instead enrich an unscrupulous few.&lt;/p&gt;
+
+&lt;p&gt;Getting access to reliable data on mineral extraction and trade is challenging. This can be down to issues of physical access (for example in &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/myanmar/&quot;&gt;Myanmar&lt;/a&gt; or &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/democratic-republic-congo/&quot;&gt;DRC&lt;/a&gt;), an unwillingness on the part of companies and governments to be more transparent or a lack of technical capacity of providers. This lack of information makes investigating business practices and exposing wrongdoing more difficult.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-importance-of-satellite-imagery&quot;&gt;The importance of satellite imagery&lt;/h2&gt;
+
+&lt;p&gt;This is where satellite imagery comes in. Data generated from satellites, and, in some cases drones, could provide citizens, researchers and journalists unprecedented access to surface markers of mining activity. This data could be used to verify official statistics and flag discrepancies, or as &lt;a href=&quot;https://en.wikipedia.org/wiki/Proxy_(statistics)&quot;&gt;proxies&lt;/a&gt; where no other statistics exist, and thus be an important tool for holding the mining sector to account&lt;/p&gt;
+
+&lt;p&gt;If used responsibly, companies could also employ satellite imagery to help identify risks in their supply chains (such as discrepancies between the location of mines and export statistics to look out for cross-border smuggling) and governments to monitor otherwise hard to access regions.&lt;/p&gt;
+
+&lt;p&gt;Here at Global Witness we’ve manually reviewed high-resolution satellite imagery to get the investigative insights we need, for example when looking at &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/afghanistan/talc-everyday-mineral-funding-afghan-insurgents/&quot;&gt;ISIS talc mining in Afghanistan&lt;/a&gt; and logging in &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/forests/stained-trade/&quot;&gt;Papua New Guinea&lt;/a&gt;. But this often requires advance knowledge of what you are looking for and, perhaps more importantly, a lot of time – practical when the area is small, but less so over a larger region.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-role-of-artificial-intelligence&quot;&gt;The role of artificial intelligence&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://site-media.globalwitness.org/images/Picture1_oiXXjRq.width-600.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Eastern DRC’s dense forests and tropical cloud cover could have hampered the resolution of the Landsat satellite imagery. Cloudy Landsat 8 satellite image overlaid on a high resolution map. Paradiso Mine (an artisanal gold mining site), Ituri Province.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Developments in artificial intelligence and machine learning may provide a solution to the challenges of using satellite imagery. Computer algorithms can now be trained to look for specific markers in images that are either too subtle for a human to identify or would take too long for them to see.&lt;/p&gt;
+
+&lt;p&gt;In other domains, these approaches are already improving our lives. Scientists have developed programmes that are &lt;a href=&quot;https://www.ft.com/content/84fcc16c-0787-11e8-9650-9c0ad2d7c5b5&quot;&gt;better at detecting disease in retinal scans than doctors&lt;/a&gt;, and publicly available satellite imagery is already being used by environmental watchdogs to &lt;a href=&quot;https://glad.umd.edu/projects/global-forest-watch&quot;&gt;detect and estimate forest cover loss&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Last year Global Witness joined &lt;a href=&quot;http://www.datakind.org/&quot;&gt;DataKind&lt;/a&gt; and &lt;a href=&quot;https://resourcegovernance.org/&quot;&gt;NRGI&lt;/a&gt; to explore the feasibility of using satellite imagery and artificial intelligence to automatically detect certain types of mining activity across a large area. To our knowledge this kind of project has never successfully been done before.&lt;/p&gt;
+
+&lt;p&gt;We set out to build a computer programme capable of automatically identifying the location of mines using satellite imagery. For this first attempt, we focussed on small-scale mining in eastern Democratic Republic of Congo – for two reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Small mines are harder to find than larger industrial ones, which have more obvious and extensive markers. If we could do it with small mines, we knew we could also easily use the model/data to identify larger ones.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We had “training data” readily available for this region and type of mine.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;training-the-model&quot;&gt;Training the model&lt;/h2&gt;
+
+&lt;p&gt;In order to build the model we used a technique called machine learning. Machine learning is a branch of artificial intelligence and has a variety of applications in everyday life, from Google Translate to email spam filtering. In statistical terms, we were seeking to predict the location of mine sites. This meant assigning a probability that a given pixel of a piece of satellite imagery was in fact part of a mine.&lt;/p&gt;
+
+&lt;p&gt;The first thing we needed was satellite imagery and lots of it. We needed it to be quickly accessible to the software we were going to build and we needed it to be free. Amazingly, a service called &lt;a href=&quot;https://earthengine.google.com/&quot;&gt;Google Earth Engine&lt;/a&gt; now makes historical data from the Landsat satellite available in the cloud for just this purpose. The Landsat passes over the same places on Earth every sixteen days. It’s an extraordinarily powerful tool allowing you to analyse dynamic changes in the landscape and environment that could be indicative of mining.&lt;/p&gt;
+
+&lt;p&gt;Second, we needed a “training” dataset with the real location of some known artisanal mines. The algorithm could then “learn” what a mine pixel looks like and more accurately predict where other mines exist. Finding a training dataset of artisanal mines in eastern DRC could have been tough, but we were lucky to have access to data collected by the &lt;a href=&quot;http://ipisresearch.be/&quot;&gt;International Peace Information Service (IPIS)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our team of volunteer data scientists then built an application to outline each of the mines identified by IPIS, effectively drawing shapes around their boundaries (see below image).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://site-media.globalwitness.org/images/image8.width-600.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A screenshot of outlines of the manually drawn IPIS mine sites that were used to train the model&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;These shapes – which represented known mine sites – could then be fed into our machine learning algorithm to train the model. The volunteers found that so-called &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_forest&quot;&gt;“random forest” algorithms&lt;/a&gt; (nothing to do with actual forests!) were the most effective at predicting mine sites.&lt;/p&gt;
+
+&lt;p&gt;The model’s effectiveness was evaluated by seeing how many of the known (but “unseen”) mine sites from the IPIS dataset it was capable of accurately identifying whilst only being trained on a partial portion of the data. The idea being that the better it could identify these mine sites, the better it would be able to identify entirely new or previously unidentified mine sites.&lt;/p&gt;
+
+&lt;p&gt;The results were promising. The best model could identify 79.7% of the known mines. The downside – and where more work is required – is that the model had a high false positive rate. This meant that it often identified pixels as mines where no mining activity was present. Of all the pixels that were not part of known mine sites, the model could only identify 48.4% of them correctly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://site-media.globalwitness.org/images/Picture1_xwfkDwP.width-600.png&quot; alt=&quot;Data pipeline&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A diagram of the data processing workflow&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h2&gt;
+
+&lt;p&gt;While the model needs some refinement, it has clearly shown that this is a fruitful avenue for further research.&lt;/p&gt;
+
+&lt;p&gt;As with all technology, it has its limitations and could be captured for private or commercial advantage, or be misused, and thus help perpetuate certain current, irresponsible trading models.&lt;/p&gt;
+
+&lt;p&gt;To mitigate these risks, we believe that open source development – the process of making computer code and its outputs freely available to all – is a critical exercise for accountability organisations like ours. It creates information infrastructures that serve the public interest and produce knowledge that can be used by everyone.&lt;/p&gt;
+
+&lt;p&gt;The alternative is that technological innovation takes place within proprietary walled gardens. Proprietary systems can reinforce the information asymmetries where certain powerful actors – whether governments, companies or individuals – supress information, which they themselves use to their advantage.&lt;/p&gt;
+
+&lt;p&gt;DataKind have open sourced all the code produced and we hope that this can kickstart innovation for social good in this area. For developers, civic hackers and academics interested in building on the model we created, the source code is available on &lt;a href=&quot;https://github.com/datakind/public-DKHQ_GlobalWitness&quot;&gt;Github here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;shout-outs&quot;&gt;Shout outs&lt;/h2&gt;
+
+&lt;p&gt;A special thanks goes to DataKind and the volunteers who worked on this project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Krishna Bhogaonker, University of California, Los Angeles&lt;/li&gt;
+  &lt;li&gt;Daniel Duckworth, Google Brain&lt;/li&gt;
+  &lt;li&gt;Junchuan Fan, University of Maryland, College Park&lt;/li&gt;
+  &lt;li&gt;Sina Kashuk, DataKind&lt;/li&gt;
+  &lt;li&gt;Ryan Vilim, Sidewalk Labs&lt;/li&gt;
+  &lt;li&gt;Katie Yoshida, Foursquare&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/data-journalism/2018/11/08/ai-and-mining/</link>
+        <guid isPermaLink="true">http://localhost:4000/data-journalism/2018/11/08/ai-and-mining/</guid>
+      </item>
+    
+      <item>
+        <title>How we mined the world's first open data register of company control</title>
+        <description>&lt;p&gt;Last week we published the findings from our in-depth analysis of the world’s first open register of who controls companies. &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/anonymous-company-owners/companies-we-keep/&quot;&gt;&lt;em&gt;The Companies We Keep&lt;/em&gt;&lt;/a&gt; shows that two-years on the UK register of beneficial owners is having an important impact. One good example of this is the drop in rate of incorporation of one of the UK’s most widely abused corporate entities for money laundering, Scottish Limited Partnerships (SLPs). SLPs have been implicated in numerous money laundering scandals, and following their inclusion in the beneficial ownership regime in 2017, their rate of incorporation plummeted (see chart below).&lt;/p&gt;
+
+&lt;iframe id=&quot;datawrapper-chart-a4Ok1&quot; src=&quot;//datawrapper.dwcdn.net/a4Ok1/3/&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; style=&quot;width: 0; min-width: 100% !important;&quot; height=&quot;472&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;However, our analysis also revealed that serious loopholes remain in the register and that could be exploited by individuals intent on keeping their association with companies hidden. The government and Companies House urgently need to address these issues if the register is to fulfill its potential. See more of our recommendations &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/anonymous-company-owners/companies-we-keep/#chapter-4/section-0&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New data, new challenges, new ways of working&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This project was a first for Global Witness. We collaborated with volunteer data scientists from &lt;a href=&quot;https://www.datakind.org/chapters/datakind-uk&quot;&gt;DataKind UK&lt;/a&gt; who helped us mine the register and find answers to key investigative and research questions. We took these insights to Companies House and used them to make the case for what needed to be improved for the register to fulfill its potential. This collaborative approach was really effective, and Companies House has already implemented some of our earlier recommendations and is now considering ways to implement the red flagging systems we developed. It is fitting recognition of the brilliant work of the team of volunteers that the project is also now a finalist for the 2018 &lt;a href=&quot;https://www.datsciawards.ie/awards/best-data-science-social-impact/&quot;&gt;DatSci Social Impact award&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There were three challenges we faced when we confronted the project: scale, reproducibility and the networked nature of the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A lot of data, not enough memory&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;First, the data was very large. With over 10 million records on companies, officers and beneficial owners, it far exceeded what a normal laptop can handle. We needed to use powerful cloud-based computers in order to store, clean and analyse the data. There is a mind-boggling array of relatively low cost options for cloud computing today. We chose to use a virtual machine on Amazon Web Services (AWS) with 122 GB of memory. This is is about 30 times more powerful than the average laptop with 4GB of RAM. These servers cost about $1 an hour to run on a pay-as-you-go basis. We would start them when performing computationally expensive tasks where we were required to handle all the data at once in memory and then just stop them at the end of the day.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Second, we wanted to share our working with Companies House and other anti-corruption watchdogs keen who were also keen to monitor the data. We did this by &lt;a href=&quot;https://github.com/Global-Witness/the-companies-we-keep&quot;&gt;publishing all the code we wrote&lt;/a&gt; to extract, process, clean and analyse the various datasets we used. This would enable anyone else to reproduce our working and build on top of it. If you’re interested in doing this, please fork &lt;a href=&quot;https://github.com/Global-Witness/the-companies-we-keep&quot;&gt;our code&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Having our analysis as reproducible computer scripts also has the advantage that we can re-run our analysis and monitor the data at a later date and compare our results. This will be an important way through which we can understand if some of the issues we identified get resolved.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Everything is a network&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;float: right;&quot; src=&quot;https://site-media.globalwitness.org/images/Untitled-1.width-500.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Third, we wanted not just to count records of specific types, but identify patterns. For instance, we wanted to be able to identify which companies controlled themselves via other companies or which companies were part of very complicated ownership structures. We addressed this by using so-called &lt;a href=&quot;https://neo4j.com/developer/graph-db-vs-rdbms/&quot;&gt;‘graph’ database technology&lt;/a&gt;. Graph database technology helps researchers that want to understand connections in networks. We used two tools - &lt;a href=&quot;https://linkurio.us/&quot;&gt;Linkurious&lt;/a&gt; and &lt;a href=&quot;https://neo4j.com/&quot;&gt;Neo4J&lt;/a&gt; - that are becoming popular amongst tech savvy investigative journalists such as ICIJ.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How the collaboration with DataKind worked&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The first stage of collaboration with DataKind began with a two-day event in November 2016, almost six months after the launch of the UK register. The event, organised in collaboration with &lt;a href=&quot;https://opencorporates.com/&quot;&gt;OpenCorporates&lt;/a&gt;, &lt;a href=&quot;https://www.spendnetwork.com/&quot;&gt;Spend Network&lt;/a&gt; and &lt;a href=&quot;http://occrp.org/&quot;&gt;OCCRP&lt;/a&gt;, was used to develop an exploratory analysis of the register.The insights and investigative leads generated that day were passed onto Companies House, which has since made changes to the register’s nationality field and age prompts, and looked further into 2,500 companies linked to secrecy jurisdictions. In 2017, the second stage of collaboration with DataKind began, involving a dedicated team of four volunteer data scientists working alongside Global Witness and culminating in the briefing published last week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Civic tech and the importance of open source for collaboration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;At Global Witness we want to embrace the open ethos of some of the most exciting investigative journalism in the last few years. Historically journalists have not been the most collaborative types, but investigative data journalism seems to be bucking this trend. Increasing numbers of media outlets are not only publishing the data that underpins their scoops but they are also publishing the source code that can help others to check, tweak and reuse their work in new scenarios. A growing list of open journalism initiatives is &lt;a href=&quot;https://getpocket.com/a/read/2057846274&quot;&gt;curated here&lt;/a&gt; and includes contributions from the likes of &lt;a href=&quot;https://github.com/BuzzFeedNews&quot;&gt;BuzzFeed&lt;/a&gt;, &lt;a href=&quot;https://github.com/ajam&quot;&gt;AlJazeera&lt;/a&gt; and &lt;a href=&quot;https://github.com/NYTimes&quot;&gt;The New York Times&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At Global Witness we’ve seen the value of sharing the technology you build first hand. Computer programs we developed to extract data from the Papua New Guinea register have been re-used and improved as part of an ambitious transparency initiative called &lt;a href=&quot;https://pngiportal.org/&quot;&gt;PNGi&lt;/a&gt; which let’s users search and explore the connections between companies and political institutions. A similar story can be told about other open source investigative tech, such as Aleph which power &lt;a href=&quot;https://data.occrp.org/&quot;&gt;data.occrp.org&lt;/a&gt; and is also used by extractives industry watchdog group, &lt;a href=&quot;http://aleph.openoil.net/&quot;&gt;OpenOil&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Open data and the many eyes of the crowd&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As we show in &lt;em&gt;The Companies We Keep&lt;/em&gt;, it is essential that beneficial ownership data is published in an open format. While our report exposes issues with the UK’s register around verification and validation, we know that it is always riskier to lie in public than in secret. We also know that without the data being made available in an open format many of issues with the register that we identified would have remained hidden. On this project we’ve applied much the same principle to our working. We have published our source code on &lt;a href=&quot;https://github.com/Global-Witness/the-companies-we-keep&quot;&gt;Github&lt;/a&gt; for others to review and build on.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Aug 2018 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/data-journalism/2018/08/03/analysing-psc-register/</link>
+        <guid isPermaLink="true">http://localhost:4000/data-journalism/2018/08/03/analysing-psc-register/</guid>
+      </item>
+    
+      <item>
         <title>Joining the dots - From property deals at the Trump Ocean Club, Panama to Latin American drug cartels</title>
         <description>&lt;p&gt;In October Global Witness’ investigation &lt;a href=&quot;https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/narco-a-lago-panama/&quot;&gt;&lt;em&gt;Narco-A-Lago: Money Laundering at the Trump Ocean Club, Panama&lt;/em&gt;&lt;/a&gt; exposed how profits from Colombian cartels were trafficked through the purchase of real estate units at a Panama property development which Donald Trump made millions selling his name to. The investigation was based on months of research, interviews and in-depth data work on public sources including the Panamanian Company Registry, the Panamanian Land Registry and OpenCorporates.com.&lt;/p&gt;
 
@@ -149,96 +460,6 @@
       </item>
     
       <item>
-        <title>Mining the UK register of beneficial ownership</title>
-        <description>&lt;p&gt;UK companies with hidden owners lie behind some of the worst problems of our time. Amongst other things they have been used to breach UN sanctions, evade taxes and rip off ordinary citizens. That’s why Global Witness has been calling for an end to these getaway cars for crime and corruption for years (see this &lt;a href=&quot;http://ed.ted.com/lessons/how-exposing-anonymous-companies-could-cut-down-on-crime-global-witness&quot;&gt;TED-Ed animation&lt;/a&gt; for a short introduction to the issue). Now, we’re seeing the first seeds of change - in June, the &lt;a href=&quot;https://companieshouse.blog.gov.uk/2016/04/13/the-new-people-with-significant-control-register/&quot;&gt;UK government started publishing&lt;/a&gt; the world’s first open data register of the real owners and controllers of companies – known as “beneficial owners”.&lt;/p&gt;
-
-&lt;p&gt;It is a big step forward for transparency in this country, and a potential treasure trove of information - but we need to make sense of it first. Which is why we’ve collaborated with &lt;a href=&quot;http://www.datakind.org/chapters/datakind-uk&quot;&gt;DataKind UK&lt;/a&gt;, &lt;a href=&quot;https://opencorporates.com/&quot;&gt;OpenCorporates&lt;/a&gt;, &lt;a href=&quot;https://www.spendnetwork.com/&quot;&gt;Spend Network&lt;/a&gt; and &lt;a href=&quot;https://www.occrp.org/en&quot;&gt;OCCRP&lt;/a&gt;, to probe it in detail, and give feedback on how useful it is. So on a grey autumn weekend in London, we brought together thirty volunteer data scientists, including the head of software for a Formula 1 team, an astrophysicist and a former consultant to the UK tax authority.&lt;/p&gt;
-
-&lt;p&gt;We had three aims for the weekend. Firstly, we wanted to get some basic insights into this data and what it could tell us about companies in the UK. Secondly, it was important to understand the flaws and gaps in the new register. Finally, we were curious to see whether the register could yield investigative leads.&lt;/p&gt;
-
-&lt;p&gt;Here’s a snapshot of what we found:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Almost 3,000 companies listed their beneficial owner as a company with a tax haven address - something that is not allowed under the rules. There are problems with how the data has been inputted. For example, you can write anything in the nationality field and we found over 500 ways of putting “British”, including ten people who wrote “Cornish”.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;76 beneficial owners share the same name and birthday as someone on the U.S. sanctions list. We have to do more digging to find out whether these are actually the same people, but it’s an insight into what is possible with this new information.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Most beneficial owners are from the UK, followed by a number from other European countries and India and China.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;insights&quot;&gt;Insights&lt;/h3&gt;
-
-&lt;p&gt;The data allows us to start to understand the complex ecosystem of companies and their owners in the UK - where they’re from, and what other companies they own. In theory, law enforcement agencies, journalists and civil society being able to map this stuff out will make it much harder for those with something to hide to do so behind layers and layers of secret companies.&lt;/p&gt;
-
-&lt;p&gt;Under the new system, companies have to provide ownership information once a year when they send in their annual return or “confirmation statement”. Out of 3.5 million companies, 1.3 million have already filed beneficial ownership information as of 17 November. Most beneficial owners (1.2 million) are British. Perhaps unsurprisingly when you take the British out of the mix, Irish is the next biggest nationality, followed by a mix of European countries (Italy and Poland) and the two mega-economies of China and India.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.globalwitness.org//media/images/Screen_Shot_2016-11-19_at_22.07.18.width-1280.png&quot; alt=&quot;Beneficial Owners Nationality&quot; /&gt;
-&lt;em&gt;Nationality of beneficial owners in the UK register&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;On top of nationality, we also have information on where beneficial owners live. The vast majority are based in the UK, with 183,000, or 13% of the total, living overseas.&lt;/p&gt;
-
-&lt;p&gt;One of the arguments made against creating these registers is that companies would find it very difficult to identify their beneficial owners, but this doesn’t appear to be the case. In only 2% of cases did companies say that they were struggling to identify a beneficial owner or collect the right information.&lt;/p&gt;
-
-&lt;p&gt;Just under ten percent of companies claimed to have no beneficial owner. This is possible under the legislation, because you have to own at least 25 percent of a company to be considered its beneficial owner. We think that’s quite a high threshold, which could be exploited by people looking to stay under the radar So we will be digging a bit deeper to see whether companies are trying to avoid disclosing information that they should be.&lt;/p&gt;
-
-&lt;div style=&quot;max-width:900px&quot;&gt;&lt;iframe id=&quot;datawrapper-chart-EVcm0&quot; src=&quot;//datawrapper.dwcdn.net/EVcm0/1/&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;allowfullscreen&quot; webkitallowfullscreen=&quot;webkitallowfullscreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; oallowfullscreen=&quot;oallowfullscreen&quot; msallowfullscreen=&quot;msallowfullscreen&quot; width=&quot;100%&quot; height=&quot;196&quot;&gt;&lt;/iframe&gt;&lt;script type=&quot;text/javascript&quot;&gt;&quot;undefined&quot;==typeof window.datawrapper&amp;&amp;(window.datawrapper={}),window.datawrapper[&quot;EVcm0&quot;]={},window.datawrapper[&quot;EVcm0&quot;].embedDeltas={&quot;100&quot;:196,&quot;200&quot;:196,&quot;300&quot;:196,&quot;400&quot;:196,&quot;500&quot;:196,&quot;600&quot;:196,&quot;700&quot;:196,&quot;800&quot;:196,&quot;900&quot;:196,&quot;1000&quot;:196},window.datawrapper[&quot;EVcm0&quot;].iframe=document.getElementById(&quot;datawrapper-chart-EVcm0&quot;),window.datawrapper[&quot;EVcm0&quot;].iframe.style.height=window.datawrapper[&quot;EVcm0&quot;].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper[&quot;EVcm0&quot;].iframe.offsetWidth/100),100))]+&quot;px&quot;,window.addEventListener(&quot;message&quot;,function(a){if(&quot;undefined&quot;!=typeof a.data[&quot;datawrapper-height&quot;])for(var b in a.data[&quot;datawrapper-height&quot;])&quot;EVcm0&quot;==b&amp;&amp;(window.datawrapper[&quot;EVcm0&quot;].iframe.style.height=a.data[&quot;datawrapper-height&quot;][b]+&quot;px&quot;)});&lt;/script&gt;&lt;/div&gt;
-
-&lt;p&gt;Approximately 30 beneficial owners have been successfully granted the right to keep their name off the register due to concerns about their security.&lt;/p&gt;
-
-&lt;p&gt;We were also able to build up a picture of company networks. These were only partial insights as we were working with just three months’ worth of data, but it gave us an idea of what was possible, and to start to understand complex corporate structures. Complexity doesn’t necessarily indicate wrongdoing. For example below is a partial map of Reckitt Benckiser, the healthcare company that makes Durex condoms among other things. However, it will provide a much better map of how UK companies structure themselves, and in some cases connections between companies may raise further questions about what they have been up to.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.globalwitness.org//media/images/Screen_Shot_2016-11-18_at_14.31.23.width-1280.png&quot; alt=&quot;Reckitt Benckiser&quot; /&gt;
-&lt;em&gt;The UK control structure of Reckitt Benckiser&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;flaws&quot;&gt;Flaws&lt;/h3&gt;
-
-&lt;p&gt;Inevitably with a bold experiment like this, there will be problems with the data, despite the generally excellent job that Companies House has done. The flaws that we identified split into two categories: messy data due to how it was collected, and examples of what look like non-compliance with the law.&lt;/p&gt;
-
-&lt;p&gt;One of the big problems we found was that Companies House allows for free text entry for a number of fields. For example, we found over 500 different ways of putting “British”. Our favourite were the 10 beneficial owners who described themselves as Cornish. We were able to get around this by creating a nationality mapping table. However, an easy way to avoid this would be for Companies House to use drop down menus for fields such as nationality or title, with a potential “other box”.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.globalwitness.org/media/images/Screen_Shot_2016-11-18_at_14.19.07.width-1280.png&quot; alt=&quot;Many ways of spelling British&quot; /&gt;
-&lt;em&gt;The many ways of spelling “British” in the UK beneficial ownership register&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Another big challenge is the lack of unique identifiers for individuals and some companies. We were relying on using name and day and month of birth to try and identify individuals. This is fine if you’re someone with an unusual name, but proves more tricky for the John Smiths or Mohammed Iqbals of this world. We’d like to work with Companies House on thinking about how they could get around this problem. One solution could be to assign beneficial owners a unique number to allow better cross-matching.&lt;/p&gt;
-
-&lt;p&gt;There were also 2,160 beneficial owners born in 2016. Now either these are a very precocious bunch of toddlers or the data has been entered incorrectly. We also had people who listed 9988 as their year of birth - clearly a visitor from the future.&lt;/p&gt;
-
-&lt;p&gt;On top of these data validation issues, we found a number of signs of non-compliance with the law. For example, 9,800 companies listed their beneficial owner as a foreign company. Now this is possible if the foreign company was listed on one of the stock exchanges deemed equivalent to the UK system (e.g. the US, EU and Japanese exchanges). However, we found almost 3,000 companies with tax haven addresses listed as beneficial owners. This is not allowed under the rules. We’ll be handing this list of companies over to Companies House to investigate further.&lt;/p&gt;
-
-&lt;div style=&quot;max-width:900px&quot;&gt;&lt;iframe id=&quot;datawrapper-chart-OpOKm&quot; src=&quot;//datawrapper.dwcdn.net/OpOKm/1/&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;allowfullscreen&quot; webkitallowfullscreen=&quot;webkitallowfullscreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; oallowfullscreen=&quot;oallowfullscreen&quot; msallowfullscreen=&quot;msallowfullscreen&quot; width=&quot;100%&quot; height=&quot;351&quot;&gt;&lt;/iframe&gt;&lt;script type=&quot;text/javascript&quot;&gt;&quot;undefined&quot;==typeof window.datawrapper&amp;&amp;(window.datawrapper={}),window.datawrapper[&quot;OpOKm&quot;]={},window.datawrapper[&quot;OpOKm&quot;].embedDeltas={&quot;100&quot;:485,&quot;200&quot;:418,&quot;300&quot;:385,&quot;400&quot;:385,&quot;500&quot;:351,&quot;600&quot;:351,&quot;700&quot;:351,&quot;800&quot;:351,&quot;900&quot;:351,&quot;1000&quot;:351},window.datawrapper[&quot;OpOKm&quot;].iframe=document.getElementById(&quot;datawrapper-chart-OpOKm&quot;),window.datawrapper[&quot;OpOKm&quot;].iframe.style.height=window.datawrapper[&quot;OpOKm&quot;].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper[&quot;OpOKm&quot;].iframe.offsetWidth/100),100))]+&quot;px&quot;,window.addEventListener(&quot;message&quot;,function(a){if(&quot;undefined&quot;!=typeof a.data[&quot;datawrapper-height&quot;])for(var b in a.data[&quot;datawrapper-height&quot;])&quot;OpOKm&quot;==b&amp;&amp;(window.datawrapper[&quot;OpOKm&quot;].iframe.style.height=a.data[&quot;datawrapper-height&quot;][b]+&quot;px&quot;)});&lt;/script&gt;&lt;/div&gt;
-
-&lt;p&gt;With all of these examples it’s not clear whether this is because the people filing the information didn’t understand the new system, or whether there’s something more sinister going on.&lt;/p&gt;
-
-&lt;h3 id=&quot;investigation&quot;&gt;Investigation&lt;/h3&gt;
-
-&lt;p&gt;One of the key arguments in favour of creating this register was that law enforcement, civil society and journalists could use it to uncover wrongdoing. We didn’t expect to find any slam dunk cases in just a weekend, but we did find a few interesting leads. Because the UK register is available as open data, we could compare it to other data sets.&lt;/p&gt;
-
-&lt;p&gt;Initial findings suggest 19 senior politicians (known as politically exposed persons), 76 people from the U.S. sanctions list and 267 disqualified directors were listed as beneficial owners.&lt;/p&gt;
-
-&lt;p&gt;However, these matches were based on name and month and year of birth. This means that it’s hard to be certain that the matches are good ones. Any leads coming out of the new register will have to be followed up with more traditional investigative digging.&lt;/p&gt;
-
-&lt;p&gt;We also had an initial look at comparing the beneficial ownership to government spending information. It was challenging given that a lot of the spending information doesn’t have proper identification for companies (for example it would be good to include company numbers). But we did find a number of recipients of government contracts who had beneficial owners based in tax havens.&lt;/p&gt;
-
-&lt;h3 id=&quot;reflections&quot;&gt;Reflections&lt;/h3&gt;
-
-&lt;p&gt;As campaigners who have worked for years to get this information out in the public domain, the weekend was an exciting first opportunity to get our hands dirty and start to tell some stories. The work was only possible because the UK government made the decision to make the register free and accessible to all as open data. This is an important lesson for other countries who are thinking about creating similar registers.&lt;/p&gt;
-
-&lt;p&gt;Inevitably the data was messy, partly due to how the register is set up and partly due to confusion from those providing data. We’re going to be working with Companies House on ironing out some of these issues. Hopefully as the register beds in, these kinks will get ironed out.&lt;/p&gt;
-
-&lt;p&gt;A big question that we weren’t able to answer was whether people had lied to the register or provided inaccurate information. This is going to be a serious challenge for the credibility of the register, and the government will have to provide more reassurances on how they’re going to ensure data accuracy.&lt;/p&gt;
-
-&lt;p&gt;Finally, we’re hoping that other governments will see the potential of what the UK has done. The process will be difficult, but if our weekend showed us anything, it’s that this is incredibly useful information to have.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/open/data/2016/11/22/data-dive-beneficial-ownership/</link>
-        <guid isPermaLink="true">http://localhost:4000/open/data/2016/11/22/data-dive-beneficial-ownership/</guid>
-      </item>
-    
-      <item>
         <title>Why we published the data behind Hostile Takeover</title>
         <description>&lt;p&gt;&lt;em&gt;This blog post was originally posted on the &lt;a href=&quot;https://www.globalwitness.org/en/blog/why-we-published-data-behind-hostile-takeover/&quot;&gt;Global Witness website&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -375,29 +596,6 @@
       </item>
     
       <item>
-        <title>Google Trends in tax avoidance and tax evasion</title>
-        <description>&lt;p&gt;The Panama Leaks have shaken the foundations of British politics and done substantial reputational damage to a range of high-profile personalities around the world. We’ve seen plenty of revelations concerning corrupt and morally questionable practices of political elites over the past few years from ICIJ’s Offshore Leaks to the Wikileaks Diplomatic Cables, but few have piqued the interest of the public in the way the Panama Leaks have. Google summed this up nicely in the following chart measuring searches for two of the most significant leaks in recent years:&lt;/p&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://ssl.gstatic.com/trends_nrtr/480_RC06/embed_loader.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_chart_1752a923-477e-48a9-8e0f-02d189530086&quot;, {&quot;guestPath&quot;:&quot;https://www.google.co.uk:443/trends/embed/&quot;});
-&lt;/script&gt;
-
-&lt;p&gt;Right-wing newspapers that normally shy away from articles on tax justice have covered the Leaks at length often leading with them on their front page. As an anti-corruption campaigner, I’m hopeful that these revelations could turn the tide of public opinion on key issues around corporate accountability and tax justice. Both are issues that tend not to get the attention they deserve in part due to the relative complexity of the stories that explore them. I’m curious to see if the Panama Leaks and the associated coverage have made a breakthrough and mainstreamed these issues.&lt;/p&gt;
-
-&lt;p&gt;I had a look at Google Trends which lets you compare the popularity of certain search terms over time, a decent metric of the level of public interest in a given topic. The immediate effect on awareness of the related issues is clear, but how this translates into concrete reform, behaviour change and what people demand at the ballot box is yet to be seen. Surely though, there is reason to be optimistic.&lt;/p&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;//www.google.co.uk/trends/embed.js?hl=en-US&amp;amp;q=%22tax+evasion%22,+%22tax+avoidance%22&amp;amp;cmpt=q&amp;amp;tz=Etc/GMT-1&amp;amp;tz=Etc/GMT-1&amp;amp;content=1&amp;amp;cid=TIMESERIES_GRAPH_0&amp;amp;export=5&amp;amp;w=780&amp;amp;h=330&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;It’s notable that “tax avoidance” as a search term had a significant spike in June 2012 when Jimmy Carr’s use of a &lt;a href=&quot;http://www.theguardian.com/business/2012/jun/19/tax-scheme-jimmy-carr-hmrc&quot;&gt;“K2” tax avoidance scheme&lt;/a&gt; received press attention. As ever, the celebrity status  of the scalp claimed in the exposé drives public interest.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 10 Apr 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/04/10/tax-trends/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/04/10/tax-trends/</guid>
-      </item>
-    
-      <item>
         <title>Is the NHS safe in Cameron's hands?</title>
         <description>&lt;p&gt;As the government’s increasingly bitter dispute with Junior Doctors rolls on to the backdrop of a critically overstretched health service, it’s difficult to see how David Cameron can back up his words during the 2015 election campaign that NHS is &lt;a href=&quot;http://www.itv.com/news/update/2015-05-18/david-cameron-the-nhs-is-safe-in-my-hands/&quot;&gt;“safe in my hands”&lt;/a&gt;.&lt;/p&gt;
 
@@ -428,41 +626,6 @@ trends.embed.renderWidget(&quot;GB_cu_rWzp4FMBAAAXDM_en&quot;, &quot;fe_line_cha
         <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
         <link>http://localhost:4000/open/data/2016/03/22/safe-in-my-hands/</link>
         <guid isPermaLink="true">http://localhost:4000/open/data/2016/03/22/safe-in-my-hands/</guid>
-      </item>
-    
-      <item>
-        <title>Open data at Global Witness in 2016</title>
-        <description>&lt;em&gt;Cross-posted for the &lt;a href=&quot;https://www.globalwitness.org/en/blog/open-data-can-make-world-better-place-only-if-we-know-how-use-it/&quot;&gt;Global Witness blog&lt;/a&gt; where it was first published.&lt;/em&gt;
-
-&lt;div class=&quot;aligned intro&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;br/&gt;&lt;p&gt;I’m a self-confessed data junkie, but I appreciate that spreadsheets aren’t everyone’s idea of fun. Most people want their digested data packaged up into compelling stories and beautiful visuals. My job here at Global Witness is to do exactly that - tooling up the organisation and its partners so that we can take the troves of data we have access to and ask the questions of it that will help us create positive change.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;Now is a very exciting time to be doing this. As the explosion of powerful, free data analysis tools intersects with our own efforts to bring business into the open, we’re seeing exciting new opportunities to help cut poverty and financial crime all over the world. The challenge, as we see it, is to find the right tools and equip the right people so that all this information can be translated into genuine accountability for those in power.&lt;/p&gt;&lt;p&gt;There is already a lot of valuable data relevant to our mission in the public domain. For example, billions of dollars worth of company-to-government payments are now published each year as part of the Publish What You Pay initiative that Global Witness helped to found. Elsewhere, recent US legislation means thousands of companies who use minerals in their products routinely publish information on their supply chains, to make sure they aren’t sponsoring conflict or bloodshed where the raw materials are mined.&lt;/p&gt;&lt;p&gt;As well as laws demanding information be published, there are non-profit organisations which exist to collect data and make it useful. &lt;a href=&quot;https://opencorporates.com/&quot;&gt;OpenCorporates&lt;/a&gt;, the world’s largest free database of corporate data, now contains the records of over of 97 million companies from around the world. MySociety’s nascent &lt;a href=&quot;http://everypolitician.org/&quot;&gt;EveryPolitician.org &lt;/a&gt;contains the records of over 60,000 politicians from over 232 companies which have been scraped and crowdsourced from numerous digital sources. Our friends at OpenOil now have a service which provides free access over one million company filings related to the oil, gas and mining industries.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;figure style=&quot;display:inline-block;text-align:center;float:right&quot;&gt;	
-&lt;img src=&quot;https://globalwitness.org/media/images/Screen_Shot_2016-02-17_at_16.10.14.width-300.png&quot; width=&quot;300&quot; height=&quot;162&quot; alt=&quot;&quot; style=&quot;vertical-align:top&quot;/&gt;
-&lt;figcaption style=&quot;&quot;&gt;&lt;p style=&quot;font-size:8px&quot;&gt;Visualisation from Open Oil's &lt;br&gt; vast database of contracts from Nigeria's byzantine &lt;br&gt; oil industry: &lt;a href=&quot;https://data.openoil.net/#nigeria_production&quot;&gt;https://data.openoil.net/#nigeria_production&lt;/a&gt; &lt;/p&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;This data could revolutionise the way journalists and NGOs like Global Witness expose the corrupt networks that deprive some of the world’s poorest people of the wealth beneath their feet. But for that to happen, the data needs to be actively monitored and mined by groups equipped with the right skills and tools. This analysis is especially valuable in states with limited political will or capacity to undertake their own corruption investigations, as is the case in many countries where Global Witness works. So the opportunities are obvious, but it’s complicated.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;No single public dataset is likely to unearth substantial corruption on its own. The real value tends to come when these datasets are combined in ways not anticipated by the publisher. For example, combining port records with company information has allowed us to show how the EU’s demand for illegal timber from the DRC undermines efforts to protect the world’s second largest rainforest. Elsewhere, company filings from multiple jurisdictions helped piece together the corrupt and complex deal behind the sale of Nigeria’s largest oil block, which deprived its citizens of over one billion US dollars. The more data that is available on companies and governments in a standardised form, the greater the opportunity for linking this information in meaningful ways to fight corruption.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;figure style=&quot;display:inline-block;text-align:center&quot;&gt;
-&lt;img src=&quot;https://globalwitness.org/media/images/Screen_Shot_2016-02-17_at_15.48.22.width-1280.png&quot; alt=&quot;&quot;/&gt;
-&lt;figcaption&gt;
-&lt;p style=&quot;font-size:8px&quot;&gt;A screenshot of Global Witness’s Timber Trade Tracker built in collaboration with &lt;a href=&quot;http://okfn.org/&quot;&gt;Open Knowledge&lt;/a&gt; that visualises the flows of illegal timber out of the DRC. The data is updated on a quarterly basis: &lt;a href=&quot;http://drctimbertracker.globalwitness.org/&quot;&gt;http://drctimbertracker.globalwitness.org/ &lt;/a&gt;&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;How do we stop all this data from becoming an overwhelming deluge of information? This is where the tools developed by civic hackers and socially minded tech firms come in. Take the tools for cross-checking lists of names against databases of “politically exposed people” (PEPs) now being developed by &lt;a href=&quot;https://www.occrp.org/en&quot;&gt;OCCRP&lt;/a&gt; and the &lt;a href=&quot;http://influencemapping.org/&quot;&gt;Influence Mapping&lt;/a&gt; community. These are invaluable instruments in identifying conflicts of interest and corruption in the allocation of lucrative natural resources. Free software like &lt;a href=&quot;http://openrefine.org/&quot;&gt;OpenRefine&lt;/a&gt; puts powerful data processing algorithms at the fingertips of non-programmers and tools like &lt;a href=&quot;http://pandas.pydata.org/&quot;&gt;Python-Pandas&lt;/a&gt; , initially developed for the finance industries but now open source, let people manipulate spreadsheets millions of rows long. We put these tools to use in combination in &lt;a href=&quot;https://www.globalwitness.org/en-gb/campaigns/oil-gas-and-mining/myanmarjade/&quot;&gt;our recent Myanmar jade investigation&lt;/a&gt;, using &lt;a href=&quot;http://opencorporates.com&quot;&gt;OpenCorporates&lt;/a&gt; data to help show how this vast trade is monopolised by a military elite at the expense of some of Myanmar’s most vulnerable people.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;figure style=&quot;display:inline-block;text-align:center;float:left&quot;&gt;	
-&lt;img src=&quot;https://globalwitness.org/media/images/The-Great-Rip-Off-The-BVI-Effect-copy.width-300.jpg&quot; width=&quot;300&quot; height=&quot;162&quot; alt=&quot;&quot; style=&quot;vertical-align:top&quot;/&gt;
-&lt;figcaption style=&quot;&quot;&gt;&lt;p style=&quot;font-size:8px&quot;&gt;Secrecy for sale in the British Virgin Islands as &lt;br&gt; visualised in our &lt;a href=&quot;http://greatripoffmap.globalwitness.org/#!/&quot;&gt;Great Rip Off Map&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;That’s not to say we shouldn’t also work tirelessly to improve the data that’s already out there. Existing sources of public data are far from perfect, and in many countries online access to public records still remains a distant dream. Lack of standardisation makes information difficult to retrieve and connect. The secrecy for sale in the world’s tax havens means that many corporate structures used to funnel the proceeds of corruption remain hidden. Global Witness will continue to push for those gaps to be filled and input into developing strong, open and workable standards along with our partners in groups such as &lt;a href=&quot;http://www.publishwhatyoupay.org/&quot;&gt;Publish What You Pay&lt;/a&gt; and the &lt;a href=&quot;https://financialtransparency.org/&quot;&gt;Financial Transparency&lt;/a&gt; and &lt;a href=&quot;http://www.open-contracting.org/&quot;&gt;Open Contracting&lt;/a&gt; coalitions. And alongside our data work, we will be lobbying decision-makers to ensure that transparency becomes the expected norm in how the world does its business.  &lt;br/&gt;&lt;/p&gt;&lt;p&gt;The open data revolution shows no sign of slowing in 2016. This year even more data will go online as hundreds of UK companies release project-level information on all payments to governments in the oil, gas and mining industries under new EU law. From July onwards all UK companies will be forced to publish who their real owners are in publicly accessible register, something that Global Witness has been fighting for many years.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;figure style=&quot;display:inline-block;text-align:center;float:right&quot;&gt;	
-&lt;img src=&quot;https://globalwitness.org/media/images/Screen_Shot_2016-02-17_at_16.19.47_EY9qJg2.width-300.png&quot; width=&quot;300&quot; height=&quot;162&quot; alt=&quot;&quot; style=&quot;vertical-align:top&quot;/&gt;
-&lt;figcaption style=&quot;&quot;&gt;&lt;p style=&quot;font-size:8px&quot;&gt;OpenCorporates' proof-of-concept of a global beneficial &lt;br&gt;ownership registry: &lt;a href=&quot;http://alpha.whocontrolsit.com/&quot;&gt;http://alpha.whocontrolsit.com/&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;div class=&quot;aligned&quot;&gt;&lt;div class=&quot;rich-text&quot;&gt;&lt;p&gt;For anyone who wants to fight corruption and build a more open, just society, this is really exciting. For a data geek like me, it’s doubly so. But as the possibilities grow, so does the work involved in mining all the data, and we’re far from the only ones driving this. This week in Lima, I’ll be working with activists from all over the world to look at how they can apply these tools and techniques to their different contexts, and help make sure the new availability of information brings justice and accountability from their governments. Together we’ll be trawling this new information for insights and leads, so that the individuals and systems that perpetuate conflict, corruption and environmental devastation have no place to hide.&lt;/p&gt;&lt;p&gt;Watch this space!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/open/data/2016/02/20/gw-in-2016/</link>
-        <guid isPermaLink="true">http://localhost:4000/open/data/2016/02/20/gw-in-2016/</guid>
       </item>
     
   </channel>

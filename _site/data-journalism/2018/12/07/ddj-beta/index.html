@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Accounting for methods in data journalism - spreadsheets, scripts and programming notebooks &#8211; Noelmas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My contribution to the Data Journalism Handbook 2 currently in Beta and open to feedback.">
+    <meta name="author" content="Sam Leon">
+    <meta name="keywords" content="data-journalism">
+    <link rel="canonical" href="http://localhost:4000/data-journalism/2018/12/07/ddj-beta/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Accounting for methods in data journalism - spreadsheets, scripts and programming notebooks">
+    <meta property="og:description" content="Simple data hackery and reflections on tech for public integrity journalism.">
+    <meta property="og:url" content="http://localhost:4000/data-journalism/2018/12/07/ddj-beta/">
+    <meta property="og:site_name" content="Noelmas">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://localhost:4000">Noelmas</a>
+      <nav class="site-nav right">
+        <a href="/music/">Music</a>
+<a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="left">
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/noeL_maS"></a>
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:sam.ed.leon@gmail.com"></a>
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Accounting for methods in data journalism - spreadsheets, scripts and programming notebooks</h1>
+  <span class="post-meta">Dec 7, 2018</span><br>
+  
+  <span class="post-meta small">22 minute read</span>
+</div>
+
+<article class="post-content">
+  <p><em>This chapter is part of the second Data Jouranlism Handbook edited by Jonathan Gray and Liliana Bounegru. The oroginal chapter and rest of the Handbook can be found  <a href="https://datajournalismhandbook.org/handbook/two/working-with-data/accounting-for-methods-in-data-journalism-spreadsheets-scripts-and-programming-notebooks">here</a></em></p>
+
+<p>With the rise of data journalism, ideas around what can be considered a journalistic source are changing. Sources come in many forms now: public datasets, leaked troves of emails, scanned documents, satellite imagery and sensor data. In tandem with this, new methods for finding stories in these sources are emerging. Machine learning, text analysis and some of the other techniques explored elsewhere in this book are increasingly being deployed in the service of the scoop.</p>
+
+<p>But data, despite its aura of hard objective truth, can be distorted and mis-represented. There are many ways in which data journalists can introduce error into their interpretation of a dataset and publish a misleading story. There could be issues at the point of data collection which prevent general inferences being made to a broader population. This could, for instance, be a result of a self-selection bias in the way a sample was chosen, something that has become a common problem in the age of internet polls and surveys. Errors can also be introduced at the data processing stage. Data processing or cleaning, can involve geocoding, correcting misspelled names, harmonising categories or excluding certain data points altogether if, for instance, they are considered statistical outliers. A good example of this kind of error at work is the inaccurate geocoding of IP addresses in a widely reported study that purported to show a correlation between political persuasion and consumption of porn<sup class="footnote"><a href="#footnote1">1</a></sup>. Then of course we have the meat of the data journalist’s work, analysis. Any number of statistical fallacies may affect this portion of the work such as mistaking correlation with causation or choosing an inappropriate statistic to summarise the dataset in question.</p>
+
+<p>Given the ways in which collection, treatment and analysis of data can change a narrative - how does the data journalist reassure the reader that the sources they have used are reliable and that the work done to derive their conclusions is sound?</p>
+
+<p>In the case that the data journalist is simply reporting the data or research findings of a third-party, they need not deviate from traditional editorial standards adopted by many major news outlets. A reference to the institution that collected and analysed the data is generally sufficient. For example, a recent Financial Times chart on life expectancy in the UK is accompanied by a note which says: “Source: Club Vita calculations based on EuroStat data”. In principle, the reader can then make an assessment of the credibility of the institution quoted. While a responsible journalist will only report studies they believe to be reliable, the third-party institution is largely responsible for accounting for the methods through which it arrived at its conclusions. In an academic context, this will likely include processes of peer review and in the case of scientific publishing it will invariably include some level of methodological transparency.</p>
+
+<p>In the increasingly common case where the journalistic organisation produces the data-driven research, then they themselves are accountable to the reader for the reliability of the results they are reporting. Journalists have responded to the challenge of accounting for their methods in different ways. One common approach is to give a description of the general methodology used to arrive at the conclusions within a story. These descriptions should be framed as far as possible in plain, non-technical language so as to be comprehensible to the widest possible audience. A good example of this approach taken by the Guardian and Global Witness in explaining how they count deaths of environmental activists for their <em>Environmental Defenders series</em>.<sup class="footnote"><a href="#footnote2">2</a></sup></p>
+
+<p>But – as with all ways of accounting for social life – written accounts have their limits. The most significant issue with them is that they generally do not specify the exact procedures used to produce the analysis or prepare the data. This makes it difficult, or in some cases impossible, to exactly reproduce steps taken by the reporters to reach their conclusions. In other words, a written account is generally not a reproducible one. In the example above, where the data acquisition, processing and analysis steps are relatively straightforward, there may be no additional value in going beyond a general written description. However, when more complicated techniques are employed there may be a strong case for employing reproducible approaches.</p>
+
+<h1 id="reproducible-data-journalism">Reproducible data journalism</h1>
+
+<p>Reproducibility is widely regarded as a pillar of the modern scientific method. It aids in the process of corroborating results and to help identify and address problematic findings or questionable theories. In principle, the same mechanisms can help to weed out erroneous or misleading uses of data in the journalistic context.</p>
+
+<p>A look at one of the most well-publicised methodological errors in recent academic history can be instructive. In a 2010 paper, Harvard’s Carmen Reinhart and Kenneth Rogoff purposed to have shown that average real economic growth slows (a 0.1% decline) when a country’s debt rises to more than 90% of gross domestic product (GDP).<sup class="footnote"><a href="#footnote3">3</a></sup> This figure was then used as ammunition by politicians endorsing austerity measures.</p>
+
+<p>As it turned out, the regression was based on an Excel error. Rather than taking the mean of a whole row of countries, Reinhart and Rogoff had made an error in their formula which meant only 15 out of the 20 countries they looked at were incorporated. Once the all the countries were considered the 0.1% “decline” became a 2.2% average increase in economic growth. The mistake was only picked up when PhD candidate Thomas Herndon and professors Michael Ash and Robert Pollin looked at the original spreadsheet that Reinhard and Rogoff had worked off. This demonstrates the importance of having not just the method written out in plain language - but also having the data and technology used for the analysis itself. But the Reinhart-Rogoff error perhaps points to something else as well - Microsoft Excel, and spreadsheet software in general, may not be the best technology for creating reproducible analysis.</p>
+
+<p>Excel hides much of the process of working with data by design. Formulas - which do most of the analytical work in a spreadsheet - are only visible when clicking on a cell. This means that it is harder to review the actual steps taken to reaching a given conclusion. While we will never know for sure, one may imagine that had Reinhart and Rogoff’s analytical work been done in a language in which the steps had to be declared explicitly (e.g. a programming language) the error could have been spotted prior to publication.</p>
+
+<p>Excel based workflows generally encourage the removal of the steps taken to arrive at a conclusion. Values rather than formulas are often copied across to other sheets or columns leaving the “undo” key as the only route back to how a given number was actually generated. “Undo” histories of course are generally erased when an application is closed, and are therefore not a good place for storing important methodological information.</p>
+
+<h1 id="the-rise-of-the-literate-programmingenvironment-jupyter-notebooks-in-the-newsroom">The rise of the literate programming environment: Jupyter notebooks in the newsroom</h1>
+
+<p>An emerging approach to methodological transparency is to use so-called “literate programming” environments. Organisations like Buzzfeed, The New York Times and Correctiv are using them to provide human readable documents that can also be executed by a machine in order to reproduce exactly the steps taken in a given analysis.<sup class="footnote"><a href="#footnote4">4</a></sup></p>
+
+<p>First articulated by Donald Knuth in the 1980s, literate programming is an approach to writing computer code where the author intersperses code with ordinary human language explaining the steps taken.<sup class="footnote"><a href="#footnote5">5</a></sup> The two main literate programming environments in use today are Jupyter Notebooks and R Markdown.<sup class="footnote"><a href="#footnote6">6</a></sup> Both produce human readable documents that mix plain English, visualisations and code in a single document that can usually be rendered in HTML and published on the web. Original data can be linked to explicitly and any other technical dependencies such as third-party libraries will be clearly identified.</p>
+
+<p>Not only is there an emphasis on human readable explanation, the code is ordered so as to reflect human logic. Documents written in this paradigm can therefore read like a set of steps in an argument or a series of answers to a set of research questions.</p>
+
+<blockquote>
+  <p>“The practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style. Such an author, with thesaurus in hand, chooses the names of variables carefully and explains what each variable means. He or she strives for a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding, using a mixture of formal and informal methods that reinforce each other.”<sup class="footnote"><a href="#footnote7">7</a></sup></p>
+</blockquote>
+
+<p>A good example of the form is found in Buzzfeed News’ Jupyter Notebook detailing how they analysed trends in California’s wildfires.<sup class="footnote"><a href="#footnote8">8</a></sup> Whilst the notebook contains all the code and links to source data required to reproduce the analysis, the thrust of the document is a narrative or conversation with the source data. Explanations are set out under headings that follow a logical line of enquiry. Visualisations and charts are used to bring out key themes.</p>
+
+<p>One aspect of the “literate” approach to programming is that the documents produced (as Jupyter Notebook or R Markdown files) may be capable of re-assuring even those readers who cannot read the code itself that the steps taken to produce the conclusions are sound. The idea is similar to Steven Shapin and Simon Schaffer’s account of “virtual witnessing” as a means of establishing matters of fact in early modern science. Using Robert Boyle’s experimental programme as an example Shapin and Schaffer set out the role that “virtual witnessing” had:</p>
+
+<blockquote>
+  <p>“The technology of virtual witnessing involves the production in a reader’s mind of such an image of an experimental scene as obviates the necessity for either direct witness or replication. Through virtual witnessing the multiplication of witnesses could be, in principle, unlimited. It was therefore the most powerful technology for constituting matters of fact. The validation of experiments, and the crediting of their outcomes as matters of fact, necessarily entailed their realization in the laboratory of the mind and the mind’s eye. What was required was a technology of trust and assurance that the things had been done and done in the way claimed.”<sup class="footnote"><a href="#footnote9">9</a></sup><em>.</em></p>
+</blockquote>
+
+<p>Documents produced by literate programming environments such as as Jupyter Notebooks - when published alongside articles - may have a similar effect in that they enable the non-programming reader to visualise the steps taken to produce the findings in a particular story. While the non-programming reader may not be able to understand or run the code itself, comments and explanations in the document may be capable of re-assuring them that appropriate steps were taken to mitigate error.</p>
+
+<p>Take for instance a recent Buzzfeed News story on children’s home inspections in the UK.<sup class="footnote"><a href="#footnote10">10</a></sup> The Jupyter Notebook has specific steps to check that data has been correctly filtered (Figure 1) providing a backstop against the types of simple but serious mistakes that caught Reinhart and Rogoff out. While the exact content of the code may not be comprehensible to the non-technical reader, the presence of these tests and backstops against error with appropriate plain English explanations may go some way to showing that the steps taken to produce the journalist’s findings were sound.</p>
+
+<p><img src="https://datajournalismhandbook.org/uploads/book_two/accounting-for-methods-in-data-journalism-spreadsheets-scripts-and-programming-notebooks/Image_0.png" alt="Figure 1: A cell from the Buzzfeed Jupyter notebook with a human readable explanation or comment explaining that its purpose is to check that the filtering of the raw data was performed correctly" /></p>
+
+<p><em>A cell from the Buzzfeed Jupyter notebook with a human readable explanation or comment explaining that its purpose is to check that the filtering of the raw data was performed correctly</em></p>
+
+<h1 id="more-than-just-reproducibility">More than just reproducibility</h1>
+
+<p>Using literate programming environments for data stories does not just help make them more reproducible.</p>
+
+<p>Publishing code can aid collaboration between organisations. In 2016, Global Witness published a web scraper that extracted details on companies and their shareholders from the Papua New Guinea company register.<sup class="footnote"><a href="#footnote11">11</a></sup> The initial piece of research aimed to identify the key beneficiaries of the corruption-prone trade in tropical timber which is having a devastating impact on local communities. While Global Witness had no immediate plans to re-use the scraper it developed, the underlying code was published on Github – the popular code sharing website.</p>
+
+<p>Not long after, a community advocacy organisation, ACT NOW!, downloaded the code from the scraper, improved it and incorporated it into a their iPNG project that lets members of the public cross-check names of company shareholders and directors against other public interest sources.<sup class="footnote"><a href="#footnote12">12</a></sup> The scraper is now part of the core data infrastructure of the site, retrieving data from the Papua New Guinea company registry twice a year.</p>
+
+<p>Writing code within a literate programming environment can also help to streamline certain internal processes where others within an organisation need to understand and check an analysis prior to publication. At Global Witness, Jupyter Notebooks have been used to streamline the legal review process. As notebooks set out the steps taken to a get a certain finding in a logical order, lawyers can then make a more accurate assessment of the legal risks associated with a particular allegation.</p>
+
+<p>In the context of investigative journalism, one area where this can be particularly important is where assumptions are made around the identity of specific individuals referenced in a dataset. As part of our recent work on the state of corporate transparency in the UK, we wanted to establish which individuals controlled a very large number of companies. This is indicative (although not proof) of them being a so-called “nominee” which in certain contexts - such as when the individual is listed as Person of Significant Control (PSC) - is illegal. When publishing the list of names of those individuals who controlled the most companies, the legal team wanted to know how we knew a specific individual, let’s say John Barry Smith, was the same as another individual named John B. Smith.<sup class="footnote"><a href="#footnote13">13</a></sup> A Jupyter Notebook was able to clearly capture how we had performed this type of deduplication by presenting a table at the relevant step that set out the features that were used to assert the identity of individuals (see below).<sup class="footnote"><a href="#footnote14">14</a></sup> These same processes have been used at Global Witness for fact checking purposes as well.</p>
+
+<p><img src="https://datajournalismhandbook.org/uploads/book_two/accounting-for-methods-in-data-journalism-spreadsheets-scripts-and-programming-notebooks/Image_1.png" alt="Figure 2: A section of the Global Witness Jupyter notebook which constructs a table of individuals and accompanying counts based on them having the same first name, surname, month and year of birth and postcode." /></p>
+
+<p><em>A section of the Global Witness Jupyter notebook which constructs a table of individuals and accompanying counts based on them having the same first name, surname, month and year of birth and postcode.</em></p>
+
+<p>Jupyter Notebooks have also proven particularly useful at Global Witness when there is need to monitor a specific dataset over time. For instance, in 2018 Global Witness wanted to establish how the corruption risk in the London property market had changed over a two year period.<sup class="footnote"><a href="#footnote15">15</a></sup> They acquired a new snapshot of from the land registry of properties owned by foreign companies and re-used and published a notebook we had developed for the same purpose two years previously (Figure 2).<sup class="footnote"><a href="#footnote16">16</a></sup> This yielded comparable results with minimal overhead. The notebook has an additional advantage in this context too: it allowed Global Witness to show its methodology in the absence of being able to re-publish the underlying source data which, at the time of analysis, had certain licensing restrictions. This is something very difficult to do in a spreadsheet-based workflow. Of course, the most effective way of accounting for your method will always be to publish the raw data used. However, journalists often use data that cannot be re-published for reasons of copyright, privacy or source protection.</p>
+
+<p>While literate programming environments can clearly enhance the accountability and reproducibility of a journalist’s data work, alongside other benefits, there are some important limitations.</p>
+
+<p>One such limitation is that to re-produce (rather than just follow or “virtually witness”) an approach set out in a Jupyter Notebook or R Markdown document you need to know how to write, or at least run, code. The relatively nascent state of data journalism means that there is still a fairly small group of journalists, let alone general consumers of journalism, who can code. This means that it is unlikely that the Github repositories of newspapers will receive the same level of scrutiny as say peer reviewed code referenced in an academic journal where larger portions of the community can actually interrogate the code itself. Data journalism may therefore be more prone to hidden errors in code itself when compared to research with a more technically literate audience. As Jeff Harris points out, it probably won’t be long before we see programming corrections published by media outlets in much the same way as traditional that factual errors are published.<sup class="footnote"><a href="#footnote17">17</a></sup> It is worth noting in this context that tools like Workbench (which is also mentioned in Jonathan Stray’s chapter in this book) are starting to be developed for journalists, which promise to deliver some of the functionality of literate programming environments without the need to write or understand any code<sup class="footnote"><a href="#footnote18">18</a></sup>.</p>
+
+<p>At this point it is also worth considering whether the new mechanisms for accountability in journalism may not just be new means through which a pre-existing “public” can scrutinise methods, but indeed play a role in the formation of new types of “publics”. This is a point made by Andrew Barry in his essay, <em>Transparency as a political device</em>:</p>
+
+<blockquote>
+  <p>“Transparency implies not just the publication of specific information; it also implies the formation of a society that is in a position to recognize and assess the value of – and if necessary to modify – the information that is made public. The operation of transparency is addressed to local witnesses, yet these witnesses are expected to be properly assembled, and their presence validated. There is thus a circular relation between the constitution of political assemblies and accounts of the oil economy – one brings the other into being. Transparency is not just intended to make information public, but to form a public which is interested in being informed”<sup class="footnote"><a href="#footnote19">19</a></sup></p>
+</blockquote>
+
+<p>The methods elaborated on above for accounting for data journalistic working in themselves may play a role in the emergence of new groups of more technically aware publics that wish to scrutinise and hold reporters to account in ways not previously possible before the advent and use of technologies like literate programming environments in the journalistic context.</p>
+
+<p>This idea speaks to some of Global Witness’s work on data literacy in order to enhance the accountability of the extractives sector. Landmark legislation in the European Union that forces extractives companies to publish project-level payments to governments for oil, gas and mining projects, an area highly vulnerable to corruption, has opened the possibility for far greater scrutiny of where these revenues actually accumulate. However, Global Witness, and other advocacy groups within the Publish What You Pay coalition have long observed that there is no pre-existing “public” which could immediately play this role. As a result, Global Witness and others have developed resources and training programmes to assemble journalists and civil society groups in resource rich countries who can be supported in developing the skills to use this data to more readily hold companies to accounts. One component to this effort has been the development and publication of specific methodologies for red flagging suspicious payment reports that could be corrupt.<sup class="footnote"><a href="#footnote20">20</a></sup></p>
+
+<p>Literate programming environments are currently a promising means through which data journalists are making their methodologies more transparent and accountable. While data will always remain open to multiple interpretations, technologies that make a reporter’s assumptions explicit and their methods reproducible are valuable. They aid collaboration and open up an increasingly technical discipline to scrutiny from various publics. Given the current crisis of trust in journalism, a wider embrace of reproducible approaches may be one important way in which data teams can maintain their credibility.</p>
+
+<p><strong>Works Cited</strong></p>
+
+<ul>
+  <li>Jacob Harris, <a href="https://source.opennews.org/articles/distrust-your-data/">Distrust Your Data</a>, <em>Source</em>, 22 May 2014. Ben Leather and Billy Kyte, <a href="https://www.globalwitness.org/en/campaigns/environmental-activists/defendersmethodology/">Defenders: Methodology</a>, <em>Global Witness</em>, 13 July 2017.</li>
+  <li>Donald Knuth, <a href="http://www.literateprogramming.com/knuthweb.pdf">Literate Programming</a>, Computer Science Department, Stanford University, Stanford, CA 94305, USA, 1984.</li>
+  <li>Andrew Barry, ‘Transparency as a political device In: Débordements: Mélanges offerts à Michel Callon’, Paris: Presses des Mines, 2010. Carmen</li>
+  <li>Reinhart and Kenneth S. Rogoff, <a href="https://www.nber.org/papers/w15639">Growth in a Time of Debt</a>, <em>The National Bureau of Economic Research</em>, December 2011.</li>
+  <li>Donald E. Knuth, <a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html">Literate Programming</a>, Stanford, California: <em>Center for the Study of Language and Information</em>, 1992.</li>
+  <li>Steven Shapin and Simon Schaffer, ‘Leviathan and the Air-Pump: Hobbes, Boyle and the Experimental Life’, Princeton University Press, 1985.</li>
+  <li>Richard Holmes and Jeremy Singer-Vine, <a href="https://www.buzzfeed.com/richholmes/care-price">Danger and Despair Inside Cambian Group, Britain’s Largest Private Child Care Home Provider</a>, BuzzFeed News, 26 July 2018. Naomi Hirst and Sam Leon, <a href="https://www.globalwitness.org/en/blog/two-years-still-dark-about-86000-anonymously-owned-uk-homes/">Two Years On, We’re Still in the Dark About the UK’s 86,000 Anonymously Owned Homes</a>, Global Witness, 7 December 2017.</li>
+  <li>Jacob Harris, <a href="https://source.opennews.org/articles/times-regrets-programmer-error/">The Times Regrets the Programmer Error</a>, Source, 19 September 2013. Global Witness, ‘<u></u></li>
+  <li><a href="https://www.globalwitness.org/en/campaigns/oil-gas-and-mining/finding-missing-millions/">Finding the Missing Millions</a>, 9 August 2018.</li>
+</ul>
+
+<p><strong>Footnotes</strong></p>
+
+<div id="footnote1"></div>
+<p><a href="" class="footnoteAnchor">1</a> - Harris, ‘<u><a href="https://source.opennews.org/articles/distrust-your-data/" target="_blank" rel="noreferrer noopener">Distrust Your Data</a></u>’, 2014.</p>
+
+<div id="footnote2"></div>
+<p><a href="" class="footnoteAnchor">2</a> - A good example of this approach taken by the Guardian and Global Witness in explaining how they count deaths of environmental activists for their Environmental Defenders series. see Leather, ‘<u><a href="https://www.theguardian.com/environment/2017/jul/13/environmental-defenders-who-are-they-and-how-do-we-decide-if-they-have-died-in-defence-of-their-environment" target="_blank" rel="noreferrer noopener">Environmental defenders: who are they and how do we decide if they have died in defence of their environment?</a></u>’, 2017; and Leather and Kyte, ‘<u><a href="https://www.globalwitness.org/en/campaigns/environmental-activists/defendersmethodology/" target="_blank" rel="noreferrer noopener">Defenders: Methodology</a></u>’, July 2017.</p>
+
+<div id="footnote3"></div>
+<p><a href="" class="footnoteAnchor">3</a> - Reinhart &amp; Rogoff, ‘<u><a href="https://www.nber.org/papers/w15639" target="_blank" rel="noreferrer noopener">Growth in a Time of Debt</a></u>’, 2011.</p>
+
+<div id="footnote4"></div>
+<p><a href="" class="footnoteAnchor">4</a> - See GitHub for <u><a href="https://github.com/BuzzFeedNews/everything" target="_blank" rel="noreferrer noopener">Buzzfeed</a></u>, <u><a href="https://github.com/TheUpshot" target="_blank" rel="noreferrer noopener">The New York Times</a></u>, <u><a href="https://github.com/correctiv" target="_blank" rel="noreferrer noopener">Correctiv</a></u>.</p>
+
+<div id="footnote5"></div>
+<p><a href="" class="footnoteAnchor">5</a> - Knuth, ‘<u><a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html" target="_blank" rel="noreferrer noopener">Literate Programming</a></u>’, 1992.</p>
+
+<div id="footnote6"></div>
+<p><a href="" class="footnoteAnchor">6</a> - See <u><a href="http://jupyter.org/" target="_blank" rel="noreferrer noopener">Jupyter Notebooks</a></u> and <u><a href="https://rmarkdown.rstudio.com/" target="_blank" rel="noreferrer noopener">R Markdown</a></u></p>
+
+<div id="footnote7"></div>
+<p><a href="" class="footnoteAnchor">7</a> - Knuth, Literate Programming, 1984</p>
+
+<div id="footnote8"></div>
+<p><a href="" class="footnoteAnchor">8</a> - See <u><a href="https://buzzfeednews.github.io/2018-07-wildfire-trends/" target="_blank" rel="noreferrer noopener">Buzzfeed GitHub: Wildfire Trends</a></u>.</p>
+
+<div id="footnote9"></div>
+<p><a href="" class="footnoteAnchor">9</a> - <em>Shaping &amp; Schaffer, ‘Leviathan and The Air-Pump’,1985</em></p>
+
+<div id="footnote10"></div>
+<p><a href="" class="footnoteAnchor">10</a> - Holmes and Singer-Vine, ‘<u><a href="https://www.buzzfeed.com/richholmes/care-price" target="_blank" rel="noreferrer noopener">Danger and despair inside cambian group</a></u>’, 2018.</p>
+
+<div id="footnote11"></div>
+<p><a href="" class="footnoteAnchor">11</a> - See GitHub <u><a href="https://github.com/Global-Witness/papua-new-guinea-ipa" target="_blank" rel="noreferrer noopener">Global Witness: Papua New Guinea IPA </a></u></p>
+
+<div id="footnote12"></div>
+<p><a href="" class="footnoteAnchor">12</a> - See <u><a href="https://pngiportal.org/" target="_blank" rel="noreferrer noopener">iPNG project</a></u>&lt;/li&gt;</p>
+
+<div id="footnote13"></div>
+<p><a href="" class="footnoteAnchor">13</a> - Global Witness, ‘<u><a href="https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/anonymous-company-owners/companies-we-keep/" target="_blank" rel="noreferrer noopener">The Companies We Keep</a></u>’, 2018.</p>
+
+<div id="footnote14"></div>
+<p><a href="" class="footnoteAnchor">14</a> - See GitHub <u><a href="https://github.com/Global-Witness/the-companies-we-keep/blob/master/companies_we_keep_analysis.ipynb" target="_blank" rel="noreferrer noopener">Global Witness: The companies We Keep</a></u>.</p>
+
+<div id="footnote15"></div>
+<p><a href="" class="footnoteAnchor">15</a> - Hirst and Leon, ‘<u><a href="https://www.globalwitness.org/en/blog/two-years-still-dark-about-86000-anonymously-owned-uk-homes/" target="_blank" rel="noreferrer noopener">We’re still in the Dark about UK’s 86,000 Anonymously Owned Homes</a></u>’, 2017.</p>
+
+<div id="footnote16"></div>
+<p><a href="" class="footnoteAnchor">16</a> - See GitHub <u><a href="https://github.com/Global-Witness/overseas-companies-land-ownership/blob/master/overseas_companies_land_ownership_analysis.ipynb" target="_blank" rel="noreferrer noopener">Global Witness: Overseas Companies Land Ownership</a></u>.</p>
+
+<div id="footnote17"></div>
+<p><a href="" class="footnoteAnchor">17</a> - Harris, ‘<u><a href="https://source.opennews.org/articles/times-regrets-programmer-error/" target="_blank" rel="noreferrer noopener">The Times Regret the Programmer Error</a></u>’, 2013.</p>
+
+<div id="footnote18"></div>
+<p><a href="" class="footnoteAnchor">18</a> - See <u><a href="http://workbenchdata.com/" target="_blank" rel="noreferrer noopener">Workbench</a></u>.</p>
+
+<div id="footnote19"></div>
+<p><a href="" class="footnoteAnchor">19</a> - Barry, ‘Transparency as a Political Device’, 2010</p>
+
+<div id="footnote20"></div>
+<p><a href="" class="footnoteAnchor">20</a> - For an example of this type of material see Global Witness’s ‘<u><a href="https://www.globalwitness.org/en/campaigns/oil-gas-and-mining/finding-missing-millions/" target="_blank" rel="noreferrer noopener">Finding the Missing Millions</a></u>’ handbook.</p>
+
+</article>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Blog by <a href="https://twitter.com/noel_mas">@Noel_Mas</a> powered by <a href="https://github.com/johnotander/pixyll">Pixyll</a> Jekyll theme.<br>
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" 				src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" />
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57586437-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
