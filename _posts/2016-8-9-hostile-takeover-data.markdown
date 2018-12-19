@@ -2,7 +2,7 @@
 layout:     post
 title:      Why we published the data behind Hostile Takeover
 date:       2016-8-9
-summary:	Publishing the data and research tools we used to investigate crony capitalism in Cambodia is key to Global Witness's mission
+summary:	Publishing the data and research tools we used to investigate crony capitalism in Cambodia is key to Global Witness's mission.
 categories: open data
 ---
 
